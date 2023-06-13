@@ -1,0 +1,210 @@
+
+html {
+	font-size:40%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+    max-width: 100%;
+    max-height: 100vh;
+    height: auto; 
+}.home_page {
+  width: 100%;
+  height: 108rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.home_page .rectangle02 {
+  width: 192rem;
+  height: 12.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 1.6rem #000000;
+  background-color: #ffffff;
+}
+.home_page .projecx_flow {
+  width: 30.8rem;
+  height: 8.5rem;
+  position: absolute;
+  left: 88.2rem;
+  top: 23.5rem;
+  display: flex;
+  font-size: 7.6rem;
+  font-weight: 400;
+  line-height: 1.1075;
+  color: #050505;
+  font-family: Odibee Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .rectangle02 {
+  width: 12rem;
+  height: 6rem;
+  position: absolute;
+  left: 174.3rem;
+  top: 3.3rem;
+  background-color: #9aaaff;
+  border-radius: 1.2rem;
+}
+.home_page .title {
+  width: 62.2rem;
+  height: 5.3rem;
+  position: absolute;
+  left: 64.9rem;
+  top: 73rem;
+  font-size: 3.5rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #152c57;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .tagline {
+  width: 60.8rem;
+  height: 5.7rem;
+  position: absolute;
+  left: 65.6rem;
+  top: 79.8rem;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0b1a38;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.home_page .rectangle03 {
+  width: 78.6rem;
+  height: 7.3rem;
+  cursor: pointer;
+  position: absolute;
+  left: 56.6rem;
+  top: 42.3rem;
+  background-color: #dfdfdf;
+  border-radius: 4.5rem;
+}
+.home_page .search {
+  width: 17.2rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 44.3rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .item {
+  width: 1.4rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 126.7rem;
+  top: 42.35rem;
+  display: flex;
+  font-size: 4.8rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .glass_img {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 128.3rem;
+  top: 44rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.home_page .projectxflow_logo {
+  width: 12.3rem;
+  height: 11.9rem;
+  position: absolute;
+  left: 75.1rem;
+  top: 21.8rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.home_page .rectangle04 {
+  width: 20rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 75.2rem;
+  top: 52.8rem;
+  background-color: #9aaaff;
+  border-radius: 1.3rem;
+}
+.home_page .main_proj {
+  width: 12.8rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 78.75rem;
+  top: 53.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.05;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .rectangle05 {
+  width: 20rem;
+  height: 6.1rem;
+  position: absolute;
+  left: 96.7rem;
+  top: 52.8rem;
+  background-color: #9aaaff;
+  border-radius: 1.3rem;
+}
+.home_page .mini_proj {
+  width: 12.8rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 100.25rem;
+  top: 53.85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2.05;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.home_page .rectangle06 {
+  width: 26.7rem;
+  height: 6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 82.7rem;
+  top: 89.2rem;
+  background-color: #9aaaff;
+  border-radius: 1.2rem;
+}
+.home_page .start {
+  width: 16.4rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 85.6rem;
+  top: 90.1rem;
+  font-size: 2.9rem;
+  font-weight: 400;
+  line-height: 1.4137931034;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}

@@ -1,0 +1,199 @@
+
+html {
+	font-size:40%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+   max-width: 100%;
+   max-height: 100vh;
+   height: auto; 
+}.login_page {
+  width: 180rem;
+  height: 105rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.login_page .rectangle {
+  width: 116.8rem;
+  height: 108rem;
+  position: absolute;
+  left: 75.2rem;
+  top: 0;
+  background-color: rgba(154, 170, 255, 0.9900000095);
+}
+.login_page .projecx_flow {
+  width: 24.4rem;
+  height: 6.7rem;
+  position: absolute;
+  left: 27.5rem;
+  top: 79.5rem;
+  font-size: 6rem;
+  font-weight: 400;
+  line-height: 1.1075;
+  color: #050505;
+  font-family: 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .rectangle2 {
+  width: 16rem;
+  height: 6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 125.1rem;
+  top: 62.5rem;
+  background-color: #191919;
+  border-radius: 1.2rem;
+}
+.login_page .login_key {
+  width: 6.4rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 129.6rem;
+  top: 63.7rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #ffffff;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .img_01 {
+  width: 61.3rem;
+  height: 45.4rem;
+  position: relative;
+  left: 6.2rem;
+  top: 19.4rem;
+  background-size: 100% 135.022%;
+  background-position: 0 -12rem;
+  background-image: url('../assets/image-1.png');
+  border-radius: 17.1rem;
+}
+.login_page .projectxflow_2 {
+  width: 9.8rem;
+  height: 8.6rem;
+  position: absolute;
+  left: 17rem;
+  top: 78.5rem;
+  background-size: 100% 120%;
+  background-position: 0 -11rem;
+  background-image: url('../assets/projectxflow.png');
+  object-fit: cover;
+  vertical-align: top;
+}
+.login_page .rectangle3 {
+  width: 43.8rem;
+  height: 8.6rem;
+  position: absolute;
+  left: 111.2rem;
+  top: 37.5rem;
+  background-color: #ffffff;
+  border-radius: 2.8rem;
+}
+.login_page .user_name {
+  width: 12.3rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 114.5rem;
+  top: 40.3rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .rectangle4 {
+  width: 43.8rem;
+  height: 8.6rem;
+  position: absolute;
+  left: 111.2rem;
+  top: 49rem;
+  background-color: #ffffff;
+  border-radius: 2.8rem;
+}
+.login_page .pass_word {
+  width: 11.5rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 114.5rem;
+  top: 51.8rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .forgot_pass {
+  width: 19.9rem;
+  height: 3.6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 111.6rem;
+  top: 74.3rem;
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .create_acc {
+  width: 23.1rem;
+  height: 3.6rem;
+  cursor: pointer;
+  position: absolute;
+  left: 134.3rem;
+  top: 74.3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .welcome {
+  width: 36.4rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 114.8rem;
+  top: 26.4rem;
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 0.8541666667;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.login_page .line {
+  width: 0.2rem;
+  height: 4.5044rem;
+  position: absolute;
+  left: 133rem;
+  top: 73.5956rem;
+  background-color: #000000;
+}
+.login_page .tagline {
+  width: 41.2rem;
+  height: 2.9rem;
+  position: absolute;
+  left: 16.2rem;
+  top: 88.6rem;
+  text-align: center;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #0b1a38;
+  font-family: 'Source Sans Pro';
+  white-space: nowrap;
+}
