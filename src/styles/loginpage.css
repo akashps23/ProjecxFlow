@@ -100,7 +100,8 @@ body {
   border-radius: 2.8rem;
 }
 .login_page .user_name {
-  width: 12.3rem;
+  background-color: #ffffff;
+  width: 38rem;
   height: 3.6rem;
   position: absolute;
   left: 114.5rem;
@@ -110,7 +111,6 @@ body {
   line-height: 1.5;
   color: #000000;
   font-family: Poppins, 'Source Sans Pro';
-  white-space: nowrap;
 }
 .login_page .rectangle4 {
   width: 43.8rem;
@@ -122,7 +122,8 @@ body {
   border-radius: 2.8rem;
 }
 .login_page .pass_word {
-  width: 11.5rem;
+  width: 38rem;
+  background-color: #ffffff;
   height: 3.6rem;
   position: absolute;
   left: 114.5rem;
