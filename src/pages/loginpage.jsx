@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/loginpage.css";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -9,13 +9,23 @@ export default function Login() {
       <p className="projecx_flow">ProjecX flow</p>
       <div className="rectangle2"></div>
       <p className="login_key">Login</p>
-      <div className="img_01"></div>
-      <img className="projectxflow_2" />
+      <div className="grup_pic"></div>
+      <img className="logo" />
       <div className="rectangle3"></div>
-      <input className="user_name" />
+      <input
+        className="user_name"
+        defaultValue="Username"
+        onClick={(event) => (event.target.value = "")}
+      />
       <div className="rectangle4"></div>
-      <input className="pass_word" id="Password" />
+      <input
+        className="pass_word"
+        name="Password"
+        defaultValue="Password"
+        onClick={(event) => (event.target.value = "")}
+      />
       <p className="forgot_pass">Forgot Password</p>
+
       <p className="create_acc">Create an Account</p>
       <p className="welcome">Welcome Back</p>
       <div className="line"></div>
