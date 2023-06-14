@@ -123,6 +123,7 @@ body {
   position: absolute;
   left: 128.3rem;
   top: 44rem;
+  background-image: url('../assets/');
   object-fit: cover;
   vertical-align: top;
 }
