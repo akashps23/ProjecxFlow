@@ -2,12 +2,14 @@ import React from "react";
 import "../styles/homepage.css";
 import { Link } from "react-router-dom";
 
-export function Home() {
+export default function Home() {
   return (
     <div className="home_page">
       <p className="title">ProjecXFlow</p>
       <div className="login_rect"></div>
-      <div className="login_key">Login</div>
+      <Link to="/src/pages/loginpage.jsx">
+        <div className="login_key">Login</div>
+      </Link>
       <div className="search_rect"></div>
       <input
         className="search"

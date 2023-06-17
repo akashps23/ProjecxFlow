@@ -24,115 +24,130 @@ body {
   background-color: #ffffff;
 }
 .home_page .title {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .login_rect {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .login_key {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .search_key {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .search_rect {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .search {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .mini_react {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .miniproject {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .main_rect {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .mainproject {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .tagline_head {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .tagline {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .signup_rect {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
-}
-.home_page .getstarted {
-  width: 116.8rem;
-  height: 108rem;
-  position: absolute;
-  left: 75.2rem;
-  top: 0;
-  background-color: rgba(154, 170, 255, 0.9900000095);
+	position: absolute;
+	width: 20%;
+	height: 10%;
+	left: 40%;
+	top: 20%;
+	font-family: 'Odibee Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 5vw;
+	line-height: 1.2;
+	display: flex;
+	align-items: center;
+	color: #050505;
 }
 
+.home_page .login_rect {
+	position: absolute;
+	width: 10%;
+	height: 6%;
+	left: 80%;
+	top: 3%;
+
+	background: #9AAAFF;
+	border-radius: 12px;
+}
+
+.home_page .login_key {
+	position: absolute;
+	width: 6%;
+	height: 4%;
+	left: 82%;
+	top: 4%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	color: #000000;
+}
+
+.home_page .search_rect {
+	position: absolute;
+	width: 60%;
+	height: 8%;
+	left: calc(50% - 30%);
+	top: 40%;
+	background: #DFDFDF;
+	border-radius: 45px;
+}
+
+.home_page .search {
+	position: absolute;
+	width: 50%;
+	height: 3%;
+	left: 40%;
+	top: 45%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	color: #000000;
+}
+
+.home_page .mini_react {
+	width: 80%;
+	height: 100%;
+	position: absolute;
+	left: 10%;
+	top: 0;
+	background-color: rgba(154, 170, 255, 0.99);
+}
+
+.home_page .miniproject {
+	position: absolute;
+	width: 12%;
+	height: 4%;
+	left: 40%;
+	top: 50%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+
+.home_page .main_rect {
+	position: absolute;
+	width: 12%;
+	height: 4%;
+	left: 50%;
+	top: 50%;
+	background: #9AABFF;
+	border-radius: 13px;
+}
+
+.home_page .mainproject {
+	position: absolute;
+	width: 12%;
+	height: 4%;
+	left: 50%;
+	top: 50%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	color: #000000;
+}
+
+.home_page .tagline_head {
+	position: absolute;
+	width: 40%;
+	height: 4%;
+	left: calc(50% - 20%);
+	top: 70%;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+}
