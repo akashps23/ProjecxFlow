@@ -75,7 +75,7 @@ body {
   top: 19.4rem;
   background-size: 100% 135.022%;
   background-position: 0 -12rem;
-  background-image: url('../assets/image-1.png');
+  background-image: url('../assets/grouppic.png');
   border-radius: 17.1rem;
 }
 .login_page .logo {
@@ -86,7 +86,7 @@ body {
   top: 78rem;
   background-size: 100% 120%;
   background-position: 0 -11rem;
-  background-image: url('../assets/projectxflow.png');
+  background-image: url('../assets/logo.png');
   object-fit: cover;
   vertical-align: top;
   border-image: none;
