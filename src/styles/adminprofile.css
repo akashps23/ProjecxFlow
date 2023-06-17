@@ -1,0 +1,454 @@
+
+html {
+	font-size:62.5%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+  width: 192rem;
+}.admin-profile-QgN {
+  width: 100%;
+  height: 108rem;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.admin-profile-QgN .group-3-8MU {
+  width: 222.4rem;
+  height: 165.6699rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-4jbx-4F8 {
+  margin: 24.862rem 9.606rem 0rem 0rem;
+  width: 78.9928rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-4jbx-4F8 .ellipse-9-NWi {
+  margin: 0rem 38.197rem 7.007rem 24.184rem;
+  width: calc(100% - 62.3807rem);
+  height: 16.6122rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 8.3061rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-4jbx-4F8 .ellipse-10-5R8 {
+  margin: 0rem 17.064rem 25.879rem 49.611rem;
+  width: calc(100% - 66.6748rem);
+  height: 12.3179rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 6.1589rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-4jbx-4F8 .ellipse-5-bPU {
+  width: 100%;
+  height: 78.9927rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 39.4963rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-wcxe-LM4 {
+  margin: 48.028rem 14.126rem 43.621rem 0rem;
+  height: calc(100% - 91.6496rem);
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-wcxe-LM4 .ellipse-7-4Xx {
+  margin: 0rem 14.465rem 26.67rem 0rem;
+  width: 30.7383rem;
+  height: 30.7382rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 15.3691rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-wcxe-LM4 .ellipse-8-yev {
+  width: 16.6121rem;
+  height: 16.6122rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 8.3061rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-c9mg-JhC {
+  margin-bottom: 40.9089rem;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-c9mg-JhC .ellipse-11-f1x {
+  margin-bottom: 10.5098rem;
+  width: 28.7041rem;
+  height: 28.7041rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 14.352rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-c9mg-JhC .ellipse-5-C1t {
+  margin-left: 17.6291rem;
+  width: 56.8432rem;
+  height: 56.8431rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 28.4215rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .group-3-8MU .auto-group-c9mg-JhC .ellipse-6-vTg {
+  margin-left: 3.9553rem;
+  width: 28.7041rem;
+  height: 28.7041rem;
+  background-color: rgba(154, 170, 255, 0.1400000006);
+  border-radius: 14.352rem;
+  flex-shrink: 0;
+}
+.admin-profile-QgN .rectangle-14-Sgv {
+  width: 192rem;
+  height: 12.6rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  box-shadow: 0 0 1.6rem #000000;
+  background-color: #ffffff;
+}
+.admin-profile-QgN .projecx-flow-Asp {
+  width: 14.6rem;
+  height: 4rem;
+  position: absolute;
+  left: 9.4rem;
+  top: 4.3rem;
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 1.1075;
+  color: #050505;
+  font-family: Odibee Sans, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .projectxflow-2-GR4 {
+  width: 5.8rem;
+  height: 5.1rem;
+  position: absolute;
+  left: 3.2rem;
+  top: 3.7rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.admin-profile-QgN .welcome-admin-Q1U {
+  width: 48.2rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 69rem;
+  top: 23.3rem;
+  font-size: 5.7rem;
+  font-weight: 400;
+  line-height: 0.7192982456;
+  color: #111d5e;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+  display: flex;
+  align-items: baseline;
+}
+.admin-profile-QgN .welcome-admin-Q1U .welcome-admin-Q1U-sub-0 {
+  font-size: 5.7rem;
+  font-weight: 600;
+  line-height: 0.7192982456;
+  color: #111d5e;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.admin-profile-QgN .welcome-admin-Q1U .welcome-admin-Q1U-sub-1 {
+  font-size: 5.7rem;
+  font-weight: 600;
+  line-height: 0.7192982456;
+  color: #111d5e;
+  font-family: Poppins, 'Source Sans Pro';
+}
+.admin-profile-QgN .rectangle-21-TP4 {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 13.5rem;
+  top: 60.2rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-24-Zgz {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 56.4rem;
+  top: 60.2rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-25-V4r {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 99.3rem;
+  top: 60.2rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-26-c9U {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 142.2rem;
+  top: 60.2rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-27-8Ni {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 142.2rem;
+  top: 81.7rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-28-SuC {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 99.3rem;
+  top: 81.7rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-29-NXx {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 56.4rem;
+  top: 81.7rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .rectangle-30-h4S {
+  width: 36.4rem;
+  height: 14.7rem;
+  cursor: pointer;
+  position: absolute;
+  left: 13.5rem;
+  top: 81.7rem;
+  box-shadow: 0 0 3.4rem #111e5f;
+  background-color: #9babff;
+  border-radius: 1rem;
+}
+.admin-profile-QgN .mini-project-1qp {
+  width: 19.8rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 21.8rem;
+  top: 65.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .main-project-hyY {
+  width: 20.8rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 64.2rem;
+  top: 65.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .guides-Q7G {
+  width: 11.6rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 111.7rem;
+  top: 65.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .coordinators-Hwk {
+  width: 21.9rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 149.45rem;
+  top: 65.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .request-bBk {
+  width: 13.6rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 153.6rem;
+  top: 87rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .notification-6eJ {
+  width: 19.7rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 107.65rem;
+  top: 87rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .student-list-bqx {
+  width: 20rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 64.6rem;
+  top: 87rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .project-list-7pJ {
+  width: 18.6rem;
+  height: 4.1rem;
+  position: absolute;
+  left: 22.4rem;
+  top: 87rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  font-weight: 400;
+  line-height: 1.025;
+  color: #0e1122;
+  font-family: Axiforma-Bold, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .rectangle-13-pTp {
+  width: 78.6rem;
+  height: 7.3rem;
+  position: absolute;
+  left: 56.6rem;
+  top: 40.5rem;
+  background-color: #dfdfdf;
+  border-radius: 4.5rem;
+}
+.admin-profile-QgN .search-project-Yuc {
+  width: 17.2rem;
+  height: 3.6rem;
+  position: absolute;
+  left: 60.3rem;
+  top: 42.5rem;
+  font-size: 2.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #000000;
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .item--Gai {
+  width: 1.4rem;
+  height: 7.2rem;
+  position: absolute;
+  left: 126.7rem;
+  top: 40.55rem;
+  display: flex;
+  font-size: 4.8rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
+  font-family: Poppins, 'Source Sans Pro';
+  white-space: nowrap;
+}
+.admin-profile-QgN .magnifying-glass-1-yzv {
+  width: 3.8rem;
+  height: 3.8rem;
+  position: absolute;
+  left: 128.3rem;
+  top: 42.2rem;
+  object-fit: cover;
+  vertical-align: top;
+}
+.admin-profile-QgN .ellipse-13-uta {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 179rem;
+  top: 2.5rem;
+  background-color: #d9d9d9;
+  border-radius: 3.75rem;
+}
+.admin-profile-QgN .auto-group-bgmc-T9Q {
+  width: 7.5rem;
+  height: 7.5rem;
+  position: absolute;
+  left: 179rem;
+  top: 2.5rem;
+  object-fit: contain;
+  vertical-align: top;
+}
