@@ -26,7 +26,9 @@ export default function Home() {
         your projects under the guidance of your faculties.
       </p>
       <div className="signup_rect"></div>
-      <p className="getstarted">Get Started</p>
+      <Link to="/src/pages/selectingtype.jsx">
+        <p className="getstarted">Get Started</p>
+      </Link>
     </div>
   );
 }

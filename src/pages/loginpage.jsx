@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/loginpage.css";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   return (
@@ -25,8 +25,9 @@ export default function Login() {
         onClick={(event) => (event.target.value = "")}
       />
       <p className="forgot_pass">Forgot Password</p>
-
-      <p className="create_acc">Create an Account</p>
+      <Link to="/src/pages/selectingtype.jsx">
+        <p className="create_acc">Create an Account</p>
+      </Link>
       <p className="welcome">Welcome Back</p>
       <div className="line"></div>
       <p className="tagline">A Complete Solution for Managing Projects </p>
