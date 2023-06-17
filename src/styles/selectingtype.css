@@ -25,16 +25,123 @@ body {
 }
 .select .title {
 	position: absolute;
-	width: 20%;
-	height: 10%;
-	left: 40%;
-	top: 20%;
-	font-family: 'Odibee Sans';
+	width: 34%;
+	align-content: center;
+	height: 6%;
+	left: 55rem;
+	top: 22rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 1.65vw;
+	line-height: 2.3;
+	color: #312771;
+	border-radius: 10px;
+}
+.select .subtitle {
+	position: absolute;
+	width: 34%;
+	align-content: center;
+	height: 6%;
+	left: 55rem;
+	top: 50rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 1.5vw;
+	line-height: 2.3;
+	color: #181818;
+	border-radius: 10px;
+}
+.select .loginkey {
+	position: absolute;
+	width: 6%;
+	height: 4%;
+	left: 157.5rem;
+	top: 6.5rem;
+	font-family: 'Poppins';
 	font-style: normal;
-	font-weight: 400;
-	font-size: 5vw;
-	line-height: 1.2;
-	display: flex;
-	align-items: center;
-	color: #050505;
+	font-weight: 600;
+	font-size: 1.5vw;
+	line-height: 1.5;
+	color: #000000;
+}
+.select .loginrect {
+
+	width: 16rem;
+	height: 6rem;
+	cursor: pointer;
+	position: absolute;
+	left: 155rem;
+	top: 6rem;
+	background-color: #9AAAFF;
+	border-radius: 1.2rem;
+}
+.select .progline {
+
+	width: 50rem;
+	height: 1.2rem;
+	position: absolute;
+	left: 10rem;
+	top: 38rem;
+	background-color: #11772e;
+	
+}
+.select .rectline {
+
+	width: 110rem;
+	height: 1.2rem;
+	position: absolute;
+	left: 58rem;
+	top: 38rem;
+	background-color: #b3b3b3;
+	
+}
+.select .coordinator {
+	position: absolute;
+	width: 15%;
+	height: 6%;
+	left: 30rem;
+	top: 75rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+
+}
+.select .guide {
+	position: absolute;
+	width: 15%;
+	height: 6%;
+	left: 75rem;
+	top: 75rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+
+}
+.select .student {
+	position: absolute;
+	width: 15%;
+	height: 6%;
+	left: 120rem;
+	top: 75rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+
 }

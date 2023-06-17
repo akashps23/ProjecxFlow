@@ -21,7 +21,7 @@ export default function Login() {
       <input
         className="pass_word"
         name="Password"
-        defaultValue="Password"q
+        defaultValue="Password"
         onClick={(event) => (event.target.value = "")}
       />
       <p className="forgot_pass">Forgot Password</p>

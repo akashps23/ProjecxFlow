@@ -6,6 +6,8 @@ export default function Home() {
   return (
     <div className="home_page">
       <p className="title">ProjecXFlow</p>
+      <img className="searchimg"></img>
+      <img className="logo"></img>
       <div className="login_rect"></div>
       <Link to="/src/pages/loginpage.jsx">
         <div className="login_key">Login</div>
@@ -17,9 +19,10 @@ export default function Home() {
         onClick={(event) => (event.target.value = "")}
       />
       <div className="mini_rect"></div>
+      <div className="bgrect"></div>
       <p className="miniproject">Mini Project</p>
       <div className="main_rect"></div>
-      <p className="miniproject">Main Project</p>
+      <p className="mainproject">Main Project</p>
       <p className="tagline_head">Manage projects with ProjectXFlow</p>
       <p className="tagline">
         All in one solution for project management. Here you can simply manage
