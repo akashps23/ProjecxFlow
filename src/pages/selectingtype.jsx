@@ -10,12 +10,10 @@ export default function UserType() {
       <div className="coordinator">Coordinator</div>
       <div className="guide">Guide</div>
       <div className="student">Student</div>
-      <div className="loginrect"></div>
-      <div className="progline"></div>
-      <div className="rectline"></div>
       <Link to="/src/pages/loginpage.jsx">
         <div className="loginkey">Login</div>
       </Link>
+      <div className="bgrect"></div>
     </div>
   );
 }

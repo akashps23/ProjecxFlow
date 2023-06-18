@@ -12,16 +12,14 @@ input {
 	border: none;
 }
 body {
-	max-width: 100%;
-	max-height: 100vh;
+   max-width: 100%;
+   max-height: 100%;
    height: auto;
-   width: auto;
 }
 .projectsearch {
-	width: 180rem;
-	height: 105rem;
+  width: 100vw;
+  height: 100vh;
   position: relative;
-  letter-spacing: normal;
   overflow: hidden;
   background-color: #ffffff;
 }
@@ -30,8 +28,8 @@ body {
 	width: 45%;
 	height: 4%;
 	align-content: center;
-	left: calc(42% - 30%);
-	top: 22%;
+	left: calc(39% - 30%);
+	top: 9.5%;
     z-index: 1;
 	font-size: 3rem;
 	font-family: 'Helvetica';
@@ -51,8 +49,8 @@ body {
 	
 	width: 5rem;
 	height: 5rem;
-	left: 136rem;
-	top: 22.5rem;
+	left: 65.5rem;
+	top: 15.5rem;
 	position: relative;
 	z-index: 1;
     opacity: 50%;
@@ -64,41 +62,11 @@ body {
 	background-position: center;
 
 }
-/* .projectsearch .back {
- 
-    position: relative;
-    width: 15%;
-    height: 6%;
-    left: 80rem;
-    top: 90rem;
-    text-align: center;
-    font-family: 'Helvetica';
-    font-weight: 600;
-    font-size: 1.2vw;
-    line-height: 2.3;
-    color: #ffffff; 
-    background-color: #1d1d1d;
-    border-radius: 10px;
-        
 
-} */
-/* .projectsearch .list {
-    width: 15%;
-    height: 6%;
-    left: 160rem;
-    top: 18rem;
-    text-align: center;
-    font-family: 'Helvetica';
-    font-weight: 600;
-    z-index: 1;
-    font-size: 1.2vw;
-    line-height: 2.3;
-    color: #ffffff; 
-} */
 .projectsearch .bgrect {
-	width: 180rem;
+	width: 100vw;
 	height: 15rem;
 	position: relative;
-	top: 0rem;
+	top: -19rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);
 }
