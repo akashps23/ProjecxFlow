@@ -2,7 +2,7 @@ import React from 'react'
 import "../styles/signup.css";
 import { Link } from 'react-router-dom';
 
-export function SignUp() {
+export default function SignUp() {
   return (
     <div className='sign_up'>
 

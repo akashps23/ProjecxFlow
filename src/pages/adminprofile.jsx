@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/adminprofile.css";
 import { Link } from "react-router-dom";
 
-export function AdminProfile() {
+export default function AdminProfile() {
   return (
     <div className="admin_profile">
       <h1 className="title">Welcome Admin</h1>

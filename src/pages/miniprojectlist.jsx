@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/miniprojectlist.css";
 import { Link } from "react-router-dom";
 
-export function MiniList() {
+export default function MiniList() {
   return (
     <div className="minilist">
       {/* <Link to="/src/pages/homepage.jsx">

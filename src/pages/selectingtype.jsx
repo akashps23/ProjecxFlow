@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/selectingtype.css";
 import { Link } from "react-router-dom";
 
-export function UserType() {
+export default function UserType() {
   return (
     <div className="select">
       <p className="title">Hey ! Welcome to ProjecXFlow</p>

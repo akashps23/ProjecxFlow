@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/mainprojectlist.css";
 import { Link } from "react-router-dom";
 
-export function MainList() {
+export default function MainList() {
   return (
     <div>
       <div className="mainlist">

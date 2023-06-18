@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/forgotpassword.css";
 import { Link } from "react-router-dom";
 
-export function ForgotPassword() {
+export default function ForgotPassword() {
   return (
     <div className="forgot">
       <p className="title">Let's Recover Your Account</p>
