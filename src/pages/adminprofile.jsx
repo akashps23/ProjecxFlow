@@ -18,7 +18,7 @@ export default function AdminProfile() {
   return (
     <div className="admin_profile">
        
-      <p className="title">Welcome Admin</p>
+      <h1 className="title">Welcome Admin</h1>
 
       <div className="mini_rect"></div>
       <div className="bgrect"></div>

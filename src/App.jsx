@@ -3,6 +3,7 @@ import Home from "./pages/homepage";
 // <<<<<<< Updated upstream
 import UserType from "./pages/selectingtype";
 import adminprofile from "./pages/adminprofile";
+import SignUp from "./pages/signup";
 // <<<<<<< Updated upstream
 import MiniList from "./pages/miniprojectlist";
 import MainList from "./pages/mainprojectlist";
@@ -24,11 +25,11 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route exact path="/" element={<AdminProfile />} />
+          <Route exact path="/" element={<UserType />} />
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
-          <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
-          {/* <Route path="/src/pages/adminprofile.jsx" element={<AdminProfile />} /> */}
+        {/* <Route path="/src/pages/selectingtype.jsx" element={<UserType />} /> */}
+          <Route path="/src/pages/adminprofile.jsx" element={<AdminProfile />} />
           <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
           <Route
             path="/src/pages/miniprojectlist.jsx"
