@@ -12,7 +12,6 @@ export default function Home() {
       </Link>
 
       <img className="logo"></img>
-      <div className="login_rect"></div>
 
       <Link to="/src/pages/loginpage.jsx">
         <div className="login_key">Login</div>
@@ -41,11 +40,6 @@ export default function Home() {
       </Link>
 
       <p className="tagline_head">Manage projects with ProjectXFlow</p>
-
-      <p className="tagline">
-        All in one solution for project management. Here you can simply manage
-        your projects under the guidance of your faculties.
-      </p>
 
       <div className="signup_rect"></div>
 

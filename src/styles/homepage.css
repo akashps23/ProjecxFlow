@@ -1,5 +1,5 @@
 html {
-	font-size:40%;
+	font-size:100%;
 }
 * {
 	margin: 0;
@@ -13,42 +13,43 @@ input {
 }
 body {
 	max-width: 100%;
-	max-height: 100vh;
+	max-height: 100%;
    height: auto;
    width: auto;
 }
 .home_page {
-	width: 180rem;
-	height: 105rem;
+	width: 100vw;
+	height: 100vh;
   position: relative;
-  letter-spacing: normal;
   overflow: hidden;
   background-color: #ffffff;
 }
 .home_page .title {
 
 	position: absolute;
-	width: 20%;
-	height: 10%;
-	left: 41.5%;
-	top: 21%;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 400;
-	font-size: 3vw;
-	line-height: 1.2;
 	display: flex;
 	align-items: center;
+	width: 20%;
+	height: 10%;
+	left: 44%;
+	top: 18%;
+	font-family: 'Helvetica';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 3vw;
+	line-height: 1.2;
 	color: #050505;
 }
-
+.home_page .title:hover {
+	filter: drop-shadow(0 0 2em #646cffaa);
+  }
 .home_page .logo{
 	background-image: url(../assets//logo.png);
 	width: 10rem;
 	height: 10rem;
 	position: absolute;
-	left: 33.5%;
-	top: 20%;
+	left: 36%;
+	top: 16%;
 
 	object-fit: cover;
 	background-color: #ffffff00;
@@ -56,48 +57,6 @@ body {
 	background-size: cover;
 	background-position: center;
 	
-}
-
-
-.home_page .searchimg {
-	
-	width: 5rem;
-	height: 5rem;
-	left: 136rem;
-	top: 43.5rem;
-	position: absolute;
-	z-index: 1;
-	object-fit: cover;
-	background-color: #ffffff00;
-	border-color: #00000000 ;	
-	background-image: url('../assets/glass.png');
-	background-size: cover;
-	background-position: center;
-
-}
-.home_page .login_key {
-	position: absolute;
-	width: 6%;
-	height: 4%;
-	left: 157.5rem;
-	top: 6.5rem;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 1.5vw;
-	line-height: 1.5;
-	color: #000000;
-}
-.home_page .login_rect {
-
-	width: 16rem;
-	height: 6rem;
-	cursor: pointer;
-	position: absolute;
-	left: 155rem;
-	top: 6rem;
-	background-color: #9AAAFF;
-	border-radius: 1.2rem;
 }
 .home_page .search_rect {
 	position: absolute;
@@ -105,8 +64,41 @@ body {
 	height: 8%;
 	left: calc(50% - 30%);
 	top: 40%;
-	background: #DFDFDF;
+	background: #b7b7b7;
 	border-radius: 45px;
+}
+
+.home_page .searchimg {
+	
+	width: 4.5rem;
+	height: 4.5rem;
+	left: calc(86% - 10%);
+	top: 41%;
+	position: absolute;
+	z-index: 1;
+	object-fit: cover;
+	background-color: transparent;
+	border-color: #00000000 ;	
+	background-image: url('../assets/glass.png');
+	background-size: cover;
+	background-position: center;
+
+}
+.home_page .login_key {
+
+	position: absolute;
+	width: 6%;
+	height: 6%;
+	left: 138rem;
+	top: 4.5rem;
+	align-items: center;
+	text-align: center;
+	font-weight: 600;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #9AAAFF;
+	border-radius: 10px;
 }
 
 .home_page .search {
@@ -115,8 +107,8 @@ body {
 	height: 7%;
 	left: calc(53% - 30%);
 	top: 40.5%;
-	font-family: 'Poppins';
-	font-weight: 300;
+	font-family: 'Helvetica';
+	font-weight: 500;
 	font-size: 1.3vw;
 	background-color: #ffffff00;
 	color: #111111;
@@ -124,32 +116,35 @@ body {
 .home_page .miniproject {
 	position: absolute;
 	width: 12%;
-	height: 4%;
+	height: 7%;
 	left: 35%;
 	top: 55%;
-	font-family: 'Poppins';
+	font-family: 'Helvetica';
 	font-weight: 700;
-	font-size: 1.2vw;
-	line-height: 1.5;
+	font-size: 1.6vw;
+	line-height: 2;
 	align-items: center;
 	text-align: center;
 	color: #000000;
+	background-color: #9aaaff;
+	border-radius: 10px;
 }
 .home_page .mainproject {
 	position: absolute;
 	width: 12%;
-	height: 4%;
+	height: 7%;
 	left: 55%;
 	top: 55%;
-	font-family: 'Poppins';
+	font-family: 'Helvetica';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 1.2vw;
-	line-height: 1.5;
-	display: flex;
+	font-size: 1.6vw;
+	line-height: 2;
 	align-items: center;
 	text-align: center;
 	color: #000000;
+	background-color: #9aaaff;
+	border-radius: 10px;
 }
 
 .home_page .tagline_head {
@@ -157,12 +152,12 @@ body {
 	width: 45%;
 	height: 4%;
 	align-content: center;
-	left: calc(50% - 20%);
+	left: calc(51% - 20%);
 	top: 77%;
-	font-size: 4.5rem;
-	font-family: 'Poppins';
-	font-weight: 500;
-	color: #2a387e;
+	font-size: 3.5rem;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	color: #2b2b2b;
 }
 /* .home_page .tagline {
 	position: absolute;
@@ -171,7 +166,7 @@ body {
 	left: calc(50% - 20%);
 	top: 78%;
 	font-size: 2rem;
-	font-family: 'Poppins';
+	font-family: 'Helvetica';
 	font-weight: 300;
 	color: #2c2c2c;
 } */
@@ -179,10 +174,10 @@ body {
 	position: absolute;
 	width: 15%;
 	height: 6%;
-	left: 80rem;
-	top: 90rem;
+	left: 66rem;
+	top: 63rem;
 	text-align: center;
-	font-family: 'Poppins';
+	font-family: 'Helvetica';
 	font-weight: 600;
 	font-size: 1.2vw;
 	line-height: 2.3;
@@ -192,9 +187,9 @@ body {
 
 }
 .home_page .bgrect {
-	width: 180rem;
-	height: 108rem;
+	width: 100vw;
+	height: 40rem;
 	position: absolute;
-	top: 73rem;
+	top: 50rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);
 }

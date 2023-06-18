@@ -13,19 +13,19 @@ input {
 }
 body {
    max-width: 100%;
-   max-height: 100vh;
+   max-height: 100%;
    height: auto;
 }
 .login_page {
-  width: 180rem;
-  height: 105rem;
+  width: 100vw;
+  height: 100vh;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
 }
 .login_page .rectangle {
-  width: 116.8rem;
-  height: 108rem;
+  width: 110vh;
+  height: 100%;
   position: absolute;
   left: 75.2rem;
   top: 0;
@@ -36,105 +36,99 @@ body {
   height: 6.7rem;
   position: absolute;
   left: 27.5rem;
-  top: 79.5rem;
-  font-size: 6rem;
-  font-weight: 400;
+  top: 58.5rem;
+  font-size: 4rem;
+  font-weight: 600;
   line-height: 1.1075;
   color: #050505;
   font-family: 'Source Sans Pro';
   white-space: nowrap;
 }
-.login_page .rectangle2 {
+.login_page .login_key {
   width: 16rem;
   height: 6rem;
-  cursor: pointer;
   position: absolute;
-  left: 125.1rem;
-  top: 62.5rem;
-  background-color: #191919;
-  border-radius: 1.2rem;
-}
-.login_page .login_key {
-  width: 6.4rem;
-  height: 3.6rem;
-  position: absolute;
-  left: 129.6rem;
-  top: 63.7rem;
+  left: 109rem;
+  top: 43.8rem;
   font-size: 2.4rem;
   font-weight: 400;
-  line-height: 1.5;
+  align-items: center;
+  text-align: center;
+  line-height: 2.5;
   color: #ffffff;
-  font-family: Poppins, 'Source Sans Pro';
+  background-color: #191919;
+  border-radius: 1.2rem;
+  font-family: 'Helvetica';
   white-space: nowrap;
 }
 .login_page .grup_pic {
-  width: 61.3rem;
-  height: 45.4rem;
+  width: 50rem;
+  height: 39rem;
   position: relative;
-  left: 6.2rem;
-  top: 19.4rem;
+  left: 10rem;
+  top: 10rem;
   background-size: 100% 135.022%;
-  background-position: 0 -12rem;
+  background-position: 0 -10rem;
   background-image: url('../assets/grouppic.png');
-  border-radius: 17.1rem;
+  border-radius: 10rem;
 }
 .login_page .logo {
   width: 8rem;
   height: 5.5rem;
   position: absolute;
-  left: 17rem;
-  top: 78rem;
+  left: 18rem;
+  top: 58rem;
   background-size: 100% 120%;
-  background-position: 0 -11rem;
+  background-position: 0 -7rem;
   background-image: url('../assets/logo.png');
   object-fit: cover;
   vertical-align: top;
   border-image: none;
 }
 
-.login_page .rectangle3 {
+.login_page .rectuser {
   width: 43.8rem;
-  height: 8.6rem;
+  height: 6rem;
   position: absolute;
-  left: 111.2rem;
-  top: 37.5rem;
+  left: 95rem;
+  top: 23rem;
   background-color: #ffffff;
-  border-radius: 2.8rem;
+  border-radius: 1.5rem;
 }
 .login_page .user_name {
   background-color: #ffffff;
   width: 38rem;
   height: 3.6rem;
   position: absolute;
-  left: 114.5rem;
-  top: 40.3rem;
+  left: 98rem;
+  top: 24rem;
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
+  font-family: Helvetica, 'Source Sans Pro';
 }
-.login_page .rectangle4 {
+.login_page .rectpass {
   width: 43.8rem;
-  height: 8.6rem;
+  height: 6rem;
   position: absolute;
-  left: 111.2rem;
-  top: 49rem;
+  left: 95rem;
+  top: 32rem;
   background-color: #ffffff;
-  border-radius: 2.8rem;
+  border-radius: 1.5rem;
 }
 .login_page .pass_word {
   width: 38rem;
   background-color: #ffffff;
   height: 3.6rem;
   position: absolute;
-  left: 114.5rem;
-  top: 51.8rem;
+  left: 98rem;
+  top: 33rem;
   font-size: 2.4rem;
-  font-weight: 300;
+  font-weight: 350;
   line-height: 1.5;
   color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
+  font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
 .login_page .forgot_pass {
@@ -142,13 +136,13 @@ body {
   height: 3.6rem;
   cursor: pointer;
   position: absolute;
-  left: 111.6rem;
-  top: 74.3rem;
+  left: 97rem;
+  top: 58.5rem;
   font-size: 2.4rem;
   font-weight: 400;
   line-height: 1.5;
   color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
+  font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
 .login_page .create_acc {
@@ -156,47 +150,33 @@ body {
   height: 3.6rem;
   cursor: pointer;
   position: absolute;
-  left: 134.3rem;
-  top: 74.3rem;
+  left: 119.5rem;
+  top: 58.5rem;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.5;
   color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
+  font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
 .login_page .welcome {
   width: 36.4rem;
   height: 4.1rem;
   position: absolute;
-  left: 114.8rem;
-  top: 26.4rem;
+  left: 100rem;
+  top: 11rem;
   font-size: 4.8rem;
   font-weight: 600;
   line-height: 0.8541666667;
   color: #000000;
-  font-family: Poppins, 'Source Sans Pro';
+  font-family: Helvetica, 'Source Sans Pro';
   white-space: nowrap;
 }
 .login_page .line {
   width: 0.2rem;
   height: 4.5044rem;
   position: absolute;
-  left: 133rem;
-  top: 73.5956rem;
+  left: 117rem;
+  top: 58rem;
   background-color: #000000;
-}
-.login_page .tagline {
-  width: 41.2rem;
-  height: 2.9rem;
-  position: absolute;
-  left: 16.2rem;
-  top: 88.6rem;
-  text-align: center;
-  font-size: 1.9rem;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #0b1a38;
-  font-family: 'Source Sans Pro';
-  white-space: nowrap;
 }

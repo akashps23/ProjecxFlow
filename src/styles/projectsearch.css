@@ -34,7 +34,7 @@ body {
 	top: 22%;
     z-index: 1;
 	font-size: 3rem;
-	font-family: 'Poppins';
+	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #292929;
 }
@@ -72,7 +72,7 @@ body {
     left: 80rem;
     top: 90rem;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Helvetica';
     font-weight: 600;
     font-size: 1.2vw;
     line-height: 2.3;
@@ -88,7 +88,7 @@ body {
     left: 160rem;
     top: 18rem;
     text-align: center;
-    font-family: 'Poppins';
+    font-family: 'Helvetica';
     font-weight: 600;
     z-index: 1;
     font-size: 1.2vw;
