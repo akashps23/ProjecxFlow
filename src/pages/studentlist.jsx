@@ -1,11 +1,5 @@
-import React from 'react'
+import React from "react";
 
-function studentlist() {
-  return (
-    <div>
-      
-    </div>
-  )
+export function studentlist() {
+  return <div></div>;
 }
-
-export default studentlist

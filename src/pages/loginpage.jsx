@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/loginpage.css";
 import { Link } from "react-router-dom";
 
-export default function Login() {
+export function Login() {
   return (
     <div className="login_page">
       <div className="rectangle"></div>

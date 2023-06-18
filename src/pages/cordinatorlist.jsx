@@ -1,11 +1,10 @@
 import React from 'react'
 
-function cordinatorlist() {
+export function cordinatorlist() {
   return (
     <div>
       
     </div>
-  )
+  );
 }
 
-export default cordinatorlist

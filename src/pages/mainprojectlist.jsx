@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/mainprojectlist.css";
 import { Link } from "react-router-dom";
 
-function MainList() {
+export function MainList() {
   return (
     <div>
       <div className="mainlist">
@@ -21,5 +21,3 @@ function MainList() {
     </div>
   );
 }
-
-export default MainList;

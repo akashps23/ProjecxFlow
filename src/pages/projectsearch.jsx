@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/projectsearch.css";
 
-function ProjectSearch() {
+export function ProjectSearch() {
   return (
     <div>
       <div className="projectsearch">
@@ -22,5 +22,3 @@ function ProjectSearch() {
     </div>
   );
 }
-
-export default ProjectSearch;

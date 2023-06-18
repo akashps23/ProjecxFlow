@@ -1,5 +1,5 @@
 html {
-	font-size:100%;
+	font-size:40%;
 }
 * {
 	margin: 0;
@@ -40,9 +40,7 @@ body {
 	line-height: 1.2;
 	color: #050505;
 }
-.home_page .title:hover {
-	filter: drop-shadow(0 0 2em #646cffaa);
-  }
+
 .home_page .logo{
 	background-image: url(../assets//logo.png);
 	width: 10rem;

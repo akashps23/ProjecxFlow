@@ -1,11 +1,9 @@
 import React from 'react'
 
-function request() {
+export function request() {
   return (
     <div>
       
     </div>
-  )
+  );
 }
-
-export default request

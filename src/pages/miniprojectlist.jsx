@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/miniprojectlist.css";
 import { Link } from "react-router-dom";
 
-function MiniList() {
+export function MiniList() {
   return (
     <div className="minilist">
       {/* <Link to="/src/pages/homepage.jsx">
@@ -19,5 +19,3 @@ function MiniList() {
     </div>
   );
 }
-
-export default MiniList;

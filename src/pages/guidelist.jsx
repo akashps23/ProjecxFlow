@@ -1,11 +1,5 @@
-import React from 'react'
+import React from "react";
 
-function guidelist() {
-  return (
-    <div>
-      
-    </div>
-  )
+export function guidelist() {
+  return <div></div>;
 }
-
-export default guidelist
