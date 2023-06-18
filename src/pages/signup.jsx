@@ -100,7 +100,7 @@ export default function SignUp() {
         onClick={(event) => (event.target.value = "")}   
       />
 
-<Link to="/src/pages/loginpage.jsx">
+      <Link to="/src/pages/loginpage.jsx">
         <div className="submit">Submit</div>
       </Link>
     
