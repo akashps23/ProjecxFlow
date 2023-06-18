@@ -2,27 +2,33 @@ import React, { useState } from 'react';
 import "../styles/adminprofile.css";
 import { Link } from "react-router-dom";
 
-function adminprofile() {
-  const [searchTerm, setSearchTerm] = useState('');
+export default function adminprofile() {
+ 
+  // const [searchTerm, setSearchTerm] = useState('');
 
-  const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value);
-  };
+  // const handleSearchChange = (event) => {
+  //   setSearchTerm(event.target.value);
+  // };
 
-  const handleSelection = (selection) => {
-    // Handle selection logic here
-    console.log(`Selected option: ${selection}`);
-  };
+  // const handleSelection = (selection) => {
+  //   // Handle selection logic here
+  //   console.log(`Selected option: ${selection}`);
+  // };
 
   return (
-    <div>
-      <h1>Welcome, Admin!</h1>
-      <input
-        type="text"
-        value={searchTerm}
-        onChange={handleSearchChange}
-        placeholder="Search..."
-      />
+    <div className="admin_profile">
+       
+      <p className="title">Welcome Admin</p>
+
+      <Link to="/src/pages/projectsearch.jsx">
+        <img className="searchimg"></img>
+      </Link>
+
+      <div className="minipro_rect"></div>
+
+      <Link to="/src/pages/miniprojectlist.jsx">
+        <div className="miniproject">LMini Project</div>
+      </Link>
       <div>
         <button onClick={() => handleSelection('Mini Project')}>Mini Project</button>
         <button onClick={() => handleSelection('Main Project')}>Main Project</button>
@@ -37,4 +43,4 @@ function adminprofile() {
   );
 }
 
-export default adminprofile;
+
