@@ -2,56 +2,112 @@ import React from 'react'
 import "../styles/signup.css";
 import { Link } from 'react-router-dom';
 
-export default function signup() {
+export default function SignUp() {
   return (
-    <div>
-      <div class="create-account-pQn">
-  <div class="group-3-9hx">
-    <div class="auto-group-6ru4-gSz">
-      <div class="ellipse-9-CRL">
-      </div>
-      <div class="ellipse-10-6Wi">
-      </div>
-      <div class="ellipse-5-cV4">
-      </div>
-    </div>
-    <div class="auto-group-7blr-kbG">
-      <div class="ellipse-7-Qfp">
-      </div>
-      <div class="ellipse-8-862">
-      </div>
-    </div>
-    <div class="auto-group-1xvq-FwL">
-      <div class="ellipse-11-ohx">
-      </div>
-      <div class="ellipse-5-Y9k">
-      </div>
-      <div class="ellipse-6-4tn">
-      </div>
-    </div>
-  </div>
-  <div class="rectangle-14-NuU">
-  </div>
-  <p class="projecx-flow-vAJ">ProjecX flow</p>
-  <img class="projectxflow-2-RMx" src="./assets/projectxflow-2-6Wa.png"/>
-  <div class="rectangle-21-MWW">
-  </div>
-  <p class="username-tFY">Username</p>
-  <div class="rectangle-22-PTC">
-  </div>
-  <div class="rectangle-23-7tz">
-  </div>
-  <p class="answer-FVQ">Answer</p>
-  <p class="phone-number-ZW6">Phone number</p>
-  <div class="question-gKp">Question</div>
-  <p class="reset-your-password-z5c">Reset Your Password</p>
-  <div class="line-1-6PY">
-  </div>
-  <div class="rectangle-20-2nz">
-  </div>
-  <p class="submit-MqG">Submit</p>
-  <img class="icon-arrow-left-5WN" src="./assets/icon-arrow-left-a22.png"/>
-</div>
+    <div className='sign_up'>
+
+    <div className="name_rect"></div>
+      <input
+         className="Name" 
+         defaultValue="Name"
+         onClick={(event) => (event.target.value = "")}
+         />
+      <div className='phno_rect'></div>
+        <input
+          className='phno'
+          defaultValue="Phone Number"
+          onClick={(event) => (event.target.value = "")}
+          />
+
+      <div className='email_rect'></div>
+      <input
+         className="email" 
+         defaultValue="EMail"
+         onClick={(event) => (event.target.value = "")}
+         />
+
+      <div className='clg_rect'></div>
+      <input
+         className="clg" 
+         defaultValue="College"
+         onClick={(event) => (event.target.value = "")}
+         /> 
+
+      <div className='dept_rect'></div>
+      <input
+         className="dept" 
+         defaultValue="Department"
+         onClick={(event) => (event.target.value = "")}
+         />   
+
+      <div className='sem_rect'></div>
+      <input
+         className="sem" 
+         defaultValue="Semester"
+         onClick={(event) => (event.target.value = "")}
+         /> 
+
+      <div className='adno_rect'></div>
+      <input
+         className="adno" 
+         defaultValue="Admmission Number"
+         onClick={(event) => (event.target.value = "")}
+         /> 
+
+      <div className='rno_rect'></div>
+      <input
+         className="rno" 
+         defaultValue="Roll Number"
+         onClick={(event) => (event.target.value = "")}
+         />  
+
+      <div className='regno_rect'></div>
+      <input
+         className="regno" 
+         defaultValue="Register Number"
+         onClick={(event) => (event.target.value = "")}
+         />      
+
+      <div className='pwd_rect'></div>
+      <input
+        className="pwd"
+        name="Password"
+        defaultValue="Password"
+        onClick={(event) => (event.target.value = "")}   
+      />
+
+      <div className='repwd_rect'></div>
+      <input
+        className="repwd"
+        name="Password"
+        defaultValue="Reenter Password"
+        onClick={(event) => (event.target.value = "")}   
+      />
+
+      <div className='quest_rect'></div>
+      <input
+        className="quest"
+        name="question"
+        defaultValue="Enter a question"
+        onClick={(event) => (event.target.value = "")}   
+      />
+
+      <div className='ans'></div>
+      <input
+        className="ans"
+        name="Answer"
+        defaultValue="Submit your answer"
+        onClick={(event) => (event.target.value = "")}   
+      />
+
+<Link to="/src/pages/loginpage.jsx">
+        <div className="submit">Submit</div>
+      </Link>
+    
+
+      <div className="loginrect"></div>
+      <div className="progline"></div>
+      <div className="rectline"></div>
     </div>
   )
 }

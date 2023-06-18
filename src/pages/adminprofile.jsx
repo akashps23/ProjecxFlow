@@ -1,24 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../styles/adminprofile.css";
 import { Link } from "react-router-dom";
 
-export default function AdminProfile() {
- 
-  // const [searchTerm, setSearchTerm] = useState('');
-
-  // const handleSearchChange = (event) => {
-  //   setSearchTerm(event.target.value);
-  // };
-
-  // const handleSelection = (selection) => {
-  //   // Handle selection logic here
-  //   console.log(`Selected option: ${selection}`);
-  // };
-
+export function AdminProfile() {
   return (
     <div className="admin_profile">
-       
-      <p className="title">Welcome Admin</p>
+      <h1 className="title">Welcome Admin</h1>
 
       <div className="mini_rect"></div>
       <div className="bgrect"></div>
@@ -68,20 +55,6 @@ export default function AdminProfile() {
       <Link to="/src/pages/request.jsx">
         <p className="request">Requests</p>
       </Link>
-
-
-      {/* <div>
-        <button onClick={() => handleSelection('Mini Project')}>Mini Project</button>
-        <button onClick={() => handleSelection('Main Project')}>Main Project</button>
-        <button onClick={() => handleSelection('Guides')}>Guides</button>
-        <button onClick={() => handleSelection('Cordinators')}>Cordinators</button>
-        <button onClick={() => handleSelection('Project List')}>Project List</button>
-        <button onClick={() => handleSelection('Student list')}>Student list</button>
-        <button onClick={() => handleSelection('Notifications')}>Notifications</button>
-        <button onClick={() => handleSelection('Request')}>Request</button>
-      </div> */}
     </div>
   );
 }
-
-

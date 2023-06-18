@@ -159,17 +159,7 @@ body {
 	font-weight: 600;
 	color: #2b2b2b;
 }
-/* .home_page .tagline {
-	position: absolute;
-	width: 40%;
-	height: 4%;
-	left: calc(50% - 20%);
-	top: 78%;
-	font-size: 2rem;
-	font-family: 'Helvetica';
-	font-weight: 300;
-	color: #2c2c2c;
-} */
+
 .home_page .getstarted {
 	position: absolute;
 	width: 15%;
