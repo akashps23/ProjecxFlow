@@ -2,6 +2,7 @@ import Login from "./pages/loginpage";
 import Home from "./pages/homepage";
 // <<<<<<< Updated upstream
 import UserType from "./pages/selectingtype";
+import adminprofile from "./pages/adminprofile";
 // <<<<<<< Updated upstream
 import MiniList from "./pages/miniprojectlist";
 import MainList from "./pages/mainprojectlist";
@@ -9,7 +10,7 @@ import ProjectSearch from "./pages/projectsearch";
 import ForgotPassword from "./pages/forgotpassword";
 // =======
 // =======
-import adminprofile from "./pages/adminprofile";
+import AdminProfile from "./pages/adminprofile";
 
 // >>>>>>> Stashed changes
 // >>>>>>> Stashed changes
@@ -23,11 +24,11 @@ function App() {
       <BrowserRouter>
         <Routes>
 
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<AdminProfile />} />
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
           <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
-
+          {/* <Route path="/src/pages/adminprofile.jsx" element={<AdminProfile />} /> */}
           <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
           <Route
             path="/src/pages/miniprojectlist.jsx"
@@ -43,9 +44,9 @@ function App() {
           />
 =======
 =======
-          <Route exact path="/" element={<adminprofile />} />
-          <Route path="/src/pages/loginpage.jsx" element={<Home />} />
-          <Route path="/src/pages/adminprofile.jsx" element={<adminprofile />} />
+          {/* <Route exact path="/" element={<adminprofile />} />
+          <Route path="/src/pages/loginpage.jsx" element={<Home />} /> */}
+          
 
         </Routes>
       </BrowserRouter>

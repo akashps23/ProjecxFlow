@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import "../styles/adminprofile.css";
 import { Link } from "react-router-dom";
 
-export default function adminprofile() {
+export default function AdminProfile() {
  
   // const [searchTerm, setSearchTerm] = useState('');
 
@@ -20,16 +20,57 @@ export default function adminprofile() {
        
       <p className="title">Welcome Admin</p>
 
-      <Link to="/src/pages/projectsearch.jsx">
-        <img className="searchimg"></img>
-      </Link>
-
-      <div className="minipro_rect"></div>
+      <div className="mini_rect"></div>
+      <div className="bgrect"></div>
 
       <Link to="/src/pages/miniprojectlist.jsx">
-        <div className="miniproject">LMini Project</div>
+        <p className="miniproject">Mini Project</p>
       </Link>
-      <div>
+
+      <div className="main_rect"></div>
+
+      <Link to="/src/pages/mainprojectlist.jsx">
+        <p className="mainproject">Main Project</p>
+      </Link>
+
+      <div className="guide_rect"></div>
+
+      <Link to="/src/pages/guidelist.jsx">
+        <p className="guides">Guide</p>
+      </Link>
+
+      <div className="cord_rect"></div>
+
+      <Link to="/src/pages/cordinatorlist.jsx">
+        <p className="cordinator">Cordinators</p>
+      </Link>
+
+      <div className="prolist_rect"></div>
+
+      <Link to="/src/pages/projectlist.jsx">
+        <p className="projectlist">Project List</p>
+      </Link>
+
+      <div className="student_rect"></div>
+
+      <Link to="/src/pages/cordinatorlist.jsx">
+        <p className="studentlist">Student List</p>
+      </Link>
+
+      <div className="notif_rect"></div>
+
+      <Link to="/src/pages/notifications.jsx">
+        <p className="notification">Notifications</p>
+      </Link>
+
+      <div className="req_rect"></div>
+
+      <Link to="/src/pages/request.jsx">
+        <p className="request">Requests</p>
+      </Link>
+
+
+      {/* <div>
         <button onClick={() => handleSelection('Mini Project')}>Mini Project</button>
         <button onClick={() => handleSelection('Main Project')}>Main Project</button>
         <button onClick={() => handleSelection('Guides')}>Guides</button>
@@ -38,7 +79,7 @@ export default function adminprofile() {
         <button onClick={() => handleSelection('Student list')}>Student list</button>
         <button onClick={() => handleSelection('Notifications')}>Notifications</button>
         <button onClick={() => handleSelection('Request')}>Request</button>
-      </div>
+      </div> */}
     </div>
   );
 }
