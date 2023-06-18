@@ -24,7 +24,9 @@ export default function Login() {
         defaultValue="Password"
         onClick={(event) => (event.target.value = "")}
       />
-      <p className="forgot_pass">Forgot Password</p>
+      <Link to="/src/pages/forgotpassword.jsx">
+        <p className="forgot_pass">Forgot Password</p>
+      </Link>
       <Link to="/src/pages/selectingtype.jsx">
         <p className="create_acc">Create an Account</p>
       </Link>

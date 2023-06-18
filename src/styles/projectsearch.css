@@ -1,0 +1,104 @@
+html {
+	font-size:40%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+	max-width: 100%;
+	max-height: 100vh;
+   height: auto;
+   width: auto;
+}
+.projectsearch {
+	width: 180rem;
+	height: 105rem;
+  position: relative;
+  letter-spacing: normal;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.projectsearch .title {
+    position: absolute;
+	width: 45%;
+	height: 4%;
+	align-content: center;
+	left: calc(42% - 30%);
+	top: 22%;
+    z-index: 1;
+	font-size: 3rem;
+	font-family: 'Poppins';
+	font-weight: 600;
+	color: #292929;
+}
+.projectsearch .search_rect {
+	position: absolute;
+	width: 60%;
+	height: 8%;
+	left: calc(50% - 30%);
+	top: 20%;
+	background: #DFDFDF;
+	border-radius: 45px;
+}
+.projectsearch .searchimg {
+	
+	width: 5rem;
+	height: 5rem;
+	left: 136rem;
+	top: 22.5rem;
+	position: absolute;
+	z-index: 1;
+    opacity: 50%;
+	object-fit: cover;
+	background-color: #ffffff00;
+	border-color: #00000000 ;	
+	background-image: url('../assets/glass.png');
+	background-size: cover;
+	background-position: center;
+
+}
+/* .projectsearch .back {
+ 
+    position: absolute;
+    width: 15%;
+    height: 6%;
+    left: 80rem;
+    top: 90rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 2.3;
+    color: #ffffff; 
+    background-color: #1d1d1d;
+    border-radius: 10px;
+        
+
+} */
+/* .projectsearch .list {
+    width: 15%;
+    height: 6%;
+    left: 160rem;
+    top: 18rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.2vw;
+    line-height: 2.3;
+    color: #ffffff; 
+} */
+.projectsearch .bgrect {
+	width: 180rem;
+	height: 15rem;
+	position: absolute;
+	top: 0rem;
+	background-color: rgba(154, 170, 255, 0.9900000095);
+}

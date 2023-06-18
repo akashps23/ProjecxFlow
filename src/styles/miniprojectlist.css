@@ -1,0 +1,78 @@
+html {
+	font-size:40%;
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+ul, li {
+	list-style: none;
+}
+input {
+	border: none;
+}
+body {
+	max-width: 100%;
+	max-height: 100vh;
+   height: auto;
+   width: auto;
+}
+.minilist {
+	width: 180rem;
+	height: 105rem;
+  position: relative;
+  letter-spacing: normal;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+.minilist .title {
+    position: absolute;
+	width: 45%;
+	height: 4%;
+	align-content: center;
+	left: calc(15% - 20%);
+	top: 4%;
+    z-index: 1;
+	font-size: 4.5rem;
+	font-family: 'Poppins';
+	font-weight: 600;
+	color: #292929;
+}
+/* .minilist .back {
+ 
+    position: absolute;
+    width: 15%;
+    height: 6%;
+    left: 80rem;
+    top: 90rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    font-size: 1.2vw;
+    line-height: 2.3;
+    color: #ffffff; 
+    background-color: #1d1d1d;
+    border-radius: 10px;
+        
+
+} */
+/* .minilist .list {
+    width: 15%;
+    height: 6%;
+    left: 160rem;
+    top: 18rem;
+    text-align: center;
+    font-family: 'Poppins';
+    font-weight: 600;
+    z-index: 1;
+    font-size: 1.2vw;
+    line-height: 2.3;
+    color: #ffffff; 
+} */
+.minilist .bgrect {
+	width: 180rem;
+	height: 15rem;
+	position: absolute;
+	top: 0rem;
+	background-color: rgba(154, 170, 255, 0.9900000095);
+}
