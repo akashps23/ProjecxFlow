@@ -19,6 +19,7 @@ function App() {
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
           <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
           <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
+          <Route path="/*"  element={(<h1>404 Not Found</h1>)}></Route>
           <Route
             path="/src/pages/projectsearch.jsx"
             element={<ProjectSearch />}
