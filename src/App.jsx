@@ -17,7 +17,13 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+
+          <Route exact path="/" element={<UserType />} />
+          <Route path="/src/pages/loginpage.jsx" element={<Login />} />
+          <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
+        {/* <Route path="/src/pages/selectingtype.jsx" element={<UserType />} /> */}
+          <Route path="/src/pages/adminprofile.jsx" element={<AdminProfile />} />
+          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
           <Route
             path="/src/pages/adminprofile.jsx"
             element={<AdminProfile />}
