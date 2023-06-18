@@ -6,6 +6,12 @@ export default function SignUp() {
   return (
     <div className='sign_up'>
 
+    <div className="login_rect"></div>
+
+    <Link to="/src/pages/loginpage.jsx">
+        <div className="login">Login</div>
+      </Link>
+
     <div className="name_rect"></div>
       <input
          className="Name" 
@@ -76,13 +82,13 @@ export default function SignUp() {
         onClick={(event) => (event.target.value = "")}   
       />
 
-      <div className='repwd_rect'></div>
+      {/* <div className='repwd_rect'></div>
       <input
         className="repwd"
         name="Password"
         defaultValue="Reenter Password"
         onClick={(event) => (event.target.value = "")}   
-      />
+      /> */}
 
       <div className='quest_rect'></div>
       <input
@@ -92,7 +98,7 @@ export default function SignUp() {
         onClick={(event) => (event.target.value = "")}   
       />
 
-      <div className='ans'></div>
+      <div className='ans_rect'></div>
       <input
         className="ans"
         name="Answer"
@@ -101,7 +107,7 @@ export default function SignUp() {
       />
 
       <Link to="/src/pages/loginpage.jsx">
-        <div className="submit">Submit</div>
+        <p className="submit">Submit</p>
       </Link>
     
 

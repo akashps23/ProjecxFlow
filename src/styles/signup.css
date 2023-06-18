@@ -19,13 +19,14 @@ body {
 .sign_up {
   width: 100vw;
   height: 100vh;
-  position: relative;
+  position: absolute;
   overflow: hidden;
   background-color: #ffffff;
 }
 
-.select .loginrect {
+.sign_up .login_rect {
 
+<<<<<<< Updated upstream
 	width: 16rem;
 	height: 6rem;
 	cursor: pointer;
@@ -34,6 +35,16 @@ body {
 	top: 6rem;
 	background-color: #9AAAFF;
 	border-radius: 1.2rem;
+=======
+	position: absolute;
+	width: 120px;
+	height: 60px;
+	left: 1743px;
+	top: 33px;
+	
+	background: #9AAAFF;
+	border-radius: 12px;
+>>>>>>> Stashed changes
 }
 .create-account-pQn .group-3-9hx .auto-group-6ru4-gSz {
   margin: 22rem 8.5rem 0rem 0rem;
@@ -283,17 +294,427 @@ body {
   vertical-align: top;
 
 
-.select .progline {
+.sign_up .login {
+	position: absolute;
+	width: 66px;
+	height: 36px;
+	left: 1768px;
+	top: 44px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	color: #000000;
+}
+
+.sign_up .name_rect {
+
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 519px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .Name {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 544px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+.sign_up .phno_rect {
+
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 637px;
+	
+	background: #E2E2E2;
+	border-radius: 10px
+}
+.sign_up .phno {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 662px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+.sign_up .email_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 755px;
+
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+
+.sign_up .email {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 780px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+.sign_up .clg_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 873px;
+
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .clg {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 898px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+.sign_up .dept_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 991px;
+
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .dept {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1016px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .sem_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1109px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .sem {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1135px;
+
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+
+	color: #000000;
+}
+
+.sign_up .adno_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1227px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .adno {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1252px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .rno_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1345px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .rno {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1370px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .regno_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1463px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .regno {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1488px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .pwd_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1581px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .pwd {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1606px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .quest_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1699px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .quest {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1724px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .ans_rect {
+	position: absolute;
+	width: 661px;
+	height: 86px;
+	left: 500px;
+	top: 1817px;
+	
+	background: #E2E2E2;
+	border-radius: 10px;
+}
+.sign_up .ans {
+	position: absolute;
+	width: 550px;
+	height: 36px;
+	left: 530px;
+	top: 1842px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	display: flex;
+	align-items: center;
+	
+	color: #000000;
+}
+
+.sign_up .submit {
+	position: absolute;
+	width: 10%;
+	height: 3%;
+	left: 80rem;
+	top: 350rem;
+	text-align: center;
+	font-family: 'Poppins';
+	font-weight: 600;
+	font-size: 0.8vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+}
+
+
+
+.sign_up .progline {
 
 	width: 50rem;
 	height: 1.2rem;
 	position: relative;
 	left: 10rem;
-	top: 38rem;
+	top: 38rem;position: absolute;
+	width: 66px;
+	height: 36px;
+	left: 1768px;
+	top: 44px;
+	
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+	
+	
+	color: #000000;
 	background-color: #11772e;
 }
+<<<<<<< Updated upstream
 
 .select .rectline {
+=======
+.sign_up .rectline {
+>>>>>>> Stashed changes
 
 	width: 110rem;
 	height: 1.2rem;
@@ -302,4 +723,8 @@ body {
 	top: 38rem;
 	background-color: #b3b3b3;
 	
+<<<<<<< Updated upstream
 }}
+=======
+}
+>>>>>>> Stashed changes
