@@ -8,7 +8,7 @@ export default function Home() {
       <p className="title">ProjecXFlow</p>
 
       <Link to="/src/pages/projectsearch.jsx">
-        <img className="searchimg"></img>
+        <p className="searchimg">Search</p>
       </Link>
 
       <img className="logo"></img>

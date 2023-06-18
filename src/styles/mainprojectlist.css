@@ -26,7 +26,7 @@ body {
   background-color: #ffffff;
 }
 .mainlist .title {
-    position: absolute;
+    position: relative;
 	width: 45%;
 	height: 4%;
 	align-content: center;
@@ -40,7 +40,7 @@ body {
 }
 /* .mainlist .back {
  
-    position: absolute;
+    position: relative;
     width: 15%;
     height: 6%;
     left: 80rem;
@@ -72,7 +72,7 @@ body {
 .mainlist .bgrect {
 	width: 180rem;
 	height: 15rem;
-	position: absolute;
+	position: relative;
 	top: 0rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);
 }

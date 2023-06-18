@@ -29,13 +29,12 @@ body {
 	width: 16rem;
 	height: 6rem;
 	cursor: pointer;
-	position: absolute;
+	position: relative;
 	left: 155rem;
 	top: 6rem;
 	background-color: #9AAAFF;
 	border-radius: 1.2rem;
 }
-<<<<<<< HEAD
 .create-account-pQn .group-3-9hx .auto-group-6ru4-gSz {
   margin: 22rem 8.5rem 0rem 0rem;
   width: 69.9rem;
@@ -123,7 +122,7 @@ body {
 .create-account-pQn .rectangle-14-NuU {
   width: 36.7rem;
   height: 108rem;
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   background-color: rgba(154, 170, 255, 0.9900000095);
@@ -131,7 +130,7 @@ body {
 .create-account-pQn .projecx-flow-vAJ {
   width: 10.7rem;
   height: 44.3rem;
-  position: absolute;
+  position: relative;
   left: 12.9rem;
   top: 27.5rem;
   font-size: 10rem;
@@ -143,7 +142,7 @@ body {
 .create-account-pQn .projectxflow-2-RMx {
   width: 8.6rem;
   height: 10.7rem;
-  position: absolute;
+  position: relative;
   left: 12.9rem;
   top: 69.6rem;
   object-fit: cover;
@@ -152,7 +151,7 @@ body {
 .create-account-pQn .rectangle-21-MWW {
   width: 43.8rem;
   height: 8.6rem;
-  position: absolute;
+  position: relative;
   left: 95.2rem;
   top: 31.4rem;
   background-color: #e2e2e2;
@@ -161,7 +160,7 @@ body {
 .create-account-pQn .username-tFY {
   width: 12.4rem;
   height: 3.6rem;
-  position: absolute;
+  position: relative;
   left: 98.7rem;
   top: 34.2rem;
   font-size: 2.4rem;
@@ -174,7 +173,7 @@ body {
 .create-account-pQn .rectangle-22-PTC {
   width: 43.8rem;
   height: 8.6rem;
-  position: absolute;
+  position: relative;
   left: 95.2rem;
   top: 69.2rem;
   background-color: #e2e2e2;
@@ -183,7 +182,7 @@ body {
 .create-account-pQn .rectangle-23-7tz {
   width: 43.8rem;
   height: 8.6rem;
-  position: absolute;
+  position: relative;
   left: 95.2rem;
   top: 43.5rem;
   background-color: #e2e2e2;
@@ -192,7 +191,7 @@ body {
 .create-account-pQn .answer-FVQ {
   width: 8.8rem;
   height: 3.6rem;
-  position: absolute;
+  position: relative;
   left: 98.7rem;
   top: 71.6rem;
   font-size: 2.4rem;
@@ -205,7 +204,7 @@ body {
 .create-account-pQn .phone-number-ZW6 {
   width: 17.7rem;
   height: 3.6rem;
-  position: absolute;
+  position: relative;
   left: 98.7rem;
   top: 45.9rem;
   font-size: 2.4rem;
@@ -218,7 +217,7 @@ body {
 .create-account-pQn .question-gKp {
   width: 11.2rem;
   height: 3.6rem;
-  position: absolute;
+  position: relative;
   left: 111.7rem;
   top: 62.8rem;
   display: flex;
@@ -234,7 +233,7 @@ body {
 .create-account-pQn .reset-your-password-z5c {
   width: 50.8rem;
   height: 4.1rem;
-  position: absolute;
+  position: relative;
   left: 92rem;
   top: 18.8rem;
   font-size: 4.8rem;
@@ -247,7 +246,7 @@ body {
 .create-account-pQn .line-1-6PY {
   width: 59.8rem;
   height: 0.2rem;
-  position: absolute;
+  position: relative;
   left: 87.2rem;
   top: 57.6rem;
   background-color: #000000;
@@ -255,7 +254,7 @@ body {
 .create-account-pQn .rectangle-20-2nz {
   width: 16rem;
   height: 6rem;
-  position: absolute;
+  position: relative;
   left: 111.1rem;
   top: 88.5rem;
   background-color: #191919;
@@ -264,7 +263,7 @@ body {
 .create-account-pQn .submit-MqG {
   width: 8.6rem;
   height: 3.6rem;
-  position: absolute;
+  position: relative;
   left: 114.8rem;
   top: 89.6rem;
   font-size: 2.4rem;
@@ -277,31 +276,30 @@ body {
 .create-account-pQn .icon-arrow-left-5WN {
   width: 2.5rem;
   height: 2.5549rem;
-  position: absolute;
+  position: relative;
   left: 41.4rem;
   top: 4.8rem;
   object-fit: contain;
   vertical-align: top;
-=======
+
 
 .select .progline {
 
 	width: 50rem;
 	height: 1.2rem;
-	position: absolute;
+	position: relative;
 	left: 10rem;
 	top: 38rem;
 	background-color: #11772e;
-	
->>>>>>> aff2702586e27343098715341c5f7c9eb7d35602
 }
+
 .select .rectline {
 
 	width: 110rem;
 	height: 1.2rem;
-	position: absolute;
+	position: relative;
 	left: 58rem;
 	top: 38rem;
 	background-color: #b3b3b3;
 	
-}
+}}

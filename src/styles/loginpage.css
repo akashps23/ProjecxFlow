@@ -24,10 +24,10 @@ body {
   background-color: #ffffff;
 }
 .login_page .rectangle {
-  width: 110vh;
+  width: 200rem;
   height: 100%;
   position: absolute;
-  left: 75.2rem;
+  left: 100rem;
   top: 0;
   background-color: rgba(154, 170, 255, 0.9900000095);
 }
@@ -35,9 +35,9 @@ body {
   width: 24.4rem;
   height: 6.7rem;
   position: absolute;
-  left: 27.5rem;
-  top: 58.5rem;
-  font-size: 4rem;
+  left: 37rem;
+  top: 80.5rem;
+  font-size: 6rem;
   font-weight: 600;
   line-height: 1.1075;
   color: #050505;
@@ -48,8 +48,8 @@ body {
   width: 16rem;
   height: 6rem;
   position: absolute;
-  left: 109rem;
-  top: 43.8rem;
+  left: 169rem;
+  top: 68rem;
   font-size: 2.4rem;
   font-weight: 400;
   align-items: center;
@@ -62,24 +62,24 @@ body {
   white-space: nowrap;
 }
 .login_page .grup_pic {
-  width: 50rem;
-  height: 39rem;
+  width: 66rem;
+  height: 49rem;
   position: relative;
-  left: 10rem;
-  top: 10rem;
-  background-size: 100% 135.022%;
-  background-position: 0 -10rem;
+  left: 14.5rem;
+  top: 18rem;
+  background-size: 100% 136%;
+  background-position: 0 -14rem;
   background-image: url('../assets/grouppic.png');
   border-radius: 10rem;
 }
 .login_page .logo {
-  width: 8rem;
-  height: 5.5rem;
+  width: 8rem;  
+  height: 6rem;
   position: absolute;
-  left: 18rem;
-  top: 58rem;
+  left: 25rem;
+  top: 80rem;
   background-size: 100% 120%;
-  background-position: 0 -7rem;
+  background-position: 0 -12rem;
   background-image: url('../assets/logo.png');
   object-fit: cover;
   vertical-align: top;
@@ -90,8 +90,8 @@ body {
   width: 43.8rem;
   height: 6rem;
   position: absolute;
-  left: 95rem;
-  top: 23rem;
+  left: 153rem;
+  top: 40rem;
   background-color: #ffffff;
   border-radius: 1.5rem;
 }
@@ -100,10 +100,10 @@ body {
   width: 38rem;
   height: 3.6rem;
   position: absolute;
-  left: 98rem;
-  top: 24rem;
+  left: 155.5rem;
+  top: 41rem;
   font-size: 2.4rem;
-  font-weight: 350;
+  font-weight: 450;
   line-height: 1.5;
   color: #000000;
   font-family: Helvetica, 'Source Sans Pro';
@@ -112,8 +112,8 @@ body {
   width: 43.8rem;
   height: 6rem;
   position: absolute;
-  left: 95rem;
-  top: 32rem;
+  left: 153rem;
+  top: 50rem;
   background-color: #ffffff;
   border-radius: 1.5rem;
 }
@@ -122,10 +122,10 @@ body {
   background-color: #ffffff;
   height: 3.6rem;
   position: absolute;
-  left: 98rem;
-  top: 33rem;
+  left: 155.5rem;
+  top: 51rem;
   font-size: 2.4rem;
-  font-weight: 350;
+  font-weight: 450;
   line-height: 1.5;
   color: #000000;
   font-family: Helvetica, 'Source Sans Pro';
@@ -136,10 +136,10 @@ body {
   height: 3.6rem;
   cursor: pointer;
   position: absolute;
-  left: 97rem;
-  top: 58.5rem;
+  left: 155rem;
+  top: 85.5rem;
   font-size: 2.4rem;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.5;
   color: #000000;
   font-family: Helvetica, 'Source Sans Pro';
@@ -150,8 +150,8 @@ body {
   height: 3.6rem;
   cursor: pointer;
   position: absolute;
-  left: 119.5rem;
-  top: 58.5rem;
+  left: 179rem;
+  top: 85.5rem;
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 1.5;
@@ -163,10 +163,10 @@ body {
   width: 36.4rem;
   height: 4.1rem;
   position: absolute;
-  left: 100rem;
-  top: 11rem;
-  font-size: 4.8rem;
-  font-weight: 600;
+  left: 150rem;
+  top: 20rem;
+  font-size: 7rem;
+  font-weight: 550;
   line-height: 0.8541666667;
   color: #000000;
   font-family: Helvetica, 'Source Sans Pro';
@@ -176,7 +176,7 @@ body {
   width: 0.2rem;
   height: 4.5044rem;
   position: absolute;
-  left: 117rem;
-  top: 58rem;
+  left: 177rem;
+  top: 85rem;
   background-color: #000000;
 }

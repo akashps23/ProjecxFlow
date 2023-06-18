@@ -24,7 +24,7 @@ body {
   background-color: #ffffff;
 }
 .select .title {
-	position: absolute;
+	position: relative;
 	width: 34%;
 	align-content: center;
 	height: 6%;
@@ -39,7 +39,7 @@ body {
 	border-radius: 10px;
 }
 .select .subtitle {
-	position: absolute;
+	position: relative;
 	width: 34%;
 	align-content: center;
 	height: 6%;
@@ -54,7 +54,7 @@ body {
 	border-radius: 10px;
 }
 .select .loginkey {
-	position: absolute;
+	position: relative;
 	width: 6%;
 	height: 4%;
 	left: 157.5rem;
@@ -71,7 +71,7 @@ body {
 	width: 16rem;
 	height: 6rem;
 	cursor: pointer;
-	position: absolute;
+	position: relative;
 	left: 155rem;
 	top: 6rem;
 	background-color: #9AAAFF;
@@ -81,7 +81,7 @@ body {
 
 	width: 50rem;
 	height: 1.2rem;
-	position: absolute;
+	position: relative;
 	left: 10rem;
 	top: 38rem;
 	background-color: #11772e;
@@ -91,14 +91,14 @@ body {
 
 	width: 110rem;
 	height: 1.2rem;
-	position: absolute;
+	position: relative;
 	left: 58rem;
 	top: 38rem;
 	background-color: #b3b3b3;
 	
 }
 .select .coordinator {
-	position: absolute;
+	position: relative;
 	width: 15%;
 	height: 6%;
 	left: 30rem;
@@ -114,7 +114,7 @@ body {
 
 }
 .select .guide {
-	position: absolute;
+	position: relative;
 	width: 15%;
 	height: 6%;
 	left: 75rem;
@@ -130,7 +130,7 @@ body {
 
 }
 .select .student {
-	position: absolute;
+	position: relative;
 	width: 15%;
 	height: 6%;
 	left: 120rem;

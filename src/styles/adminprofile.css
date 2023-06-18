@@ -28,7 +28,7 @@ body {
 .admin_profile .rectangle {
   width: 116.8rem;
   height: 108rem;
-  position: absolute;
+  position: relative;
   left: 75.2rem;
   top: 0;
   background-color: rgba(154, 170, 255, 0.9900000095);
@@ -36,7 +36,7 @@ body {
 /* Welcome Admin */
 
 .admin_profile .title {
-  position: absolute;
+  position: relative;
   width: 482px;
   height: 41px;
   left: 690px;
@@ -60,7 +60,7 @@ body {
   width: 36.4rem;
   height: 14.7rem;
   cursor: pointer;
-  position: absolute;
+  position: relative;
   left: 13.5rem;
   top: 60.2rem;
   box-shadow: 0 0 3.4rem #111e5f;
@@ -70,7 +70,7 @@ body {
 
 .admin_profile .miniproject{
   /* Mini Project */
-position: absolute;
+position: relative;
 width: 320px;
 height: 47px;
 left: 210px;
@@ -91,7 +91,7 @@ color: #0F1222;
 }
 
 .admin_profile .main_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 564px;
@@ -104,7 +104,7 @@ color: #0F1222;
 
 .admin_profile .mainproject{
   /* Main Project */
-position: absolute;
+position: relative;
 width: 320px;
 height: 47px;
 left: 630px;
@@ -125,7 +125,7 @@ color: #0F1222;
 }
 
 .admin_profile .guide_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 993px;
@@ -138,7 +138,7 @@ color: #0F1222;
 
 .admin_profile .guides{
   /* Guides */
-position: absolute;
+position: relative;
 width: 320px;
 height: 47px;
 left: 1110px;
@@ -159,7 +159,7 @@ color: #0F1222;
 }
 
 .admin_profile .cord_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 1422px;
@@ -171,7 +171,7 @@ color: #0F1222;
 }
 
 .admin_profile .cordinator{
-  position: absolute;
+  position: relative;
   width: 320px;
   height: 47px;
   left: 1500px;
@@ -192,7 +192,7 @@ color: #0F1222;
 }
 
 .admin_profile .prolist_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 135px;
@@ -205,7 +205,7 @@ color: #0F1222;
 
 .admin_profile .projectlist{
   /* Project List */
-position: absolute;
+position: relative;
 width: 364px;
 height: 47px;
 left: 210px;
@@ -226,7 +226,7 @@ color: #0F1222;
 }
 
 .admin_profile .student_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 564px;
@@ -239,7 +239,7 @@ color: #0F1222;
 
 .admin_profile .studentlist{
   /* Student List */
-position: absolute;
+position: relative;
 width: 364px;
 height: 47px;
 left: 630px;
@@ -260,7 +260,7 @@ color: #0F1222;
 }
 
 .admin_profile .notif_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 993px;
@@ -272,7 +272,7 @@ color: #0F1222;
 }
 
 .admin_profile .notification{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 47px;
   left: 1110px;
@@ -293,7 +293,7 @@ color: #0F1222;
   }
 
 .admin_profile .req_rect{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 147px;
   left: 1422px;
@@ -305,7 +305,7 @@ color: #0F1222;
 }
 
 .admin_profile .request{
-  position: absolute;
+  position: relative;
   width: 364px;
   height: 47px;
  
@@ -327,7 +327,7 @@ color: #0F1222;
 .admin-profile-QgN .magnifying-glass-1-yzv {
   width: 3.8rem;
   height: 3.8rem;
-  position: absolute;
+  position: relative;
   left: 128.3rem;
   top: 42.2rem;
   object-fit: cover;
@@ -336,7 +336,7 @@ color: #0F1222;
 .admin-profile-QgN .ellipse-13-uta {
   width: 7.5rem;
   height: 7.5rem;
-  position: absolute;
+  position: relative;
   left: 179rem;
   top: 2.5rem;
   background-color: #d9d9d9;
@@ -345,7 +345,7 @@ color: #0F1222;
 .admin-profile-QgN .auto-group-bgmc-T9Q {
   width: 7.5rem;
   height: 7.5rem;
-  position: absolute;
+  position: relative;
   left: 179rem;
   top: 2.5rem;
   object-fit: contain;
