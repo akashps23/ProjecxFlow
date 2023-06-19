@@ -26,16 +26,6 @@ body {
 
 .sign_up .login_rect {
 
-<<<<<<< Updated upstream
-	width: 16rem;
-	height: 6rem;
-	cursor: pointer;
-	position: relative;
-	left: 155rem;
-	top: 6rem;
-	background-color: #9AAAFF;
-	border-radius: 1.2rem;
-=======
 	position: absolute;
 	width: 120px;
 	height: 60px;
@@ -44,9 +34,8 @@ body {
 	
 	background: #9AAAFF;
 	border-radius: 12px;
->>>>>>> Stashed changes
 }
-.create-account-pQn .group-3-9hx .auto-group-6ru4-gSz {
+/* .create-account-pQn .group-3-9hx .auto-group-6ru4-gSz {
   margin: 22rem 8.5rem 0rem 0rem;
   width: 69.9rem;
   align-items: center;
@@ -291,7 +280,7 @@ body {
   left: 41.4rem;
   top: 4.8rem;
   object-fit: contain;
-  vertical-align: top;
+  vertical-align: top; */
 
 
 .sign_up .login {
@@ -709,12 +698,7 @@ body {
 	color: #000000;
 	background-color: #11772e;
 }
-<<<<<<< Updated upstream
-
-.select .rectline {
-=======
 .sign_up .rectline {
->>>>>>> Stashed changes
 
 	width: 110rem;
 	height: 1.2rem;
@@ -723,8 +707,4 @@ body {
 	top: 38rem;
 	background-color: #b3b3b3;
 	
-<<<<<<< Updated upstream
-}}
-=======
 }
->>>>>>> Stashed changes
