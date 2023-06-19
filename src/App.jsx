@@ -17,6 +17,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+<<<<<<< Updated upstream
           <Route exact path="/" element={<Home />} />
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
@@ -25,24 +26,22 @@ function App() {
             path="/src/pages/adminprofile.jsx"
             element={<AdminProfile />}
           />
-          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
-          <Route
-            path="/src/pages/adminprofile.jsx"
-            element={<AdminProfile />}
-          />
-          <Route
-            path="/src/pages/forgotpassword.jsx"
-            element={<ForgotPassword />}
-          />
+=======
+
+          <Route exact path="/" element={<SignUp />} />
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
-          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
-          <Route
-            path="/src/pages/projectsearch.jsx"
-            element={<ProjectSearch />}
+          <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
+          <Route path="/src/pages/adminprofile.jsx" element={<AdminProfile />} />
+>>>>>>> Stashed changes
+          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
+          
+          <Route path="/src/pages/forgotpassword.jsx" element={<ForgotPassword />}
+          />
+          <Route path="/src/pages/projectsearch.jsx" element={<ProjectSearch />}
           />
           <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
-          <Route path="/src/pages/signup.jsx" element={<SignUp />} />
+          {/* <Route path="/src/pages/signup.jsx" element={<SignUp />} /> */}
         </Routes>
       </BrowserRouter>
     </>
