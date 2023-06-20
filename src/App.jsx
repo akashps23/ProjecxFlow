@@ -26,31 +26,19 @@ function App() {
             element={<AdminProfile />}
           />
           <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
-<<<<<<< HEAD
 
           <Route
             path="/src/pages/forgotpassword.jsx"
             element={<ForgotPassword />}
           />
           <Route
-=======
-          <Route
             path="/src/pages/adminprofile.jsx"
             element={<AdminProfile />}
           />
           <Route
-            path="/src/pages/forgotpassword.jsx"
-            element={<ForgotPassword />}
-          />
-          <Route path="/src/pages/loginpage.jsx" element={<Login />} />
-          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
-          <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
-          <Route
->>>>>>> 17b638aca917d1ef8358e16f59c639ca7d64811b
             path="/src/pages/projectsearch.jsx"
             element={<ProjectSearch />}
           />
-          <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
           <Route path="/src/pages/signup.jsx" element={<SignUp />} />
         </Routes>
       </BrowserRouter>
