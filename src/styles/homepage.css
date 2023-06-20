@@ -61,7 +61,7 @@ html {
 	width: 50%;
 	height: 8%;
 	left: calc(50% - 30%);
-	top: 10%;
+	top: 7.5%;
 	background: #b7b7b7;
 	border-radius: 10px;
 }
@@ -71,8 +71,8 @@ html {
 	position: relative;
 	width: 2rem;
 	height: 1rem;
-	left: calc(101% - 30%);
-	top: 30.5%;
+	left: calc(29% - 30%);
+	top: 40%;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	font-size: 1.3vw;
@@ -102,7 +102,7 @@ html {
 	width: 45%;
 	height: 7%;
 	left: calc(25% - 30%);
-	top: 2.5%;
+	top: 3%;
 	font-family: 'Helvetica';
 	font-weight: 500;
 	font-size: 1.3vw;

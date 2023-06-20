@@ -1,15 +1,24 @@
 import React from "react";
 import "../styles/homepage.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Home() {
+  const navigate = useNavigate();
+  const [val, setVal] = useState("");
+  const handleSearch = (e) => {
+    e.preventDefault();
+    //console.log(val);
+    navigate("/src/pages/projectsearch.jsx", { state: { txt: val } });
+  };
   return (
     <div className="home_page">
       <p className="title">ProjecXFlow</p>
 
-      <Link to="/src/pages/projectsearch.jsx">
+      {/* <Link to="/src/pages/projectsearch.jsx">
         <p className="searchimg">Search</p>
-      </Link>
+      </Link> */}
 
       <img className="logo"></img>
 
@@ -19,13 +28,18 @@ export default function Home() {
 
       <div className="search_rect"></div>
 
-      <input
-        className="search"
-        id="searchpro"
-        defaultValue="Search Project"
-        onClick={(event) => (event.target.value = "")}
-      />
-
+      <form onSubmit={handleSearch}>
+        <input
+          className="search"
+          id="searchpro"
+          defaultValue="Search Project"
+          onChange={(e) => setVal(e.target.value)}
+          onClick={(event) => (event.target.value = "")}
+        />
+        <button className="searchimg" type="submit">
+          Search
+        </button>
+      </form>
       <div className="mini_rect"></div>
       <div className="bgrect"></div>
 
