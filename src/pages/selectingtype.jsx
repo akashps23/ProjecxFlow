@@ -9,9 +9,7 @@ export default function UserType() {
       <p className="subtitle">Can You Please Select Your Role </p>
       <div className="coordinator">Coordinator</div>
       <div className="guide">Guide</div>
-      <Link to="/src/pages/signup.jsx">
-        <div className="student">Student</div>
-      </Link>
+      <div className="student">Student</div>
       <Link to="/src/pages/loginpage.jsx">
         <div className="loginkey">Login</div>
       </Link>
