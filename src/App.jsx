@@ -17,7 +17,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<SignUp />} />
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
           <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
@@ -31,15 +31,13 @@ function App() {
             path="/src/pages/forgotpassword.jsx"
             element={<ForgotPassword />}
           />
-          <Route
-            path="/src/pages/adminprofile.jsx"
-            element={<AdminProfile />}
-          />
+          
           <Route
             path="/src/pages/projectsearch.jsx"
             element={<ProjectSearch />}
           />
-          <Route path="/src/pages/signup.jsx" element={<SignUp />} />
+          
+         
         </Routes>
       </BrowserRouter>
     </>
