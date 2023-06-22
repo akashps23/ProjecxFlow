@@ -3,8 +3,68 @@ const app = express();
 const studentModel = require('../models/studentmodel')
 const guideModel = require('../models/guidemodel')
 const cordinatorModel = require('../models/cordinatormodel')
+const adminModel = require('../models/adminmodel')
 const bcrypt = require('bcryptjs')
-const jwt =require('jsonwebtoken')
+const jwt =require('jsonwebtoken');
+const Student = require('../models/studentmodel');
+
+
+
+
+const loginadminController = async (req,res)=> {
+    try {
+        const user = await adminModel.findOne({username:req.body.username})
+        if(!user)
+        {
+            return res.status(200).send({message:"user not found",success:false})
+
+        }
+        const isMatch = await bcrypt.compare(req.body.password,user.password)
+        if(!isMatch)
+        {
+            return res.status(200).send({message:"invalid email or password", success:false})
+
+        }
+        const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});
+        res.status(200).send({message:'Login successful', success: true, token:token})
+
+} catch (error) {
+        console.log(error)
+        res.status(500).send({success:false, message:`login error ${error.message}`})
+    
+    }
+}
+
+
+
+const signupadminController = async (req,res)=> {
+    try{
+        const existingUser = await adminModel.findOne({username:req.body.username})
+        if(existingUser)
+        {
+            return res.status(200).send({message:'user already exists',success:false})
+        }
+        const password=req.body.password
+        const salt =await bcrypt.genSalt(10)
+        const hashedPassword = await bcrypt.hash(password,salt)
+        req.body.password= hashedPassword
+        const newUser= new adminModel(req.body)
+        await newUser.save()
+        res.status(201).send({message:'Register success',success:true});
+        
+     }catch(error)
+     {
+        console.log(error)
+        res.status(500).send({success:false, message:`signup error ${error.message}`})
+     }
+
+}
+
+
+
+
+
+
 
 
 const loginstudentController = async (req,res)=> {
@@ -21,22 +81,18 @@ const loginstudentController = async (req,res)=> {
             return res.status(200).send({message:"invalid email or password", success:false})
 
         }
+        const studentId= Student._id
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});
-        
         res.status(200).send({message:'Login successful', success: true, token:token})
-
-
-
-
-        
-    } catch (error) {
+} catch (error) {
         console.log(error)
         res.status(500).send({success:false, message:`signup error ${error.message}`})
     
     }
-    
-  
 }
+
+
+
 
 const loginguideController = async (req,res)=> {
     try {
@@ -65,6 +121,10 @@ const loginguideController = async (req,res)=> {
     
   
 }
+
+
+
+
 
 const logincordinatorController = async (req,res)=> {
     try {
@@ -120,6 +180,9 @@ const signupstudentController = async (req,res)=> {
      }
 
 }
+
+
+
 
 
 const signupguideController = async (req,res)=> {
@@ -266,7 +329,7 @@ const authcordinatorController = async (req,res)=>{
     }
 }
 
-module.exports= { loginstudentController,loginguideController,logincordinatorController,signupstudentController,signupguideController,signupcordinatorController,authstudentController,authguideController,authcordinatorController }
+module.exports= { loginstudentController,loginguideController,logincordinatorController,signupstudentController,signupguideController,signupcordinatorController,authstudentController,authguideController,authcordinatorController,loginadminController,signupadminController }
 
 
 
