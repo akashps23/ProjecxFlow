@@ -42,7 +42,7 @@ function TeamCreate() {
           defaultValue="Teammate's Email ID"
           onClick={(event) => (event.target.value = "")}
         />
-        <div className="facultyadd">Adding Faculties To Dashboard</div>
+        <div className="facultyadd">Add Faculties To Dashboard</div>
         <input
           className="coordinator01"
           defaultValue="Coordinator's Email ID"

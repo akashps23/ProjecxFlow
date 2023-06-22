@@ -13,15 +13,12 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await axios.post
-        "http://localhost:9013/api/v1/user/studentlogin",
+      const response = await axios.post;
+      "http://localhost:9013/api/v1/user/studentlogin",
         {
           name,
           password,
-        }
-<<<<<<< HEAD
-      );
-      //message display
+        };
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         message.success("Login Successful");
@@ -30,21 +27,8 @@ function Login() {
         // Reset the form
         setUsername("");
         setPassword("");
-=======
-        if (response.data.success) {
-          localStorage.setItem("token", response.data.token);
-          message.success("Login Successful");
-          navigate("/studenthomepage");
-  
-          // Reset the form
-          setUsername("");
-          setPassword("");
-        }
->>>>>>> c7e17b13e0ca951ecf73261253786e08001bae4a
       }
-      
-    
-    catch (error) {
+    } catch (error) {
       console.error(error);
     }
   };
@@ -86,10 +70,6 @@ function Login() {
       </form>
     </div>
   );
-};
-<<<<<<< HEAD
-export default Login;
-=======
+}
 
 export default Login();
->>>>>>> c7e17b13e0ca951ecf73261253786e08001bae4a
