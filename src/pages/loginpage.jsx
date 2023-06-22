@@ -19,8 +19,8 @@ const Login = () => {
           name,
           password,
         }
-    
-
+      );
+      //message display
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         message.success("Login Successful");
@@ -74,4 +74,4 @@ const Login = () => {
     </div>
   );
 };
-export default Login();
+export default Login;
