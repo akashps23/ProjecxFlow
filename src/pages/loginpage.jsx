@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { message } from "antd";
 
-const Login = () => {
+function Login() {
   const navigate = useNavigate();
   const [name, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -19,22 +19,21 @@ const Login = () => {
           name,
           password,
         }
-    
+      );
 
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         message.success("Login Successful");
-        navigate("/studenthomepage");
+        // navigate("/studenthomepage");
 
         // Reset the form
         setUsername("");
         setPassword("");
-      }
+      } 
     } catch (error) {
       console.error(error);
     }
   };
-
   return (
     <div className="login_page">
       <form onSubmit={handlestudentLogin}>
@@ -50,7 +49,7 @@ const Login = () => {
           className="user_name"
           type="text"
           value={name}
-          defaultValue="Username"
+          placeholder="Username"
           onChange={(event) => setUsername(event.target.value)}
         />
         <div className="rectpass"></div>
@@ -58,8 +57,8 @@ const Login = () => {
           className="pass_word"
           type="Password"
           value={password}
-          defaultValue="Password"
-          onClick={(event) => (event.target.value = "")}
+          placeholder="Password"
+          onChange={(event) => setPassword(event.target.value)}
         />
         <Link to="/src/pages/forgotpassword.jsx">
           <p className="forgot_pass">Forgot Password</p>
@@ -73,5 +72,6 @@ const Login = () => {
       </form>
     </div>
   );
-};
-export default Login();
+}
+
+export default Login;
