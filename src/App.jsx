@@ -19,30 +19,36 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+<<<<<<< HEAD
           <Route exact path="/" element={<TeamCreate />} />
+=======
+          <Route exact path="/" element={<SignUp />} />
+>>>>>>> c7e17b13e0ca951ecf73261253786e08001bae4a
           <Route path="/src/pages/loginpage.jsx" element={<Login />} />
           <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
           <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
           <Route
-            path="/src/pages/adminprofile.jsx"
+            path="/adminprofile"
             element={<AdminProfile />}
           />
-          <Route path="/src/pages/mainprojectlist.jsx" element={<MainList />} />
+          <Route path="/mainprojectlist" element={<MainList />} />
 
           <Route
-            path="/src/pages/forgotpassword.jsx"
+            path="/forgotpassword"
             element={<ForgotPassword />}
           />
+          
           <Route
-            path="/src/pages/adminprofile.jsx"
-            element={<AdminProfile />}
-          />
-          <Route
-            path="/src/pages/projectsearch.jsx"
+            path="/projectsearch"
             element={<ProjectSearch />}
           />
+<<<<<<< HEAD
           <Route path="/src/pages/signup.jsx" element={<SignUp />} />
           {/* <Route path="/src/pages/teamcreate.jsx" element={<TeamCreate />} /> */}
+=======
+          
+         
+>>>>>>> c7e17b13e0ca951ecf73261253786e08001bae4a
         </Routes>
       </BrowserRouter>
     </>
