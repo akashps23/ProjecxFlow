@@ -26,7 +26,7 @@ function App() {
           <Route path="/mainprojectlist" element={<MainList />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
-          {/* <Route path="/signup" element={<SignUp />} /> */}
+          <Route path="/signup" element={<SignUp />} />
           {/* <Route path="/teamcreate" element={<TeamCreate />} /> */}
         </Routes>
       </BrowserRouter>
