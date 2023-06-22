@@ -13,24 +13,25 @@ function Login() {
     event.preventDefault();
 
     try {
-      const response = await axios.post(
+      const response = await axios.post
         "http://localhost:9013/api/v1/user/studentlogin",
         {
           name,
           password,
         }
-      );
-
-      if (response.data.success) {
-        localStorage.setItem("token", response.data.token);
-        message.success("Login Successful");
-        // navigate("/studenthomepage");
-
-        // Reset the form
-        setUsername("");
-        setPassword("");
-      } 
-    } catch (error) {
+        if (response.data.success) {
+          localStorage.setItem("token", response.data.token);
+          message.success("Login Successful");
+          navigate("/studenthomepage");
+  
+          // Reset the form
+          setUsername("");
+          setPassword("");
+        }
+      }
+      
+    
+    catch (error) {
       console.error(error);
     }
   };
@@ -72,6 +73,6 @@ function Login() {
       </form>
     </div>
   );
-}
+};
 
-export default Login;
+export default Login();

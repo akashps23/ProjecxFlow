@@ -17,11 +17,10 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          
           <Route exact path="/" element={<SignUp />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/miniprojectlist" element={<MiniList />} />
-          <Route path="/selectingtype" element={<UserType />} />
+          <Route path="/src/pages/loginpage.jsx" element={<Login />} />
+          <Route path="/src/pages/miniprojectlist.jsx" element={<MiniList />} />
+          <Route path="/src/pages/selectingtype.jsx" element={<UserType />} />
           <Route
             path="/adminprofile"
             element={<AdminProfile />}
