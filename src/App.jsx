@@ -1,4 +1,4 @@
-import Login from "./pages/loginpage";
+// import Login from "./pages/loginpage";
 import Home from "./pages/homepage";
 import UserType from "./pages/selectingtype";
 import AdminProfile from "./pages/adminprofile";
@@ -18,8 +18,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<TeamCreate />} />
-          <Route path="/loginpage" element={<Login />} />
+          <Route exact path="/" element={<SignUp />} />
+          {/* <Route path="/loginpage" element={<Login />} /> */}
           <Route path="/miniprojectlist" element={<MiniList />} />
           <Route path="/selectingtype" element={<UserType />} />
           <Route path="/adminprofile" element={<AdminProfile />} />

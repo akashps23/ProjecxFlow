@@ -12,7 +12,7 @@ export default function ForgotPassword() {
         defaultValue={"Enter Your Email ID"}
         onClick={(event) => (event.target.value = "")}
       ></input>
-      <p className="question">What is your favorite Place ?</p>
+      <p className="question">Which is your favorite Place ?</p>
       <input
         className="answer"
         defaultValue={"Enter Your Answer"}

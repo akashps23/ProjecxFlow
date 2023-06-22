@@ -1,103 +1,76 @@
 import React from "react";
 import "../styles/signup.css";
 import { Link } from "react-router-dom";
+import { Button } from "antd";
 
 export default function SignUp() {
   return (
     <div className="sign_up">
-      <div className="login_rect"></div>
-
+      <div className="title">Creating an Account</div>
       <Link to="/src/pages/loginpage.jsx">
         <div className="login">Login</div>
       </Link>
-
-      <div className="name_rect"></div>
       <input
-        className="Name"
+        className="name"
         defaultValue="Name"
         onClick={(event) => (event.target.value = "")}
       />
-      <div className="phno_rect"></div>
       <input
         className="phno"
         defaultValue="Phone Number"
         onClick={(event) => (event.target.value = "")}
       />
-
-      <div className="email_rect"></div>
       <input
         className="email"
-        defaultValue="EMail"
+        defaultValue="Email ID"
         onClick={(event) => (event.target.value = "")}
       />
-
-      <div className="clg_rect"></div>
       <input
         className="clg"
         defaultValue="College"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="dept_rect"></div>
       <input
         className="dept"
         defaultValue="Department"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="sem_rect"></div>
       <input
         className="sem"
         defaultValue="Semester"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="adno_rect"></div>
       <input
         className="adno"
-        defaultValue="Admmission Number"
+        defaultValue="Admission Number"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="rno_rect"></div>
       <input
         className="rno"
         defaultValue="Roll Number"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="regno_rect"></div>
       <input
         className="regno"
         defaultValue="Register Number"
         onClick={(event) => (event.target.value = "")}
       />
 
-      <div className="pwd_rect"></div>
       <input
         className="pwd"
-        name="Password"
+        // type="password"
+        // name="Password"
         defaultValue="Password"
         onClick={(event) => (event.target.value = "")}
       />
 
-      {/* <div className='repwd_rect'></div>
-      <input
-        className="repwd"
-        name="Password"
-        defaultValue="Reenter Password"
-        onClick={(event) => (event.target.value = "")}   
-      /> */}
+      <p className="quest">Which is your favorite Place ?</p>
 
-      <div className="quest_rect"></div>
-      <input
-        className="quest"
-        name="question"
-        defaultValue="Enter a question"
-        onClick={(event) => (event.target.value = "")}
-      />
-
-      <div className="ans_rect"></div>
       <input
         className="ans"
         name="Answer"
@@ -106,14 +79,10 @@ export default function SignUp() {
       />
 
       <Link to="/src/pages/loginpage.jsx">
-        <p className="submit">Submit</p>
+        <button className="signup">Submit</button>
       </Link>
 
-      <div className="loginrect"></div>
-      <div className="progline"></div>
-      <div className="rectline"></div>
+      <div className="bgrect"></div>
     </div>
   );
 }
-
-// export default signup
