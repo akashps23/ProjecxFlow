@@ -10,6 +10,9 @@ const router = express.Router()
 
 //routes
 //loginpost
+router.get('/',(req,res)=>{
+    res.send("hello world");
+});
 router.post('/studentlogin',loginstudentController)
 router.post('/guidelogin',loginguideController)
 router.post('/cordinatorlogin',logincordinatorController)

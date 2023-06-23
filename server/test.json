@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "projexflow",
+  "private_key_id": "e03e891c807b860dfb1b06520b1af10f5722249d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCvkgwMfe5fs/AD\nGIPhyzD9sLJw48B+rueHODWZmyntNheAR8riCknhGVZMT2nAMaqADhcW5FStIDJ4\nAfK+/fI/Au0Yf3PJECCkbEbCCD2rOHxuU0axqLM+V3xIesdz9LM6biRS/EMWAaMx\nC5Wj5YB4jzRJY+71ZUPbgNw+T0wpr9+ikKDh2Sj5udLHoQ8boHkGCyWOZVtQXhVX\nJ+biSIRhr7AM+JRM9mg5hKctcTcd+BlHX+ixQ5RUX4/LLRBbv3QVFGkrwTbymEMY\neXdpujK1Dq1VsnMvcd7SzY39Bnzc7a9tZxeh52oRQrZCVAiRM4YOaXqU2IrHldws\nrd2XDyYTAgMBAAECggEAB+S+ku80gOwDnfgDseqjRLylgSrUND3j3fH6gvH1dBtK\n+jMAHaKNyMeNWDf3zrLM8h3wDtDsN65rZnbb9ZdQRWH5y/CrAX6uoQXXNpENSL3s\n5j7rPkCR8nsXdODER+PYDQf3rR13XK1tK17Udv5yBLmXhbcu/qxzXRKRlGGXUIZq\n/w+ohGbR7kSu7+/OUehFX1cM5ov6zNckvm7JSOWQyfN330SNEt8IBzRSvO9idphw\nwBj9SBqdm8WrZmDDaCkRTnzLCO13HzR3UAFlA4MzF7sECS3MzZUBo7PG37QwBqqw\nruS15tmveO/5lXJ/p8sFIkOANKj4qLXfzGVMZUrnQQKBgQDzF252EgWGzm4xG8Rb\nck/fFlqFqJLp4DgNYs0SV0jLb2AjYMD67p4kBMFCaI44amA0PuKJlDL7RrOXP9Ts\nTvhBNiM02xsiKLRPvEq7OrFePl1aSAj/cbKpCYpCL8AS0+vDWyhr5S18qMrkAi7/\nOrIJSYXYhCEcZpKppZ8Bb/QlUwKBgQC45L1VP7PONgP6ldwSQhcapLeCyJit7JHN\nQjL5wZ4jEoWbHkHokaPR2RJJxQGhQsjSspXW6q6IQFf713ubkFIgiKiy4k7CfvJI\n5gwnctPz4LlARRBdxSYEPrEyN3C/41M2yH2XfP1+fdiFGv7BdeYPfUk+vo2zIX+R\nukRau6YkQQKBgQDuhJ8t2qDxlLsqFESmNZOJITXQz4bXU9mryLXOuTYD5lQ+YkD3\n9gnU7ZVyw4RIdpfOq6U7uN4ND2JHlaol85ZC5gvFYPdOnQHO+sGY1A4UmryeSPAL\nNFRI58NxDck4sBc0p80RkN0A492vuzTB2aW21x0tRPf4Fezx6EAL+P1lYQKBgQCT\novrYFozR7WnR71YSMjnWqY5rXRglURC/cMvZiNRoNwL+cPO57Il+KDIlO61ogjZv\nn/Br82s4GwDmdRMbjes2VUk3xeOUBOAce61a1qMOSvRBsKQ37BPGMfU2HvTmFHQ+\n+2rlywVzurNo3bxs6GKzHZyeAHSPhAEkcTLhrJMmwQKBgF/D0QMpT+8VrPZuONbh\nO/iUwnvw01biGt4Ez+xMjUBOj+YDYcJmc22JEpUkwmBui3N10/fEbP26IrxnCa68\nNv2lOWFnCGVtWUq7uEgGMbjpLFNvXyFrCsWy+SR/yvB9pS2Uez5uPWtz9GN61CRD\n1/eOSyC5EH3pWVRv+AC+2O0B\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-jbl7o@projexflow.iam.gserviceaccount.com",
+  "client_id": "112896062765434117902",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-jbl7o%40projexflow.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com",
+  "storageBucket": "projexflow.appspot.com"
+}
