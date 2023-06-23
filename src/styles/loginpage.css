@@ -45,16 +45,17 @@ body {
   white-space: nowrap;
 }
 .login_page .login_key {
-  width: 16rem;
+  /* width: 16rem; */
   height: 6rem;
   position: absolute;
-  left: 169rem;
-  top: 68rem;
+  left: 164rem;
+  top: 65rem;
   font-size: 2.4rem;
   font-weight: 400;
+  display: flex;
   align-items: center;
   text-align: center;
-  line-height: 2.5;
+  padding: 0px 50px;
   color: #ffffff;
   background-color: #191919;
   border-radius: 1.2rem;

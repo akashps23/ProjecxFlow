@@ -12,60 +12,60 @@ export default function SignUp() {
       </Link>
       <input
         className="name"
-        defaultValue="Name"
+        placeholder="Name"
         onClick={(event) => (event.target.value = "")}
       />
       <input
         className="phno"
-        defaultValue="Phone Number"
+        placeholder="Phone Number"
         onClick={(event) => (event.target.value = "")}
       />
       <input
         className="email"
-        defaultValue="Email ID"
+        placeholder="Email ID"
         onClick={(event) => (event.target.value = "")}
       />
       <input
         className="clg"
-        defaultValue="College"
+        placeholder="College"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="dept"
-        defaultValue="Department"
+        placeholder="Department"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="sem"
-        defaultValue="Semester"
+        placeholder="Semester"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="adno"
-        defaultValue="Admission Number"
+        placeholder="Admission Number"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="rno"
-        defaultValue="Roll Number"
+        placeholder="Roll Number"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="regno"
-        defaultValue="Register Number"
+        placeholder="Register Number"
         onClick={(event) => (event.target.value = "")}
       />
 
       <input
         className="pwd"
-        // type="password"
+        type="password"
         // name="Password"
-        defaultValue="Password"
+        placeholder="Password"
         onClick={(event) => (event.target.value = "")}
       />
 
@@ -74,7 +74,7 @@ export default function SignUp() {
       <input
         className="ans"
         name="Answer"
-        defaultValue="Submit your answer"
+        placeholder="Submit your answer"
         onClick={(event) => (event.target.value = "")}
       />
 
