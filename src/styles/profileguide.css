@@ -15,14 +15,14 @@ html {
 	overflow-x: hidden;
   }
   
-  .admin_profile {
+  .guide {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	background-color: #ffffff;
   }
-  .admin_profile .title{
+  .guide .title{
 	position: absolute;
 	width: 45%;
 	height: 5%;
@@ -36,67 +36,49 @@ html {
 	font-weight: 600;
 	color: #000000;
   }
-  .admin_profile .mini{
+  .guide .mini{
 	width: 35rem;
 	height : 20rem;
 	position: absolute;
-	left : 15%;
+	left : 6%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4rem;
   }
-  .admin_profile .main{
+  .guide .main{
 	width: 35rem;
 	height : 20rem;
 	position: absolute;
-	left :39%;
+	left :29%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4rem;
   }
-  .admin_profile .student{
+  .guide .student{
 	width: 35rem;
 	height : 20rem;
 	position: absolute;
-	left :65%;
+	left :52%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4rem;
   }
-  .admin_profile .guide{
+  
+  .guide .mine{
 	width: 35rem;
 	height : 20rem;
 	position: absolute;
-	left :15%;
-	top : 70%;
+	left :75%;
+	top : 45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4rem;
   }
-  .admin_profile .coordinator{
-	width: 35rem;
-	height : 20rem;
-	position: absolute;
-	left :39%;
-	top : 70%;
-	color: #000000;
-	background-color: #99a9fd;
-	font-size: 4rem;
-  }
-  .admin_profile .move{
-	width: 35rem;
-	height : 20rem;
-	position: absolute;
-	left :65%;
-	top : 70%;
-	color: #000000;
-	background-color: #99a9fd;
-	font-size: 4rem;
-  }
-  .admin_profile .bgrect {
+ 
+  .guide .bgrect {
 	width: 100vw;
 	height: 15rem;
 	position: absolute;
