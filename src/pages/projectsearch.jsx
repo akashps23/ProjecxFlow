@@ -14,12 +14,6 @@ export default function ProjectSearch() {
         <div className="search_rect"></div>
         <img className="searchimg"></img>
         <p className="title">Similar Projects Like {txt}</p>
-        {/* <input
-        className="list"
-        id="minilist"
-        defaultValue="List of Projects"
-        onClick={(event) => (event.target.value = "")}
-      /> */}
         <div className="bgrect"></div>
       </div>
     </div>

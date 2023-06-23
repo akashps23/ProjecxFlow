@@ -1,17 +1,18 @@
 const express = require('express')
 const colors= require('colors')
 const morgan = require('morgan')
-const dotenv= require('dotenv');
 const connectdb = require('./config/db');
 const cors = require('cors');
+const dotenv = require('dotenv')
+dotenv.config()
 
 //rest obj
 const app = express()
 // Enable CORS
 app.use(cors());
 //dotenv cofiguration
-dotenv.config();
 //mongodb connection
+
 connectdb();
 
 
@@ -33,11 +34,12 @@ app.use(morgan('dev'))
 });*/
 
 app.use('/api/v1/user',require('./routes/userroute'))
-
-//listen
 const port= process.env.PORT
+console.log(port)
+//listen
+
 app.listen(port,() =>{
-    console.log(`SERver running in port ${process.env.PORT} `.bgCyan.white );
+    console.log(`SERver running in port ${port} `.bgCyan.white );
 
 });
 

@@ -6,23 +6,23 @@ import { message } from "antd";
 
 export default function Login() {
   const navigate = useNavigate();
-  const [name, setUsername] = useState("");
+  const [email, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   const handlestudentLogin = async (event) => {
     event.preventDefault();
-
     try {
-      const response = await axios.post;
+      const response = await axios.post(
       "http://localhost:9013/api/v1/user/studentlogin",
         {
-          name,
+          email,
           password,
-        };
+        });
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         message.success("Login Successful");
-        navigate("/studenthomepage");
+       // navigate("/studenthomepage");
+       console.log(response)
 
         // Reset the form
         setUsername("");
@@ -46,7 +46,7 @@ export default function Login() {
         <input
           className="user_name"
           type="text"
-          value={name}
+          value={email}
           placeholder="Username"
           onChange={(event) => setUsername(event.target.value)}
         />
@@ -58,6 +58,7 @@ export default function Login() {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
+        </form>
         <Link to="/src/pages/forgotpassword.jsx">
           <p className="forgot_pass">Forgot Password</p>
         </Link>
@@ -67,7 +68,6 @@ export default function Login() {
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>
         <p className="tagline">A Complete Solution for Managing Projects </p>
-      </form>
     </div>
   );
 }
