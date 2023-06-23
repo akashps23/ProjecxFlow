@@ -12,6 +12,7 @@ app.use(cors());
 //dotenv cofiguration
 dotenv.config();
 //mongodb connection
+
 connectdb();
 
 
@@ -37,7 +38,7 @@ app.use('/api/v1/user',require('./routes/userroute'))
 //listen
 const port= process.env.PORT
 app.listen(port,() =>{
-    console.log(`SERver running in port ${process.env.PORT} `.bgCyan.white );
+    console.log(`SERver running in port ${port} `.bgCyan.white );
 
 });
 
@@ -47,127 +48,32 @@ app.listen(port,() =>{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*const express = require('express')
-const app = express()
-const cors = require('cors')
-const port = 3000
-const mongoose = require('mongoose');
-const bodyParser = require('body-parser');
-
-app.use(cors())
-app.use(bodyParser.json()); // Parse JSON-encoded bodies
-app.use(bodyParser.urlencoded({ extended: true })); // Parse URL-encoded bodies
-
-const path = require("path");
-const dotenv = require("dotenv");
-const root_dir = __dirname.split("src")[0];
-dotenv.config({ path: path.join(root_dir, `.env`) });
-
-function connect(){
-
-    mongoose.set("strictQuery", true);
-    mongoose
-      .connect(process.env.MONGO_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-      })
-      .then(() => {
-        console.log("MongoDB Connected...");
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-}
-
-app.post('/login', (req, res) => {
-//   const User = mongoose.model("User", {username: String, password: String});
-//   const user = new User({username : "milan", password: "password"})
-//   user.save().then(() => console.log("added successfully"))
-//   res.send("hello world")
-console.log(req.body)
-const username = req.body.userName
-const password = req.body.password
-
-
-
-if(username == "milan" && password == "milan"){
-    res.status(200).json({"message" : "success"})
-}
-else{
-    res.status(400).json({"message" : "failed"})
-}
-})
-
-
-app.get("/user/:userid", (req, res) => {
-
-})
-
-app.get('/signup', (req, res) => {
-  
-    const User = mongoose.model("User", {username: String, password: String});
-    const user = new User({username : "milan", password: "password"})
-    user.save().then(() => console.log("added successfully"))
-    res.send("hello world")
-  })
-
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-  connect()
-})
-
-
-*/
+// const mongoose = require('mongoose');
+// const path = require("path");
+// /*const dotenv = require("dotenv");
+// const root_dir = __dirname.split("server")[0];
+// dotenv.config({ path: path.join(root_dir, `.env`) });
+// const connectionString = process.env.MONGO_URI;
+// require('dotenv').config()*/
+
+// const connectionString = 'mongodb+srv://user:test@cluster0.qzousud.mongodb.net/?retryWrites=true&w=majority'
+
+
+// function connectdb()
+// {
+// mongoose.connect(connectionString, {
+//   useNewUrlParser: true,
+//   useUnifiedTopology: true
+// })
+//   .then(() => {
+//     console.log('Connected to MongoDB successfully');
+//     // Continue with your application logic
+//   })
+//   .catch((error) => {
+//     console.error('Error connecting to MongoDB:', error);
+//     // Handle the error appropriately
+//   })
+// }
+
+
+// module.exports=connectdb;

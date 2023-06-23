@@ -10,7 +10,7 @@ export default function Home() {
   const handleSearch = (e) => {
     e.preventDefault();
     //console.log(val);
-    navigate("/src/pages/projectsearch.jsx", { state: { txt: val } });
+    navigate("/projectsearch", { state: { txt: val } });
   };
   return (
     <div className="home_page">

@@ -42,10 +42,6 @@ const studentSchema=new mongoose.Schema({
         type:String,
         required:[true,'register number field should be present']
     },
-    question:{
-        type:String,
-        required:[true,'question field should be present']
-    },
     answer:{
         type:String,
         required:[true,'answer field should be present']

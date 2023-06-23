@@ -21,7 +21,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<ProfileCoordinator />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/miniproject" element={<MiniList />} />
           <Route path="/usertype" element={<UserType />} />
@@ -29,7 +29,7 @@ function App() {
           <Route path="/mainproject" element={<MainList />} />
           <Route path="/forgotpassword" element={<ForgotPassword />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
-          <Route path="/signup" element={<SignUp />} />
+          <Route path="/studentsignup" element={<SignUp />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/profilecoordinator" element={<ProfileCoordinator />} />
           <Route path="/profileguide" element={<ProfileGuide />} />

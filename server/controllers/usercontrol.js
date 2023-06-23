@@ -4,6 +4,7 @@ const studentModel = require('../models/studentmodel')
 const guideModel = require('../models/guidemodel')
 const cordinatorModel = require('../models/cordinatormodel')
 const adminModel = require('../models/adminmodel')
+require('dotenv').config();
 const bcrypt = require('bcryptjs')
 const jwt =require('jsonwebtoken');
 const Student = require('../models/studentmodel');
@@ -68,22 +69,24 @@ const signupadminController = async (req,res)=> {
 
 
 const loginstudentController = async (req,res)=> {
+    console.log(req.body.email)
+    console.log(req.body.password)
     try {
-        const user = await studentModel.findOne({email:req.body.name})
+        const user = await studentModel.findOne({email:req.body.email})
         if(!user)
         {
-            return res.status(200).send({message:"user not found",success:false})
+            return res.status(204).send({message:"user not found",success:false})
 
         }
         const isMatch = await bcrypt.compare(req.body.password,user.password)
         if(!isMatch)
         {
-            return res.status(200).send({message:"invalid email or password", success:false})
+            return res.status(204).send({message:"invalid email or password", success:false})
 
         }
-        const studentId= Student._id
+        const studentId= user._id
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});
-        res.status(200).send({message:'Login successful', success: true, token:token})
+        res.status(200).send({message:'Login successful', success: true, token:token, studentId:studentId})
 } catch (error) {
         console.log(error)
         res.status(500).send({success:false, message:`signup error ${error.message}`})
