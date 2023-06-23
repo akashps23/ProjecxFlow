@@ -28,6 +28,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+button, input{
+  outline: none;
+}
 
 a {
   font-weight: 500;

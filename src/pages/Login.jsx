@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { message } from "antd";
 
-function Login() {
+export default function Login() {
   const navigate = useNavigate();
   const [name, setUsername] = useState("");
   const [password, setPassword] = useState("");
@@ -71,5 +71,3 @@ function Login() {
     </div>
   );
 }
-
-export default Login();
