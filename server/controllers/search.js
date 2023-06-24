@@ -1,24 +1,24 @@
 const express = require('express');
-const app=express()
-//const abstractModel = require('../models/abstractmodel')
+const projectModel = require('../models/projectmodel');
 
-const studentModel = require('../models/studentmodel')
-
-const searchcontroller = async (req,res)=> {
+const searchController = async (req, res) => {
   try {
-    const user = await studentModel.findOne({email:req.body.searchQuery})
-    if(!user)
-        {
-            return res.status(200).send({message:"user not found",success:false})
+    const searchQuery = req.body.searchQuery;
 
-        }
-        res.status(200).send({message:'Search successful', success: true})
+    // Perform the search using the searchQuery
+    const projects = await projectModel.find({ title: { $regex: searchQuery, $options: 'i' } });
+    // Generate the cards based on the search results
+    const cards = projects.map((project) => ({
+      id: project._id,
+      title: project.title ? project.title : 'Title not found', // Handle the case where the title property is missing or undefined
+      // Add other relevant properties from the project model
+    }));
+    console.log(cards)
+    res.status(200).send({ success: true, results: cards });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send({ success: false, message: `Search error: ${error.message}` });
   }
-  catch (error) {
-    console.log(error)
-    res.status(500).send({success:false, message:`signup error ${error.message}`})
+};
 
-}
-}
-
-module.exports= {searchcontroller}
+module.exports = { searchController };
