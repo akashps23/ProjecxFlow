@@ -32,7 +32,7 @@ export default function Home() {
         <input
           className="search"
           id="searchpro"
-          defaultValue="Search Project"
+          placeholder="Search Project"
           onChange={(e) => setVal(e.target.value)}
           onClick={(event) => (event.target.value = "")}
         />
@@ -43,13 +43,13 @@ export default function Home() {
       <div className="mini_rect"></div>
       <div className="bgrect"></div>
 
-      <Link to="/src/pages/miniprojectlist.jsx">
+      <Link to="./miniprojectlist.jsx">
         <p className="miniproject">Mini Project</p>
       </Link>
 
       <div className="main_rect"></div>
 
-      <Link to="/src/pages/mainprojectlist.jsx">
+      <Link to="./mainprojectlist.jsx">
         <p className="mainproject">Main Project</p>
       </Link>
 

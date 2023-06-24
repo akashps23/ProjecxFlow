@@ -15,14 +15,14 @@ html {
 	overflow-x: hidden;
   }
   
-  .coordinator {
+  .guide {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
 	overflow: hidden;
 	background-color: #ffffff;
   }
-  .coordinator .title{
+  .guide .title{
 	position: absolute;
 	width: 45%;
 	height: 5%;
@@ -36,67 +36,49 @@ html {
 	font-weight: 600;
 	color: #000000;
   }
-  .coordinator .mini{
+  .guide .mini{
 	width: 75rem;
 	height : 30rem;
 	position: absolute;
-	left : 15%;
+	left : 6%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 8rem;
   }
-  .coordinator .main{
+  .guide .main{
 	width: 75rem;
 	height : 30rem;
 	position: absolute;
-	left :39%;
+	left :29%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 8rem;
   }
-  .coordinator .student{
+  .guide .student{
 	width: 75rem;
 	height : 30rem;
 	position: absolute;
-	left :65%;
+	left :52%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 8rem;
   }
-  .coordinator .guide{
+  
+  .guide .mine{
 	width: 75rem;
 	height : 30rem;
 	position: absolute;
-	left :15%;
-	top : 70%;
+	left :75%;
+	top : 45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 8rem;
   }
-  .coordinator .mine{
-	width: 75rem;
-	height : 30rem;
-	position: absolute;
-	left :39%;
-	top : 70%;
-	color: #000000;
-	background-color: #99a9fd;
-	font-size: 8rem;
-  }
-  .coordinator .guidance{
-	width: 75rem;
-	height : 30rem;
-	position: absolute;
-	left :65%;
-	top : 70%;
-	color: #000000;
-	background-color: #99a9fd;
-	font-size: 8rem;
-  }
-  .coordinator .bgrect {
+ 
+  .guide .bgrect {
 	width: 100vw;
 	height: 25rem;
 	position: absolute;

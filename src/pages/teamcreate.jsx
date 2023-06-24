@@ -14,24 +14,28 @@ function TeamCreate() {
     <div className="team">
       <form
         onSubmit={() => {
-          console.log("herer");
+          console.log("submitted");
         }}
       >
         <div className="dash">Creating a Dashboard</div>
         <input className="proname" placeholder="Project Title" />
-        <input className="protype" placeholder="Project Type" />
-        <select className="year" ref={yearRef}>
+        <select className="protype" placeholder="select">
+          <option>Mini Project</option>
+          <option>Main Project</option>
+        </select>
+        {/* <input className="protype" placeholder="Project Type" /> */}
+        {/* <select className="year" ref={yearRef}>
           <option>a</option>
           <option>b</option>
           <option>c</option>
           <option>d</option>
           <option>e</option>
-        </select>
-        {/* <input
+        </select> */}
+        <input
           className="year"
           placeholder="Year"
           onClick={(event) => (event.target.value = "")}
-        /> */}
+        />
         <div className="teamadd">Add Your Team Members</div>
         <input className="teammate_one" placeholder="Teammate's Email ID" />
         <input className="teammate_two" placeholder="Teammate's Email ID" />
@@ -45,7 +49,7 @@ function TeamCreate() {
         <input
           className="submit"
           type="submit"
-          value="SUbmit"
+          value="Submit"
           onClick={() => {
             console.log("sdfsfd");
           }}

@@ -13,7 +13,8 @@ export default function ProjectSearch() {
       </Link> */}
         <div className="search_rect"></div>
         <img className="searchimg"></img>
-        <p className="title">Similar Projects Like {txt}</p>
+        <p className="title">Similar Projects Like</p>
+        <p className="search">" {txt} "</p>
         <div className="bgrect"></div>
       </div>
     </div>

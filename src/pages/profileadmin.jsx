@@ -1,11 +1,11 @@
-import React from "react";
-import "../styles/profilecoordinator.css";
+import React, { useState } from "react";
+import "../styles/adminprofile.css";
 import { Link } from "react-router-dom";
 
-function ProfileCoordinator() {
+export default function AdminProfile() {
   return (
-    <div className="coordinator">
-      <p className="title">Welcome Coordinator</p>
+    <div className="admin_profile">
+      <p className="title">Welcome Admin</p>
       <button className="mini">
         <Link to="./miniprojectlist.jsx">Mini Projects</Link>
       </button>
@@ -18,15 +18,13 @@ function ProfileCoordinator() {
       <button className="guide">
         <Link to="./guidelist.jsx">Guides List</Link>
       </button>
-      <button className="mine">
-        <Link to="./myprojects.jsx">My Projects</Link>
+      <button className="coordinator">
+        <Link to="./coordinatorlist.jsx">Coordinators List</Link>
       </button>
-      <button className="guidance">
-        <Link to="./guidanceproject.jsx">Under My Guidance</Link>
+      <button className="move">
+        <Link to="./history.jsx">Moved Projects</Link>
       </button>
       <div className="bgrect"></div>
     </div>
   );
 }
-
-export default ProfileCoordinator;
