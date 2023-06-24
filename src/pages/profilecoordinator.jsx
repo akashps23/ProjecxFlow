@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function ProfileCoordinator() {
   return (
     <div className="coordinator">
-      <p className="title">Welcome</p>
+      <p className="title">Welcome Coordinator</p>
       <button className="mini">
         <Link to="./miniprojectlist.jsx">Mini Projects</Link>
       </button>

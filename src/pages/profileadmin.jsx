@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function AdminProfile() {
   return (
     <div className="admin_profile">
-      <p className="title">Welcome</p>
+      <p className="title">Welcome Admin</p>
       <button className="mini">
         <Link to="./miniprojectlist.jsx">Mini Projects</Link>
       </button>

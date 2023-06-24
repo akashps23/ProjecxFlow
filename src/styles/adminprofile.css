@@ -31,74 +31,74 @@ html {
 	top: 25%;
     z-index: 1;
 	
-	font-size: 4.5rem;
+	font-size: 10rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #000000;
   }
   .admin_profile .mini{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left : 15%;
 	top :45%;
 	color: #000000;
-	background-color: #99a9fd;
-	font-size: 4rem;
+	background-color: #9babff;
+	font-size: 8rem;
   }
   .admin_profile .main{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :39%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .admin_profile .student{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :65%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .admin_profile .guide{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :15%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .admin_profile .coordinator{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :39%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .admin_profile .move{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :65%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .admin_profile .bgrect {
 	width: 100vw;
-	height: 15rem;
+	height: 25rem;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;

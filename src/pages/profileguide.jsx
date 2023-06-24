@@ -12,7 +12,7 @@ function ProfileGuide() {
       <button className="main">
         <Link to="./mainprojectlist.jsx">Main Projects</Link>
       </button>
-      <p className="title">Welcome</p>
+      <p className="title">Welcome Guide</p>
 
       <button className="student">
         <Link to="./studentlist.jsx">Students List</Link>

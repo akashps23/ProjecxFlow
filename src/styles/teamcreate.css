@@ -30,7 +30,7 @@ html {
 	left: calc(55% - 30%);
 	top: 3%;
     z-index: 1;
-	font-size: 4.5rem;
+	font-size: 10rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #292929;
@@ -97,7 +97,7 @@ html {
 	left: calc(55% - 30%);
 	top: 32%;
     z-index: 1;
-	font-size: 4rem;
+	font-size: 6rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #292929;
@@ -178,7 +178,7 @@ html {
 	left: calc(55% - 30%);
 	top: 65%;
     z-index: 1;
-	font-size: 4rem;
+	font-size: 6rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #292929;
@@ -253,7 +253,7 @@ html {
 }
   .team .bgrect {
 	width: 100vw;
-	height: 15rem;
+	height: 30rem;
 	position: absolute;
 	top: 0rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

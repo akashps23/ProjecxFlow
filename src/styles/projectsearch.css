@@ -28,8 +28,21 @@ body {
 	width: 45%;
 	height: 4%;
 	align-content: center;
-	left:10%;
-	top: 9.4%;
+	left:7.5%;
+	top: 9.2%;
+    z-index: 1;
+	font-size: 3rem;
+	font-family: 'Helvetica';
+	font-weight: 500;
+	color: #292929;
+}
+.projectsearch .search {
+    position: relative;
+	width: 45%;
+	height: 4%;
+	text-align: left;
+	left:36%;
+	top: 5%;
     z-index: 1;
 	font-size: 3rem;
 	font-family: 'Helvetica';
@@ -49,14 +62,15 @@ body {
 	
 	width: 5rem;
 	height: 5rem;
-	left: 65.5rem;
+	left: -66rem;
 	top: 15.5rem;
 	position: relative;
+	
 	z-index: 1;
     opacity: 50%;
 	object-fit: cover;
 	background-color: #ffffff00;
-	border-color: #00000000 ;	
+	
 	background-image: url('../assets/glass.png');
 	background-size: cover;
 	background-position: center;
@@ -67,6 +81,6 @@ body {
 	width: 100vw;
 	height: 15rem;
 	position: relative;
-	top: -19rem;
+	top: -24rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);
 }

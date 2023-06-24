@@ -31,74 +31,74 @@ html {
 	top: 25%;
     z-index: 1;
 	
-	font-size: 4.5rem;
+	font-size: 10rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #000000;
   }
   .coordinator .mini{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left : 15%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .main{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :39%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .student{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :65%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .guide{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :15%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .mine{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :39%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .guidance{
-	width: 35rem;
-	height : 20rem;
+	width: 75rem;
+	height : 30rem;
 	position: absolute;
 	left :65%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4rem;
+	font-size: 8rem;
   }
   .coordinator .bgrect {
 	width: 100vw;
-	height: 15rem;
+	height: 25rem;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;

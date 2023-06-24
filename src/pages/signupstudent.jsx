@@ -4,7 +4,7 @@ import { Link,useNavigate } from "react-router-dom";
 import { Button, message } from "antd";
 import axios from "axios";
 
-const SignupstudentPage = () => {
+const SignupStudent = () => {
   const navigate=useNavigate()
   const [name, setname] = useState('');
   const [phoneno, setPhoneno] = useState('');
@@ -165,114 +165,6 @@ const SignupstudentPage = () => {
 }
 
 
-export default SignupstudentPage;
+export default SignupStudent;
 
 
-/*return (
-    <div>
-      <h1>Signup</h1>
-      <form onSubmit={handlestudentSignup}>
-        <div>
-          <label>name:</label>
-          <input
-            type="text"
-            value={name}
-            onChange={(event) => setname(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Phoneno:</label>
-          <input
-            type="number"
-            value={phoneno}
-            onChange={(event) => setPhoneno(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Email:</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(event) => setEmail(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>College:</label>
-          <input
-            type="text"
-            value={college}
-            onChange={(event) => setCollege(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Dept:</label>
-          <input
-            type="text"
-            value={dept}
-            onChange={(event) => setDept(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Sem:</label>
-          <input
-            type="number"
-            value={sem}
-            onChange={(event) => setSem(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Admno:</label>
-          <input
-            type="text"
-            value={admno}
-            onChange={(event) => setAdmno(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Rollno:</label>
-          <input
-            type="text"
-            value={rollno}
-            onChange={(event) => setRollno(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Regno:</label>
-          <input
-            type="text"
-            value={regno}
-            onChange={(event) => setRegno(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Password:</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(event) => setPassword(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Question:</label>
-          <input
-            type="text"
-            value={question}
-            onChange={(event) => setQuestion(event.target.value)}
-          />
-        </div>
-        <div>
-          <label>Answer:</label>
-          <input
-            type="text"
-            value={answer}
-            onChange={(event) => setAnswer(event.target.value)}
-          />
-        </div>
-        <button type="submit">Signup</button>
-      </form>
-    </div>
-  );
-};
-
-export default SignupstudentPage;
-   */

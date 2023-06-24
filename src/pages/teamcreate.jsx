@@ -19,7 +19,7 @@ function TeamCreate() {
       >
         <div className="dash">Creating a Dashboard</div>
         <input className="proname" placeholder="Project Title" />
-        <select className="protype" defaultValue="select">
+        <select className="protype" placeholder="select">
           <option>Mini Project</option>
           <option>Main Project</option>
         </select>

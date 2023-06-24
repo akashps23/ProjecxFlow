@@ -13,7 +13,7 @@ export default function MainList() {
         {/* <input
         className="list"
         id="minilist"
-        defaultValue="List of Projects"
+        placeholder="List of Projects"
         onClick={(event) => (event.target.value = "")}
       /> */}
         <div className="bgrect"></div>

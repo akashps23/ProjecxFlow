@@ -9,13 +9,13 @@ export default function ForgotPassword() {
       <div className="bgrect"></div>
       <input
         className="email"
-        defaultValue={"Enter Your Email ID"}
+        placeholder={"Email ID"}
         onClick={(event) => (event.target.value = "")}
       ></input>
       <p className="question">Which is your favorite Place ?</p>
       <input
         className="answer"
-        defaultValue={"Enter Your Answer"}
+        placeholder={"Answer"}
         onClick={(event) => (event.target.value = "")}
       ></input>
       <Link to="/src/pages/loginpage.jsx">
