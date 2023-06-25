@@ -52,9 +52,15 @@ export default function ForgotPasswordCoordinator() {
         value={answer}
         onChange={(event) => setAnswer(event.target.value)}
       ></input>
-        <div className="submit">Submit</div>
+        <button className="submit" type="submit">Submit</button>
       </form>
       
     </div>
   );
 }
+
+
+
+
+
+/*<p className="title">Let's Recover Your Account</p> */

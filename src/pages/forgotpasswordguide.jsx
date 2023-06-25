@@ -34,7 +34,7 @@ export default function ForgotPasswordGuide() {
   };
   return (
     <div className="forgot">
-      <p className="title">Let's Recover Your Account</p>
+      <p className="title">Let's Recover Your Account</p> 
       <div className="bgrect"></div>
       <form onSubmit={handleguidePassword}>
       <input
@@ -52,9 +52,23 @@ export default function ForgotPasswordGuide() {
         value={answer}
         onChange={(event) => setAnswer(event.target.value)}
       ></input>
-        <div className="submit">Submit</div>
+        <button className="submit" type="submit">Submit</button>
       </form>
       
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<p className="title">Let's Recover Your Account</p> */

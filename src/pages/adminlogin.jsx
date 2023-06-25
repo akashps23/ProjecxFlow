@@ -61,7 +61,7 @@ export default function LoginAdmin() {
         />
         </form>
         <Link to="/forgotpasswordstudent">
-          <p className="forgot_pass">Forgot Password</p>
+          <p className="forgot_pass">Forgot Password</p>3
         </Link>
         <Link to="/studentsignup">
           <p className="create_acc">Create an Account</p>
