@@ -1,0 +1,14 @@
+{
+    "type": "service_account",
+    "project_id": "hybrid-heaven-363612",
+    "private_key_id":"a3fa5087ffa39b87d53803af9e0bedc8a9b71540",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQDGLDYZXFNQg8RR\nBdGud9vobX7d5G4fTJ8a+XkIz3RI3yFN6iJu77Vk+QNw/wkcNyU8ioqofS+5vGr5\nDNtR0lvWzdDsaDDu+xKlGH6eGmDlyJx6EedYDeoytL6yAjG12fOD2hPfvodwms+S\n2Uk1X0z9p1U68S+HjbuqGp8bH0PVGJ11IQUinfRKCedt2EetLgwCTkwnevp0N60L\nc8vFZEbmLZD2F3FSBQGbofer5oUXD2G6mbNn3hK947W/sN+WjgnREgjyt9mx/Gy2\nt9P81iUQGHrENRq0xzob3zGlVqltf7cOBnOuzmTD0M81rgTXySZRS20Y0frc6q9g\nysfn5KGZAgMBAAECgf8rXEa5hEpihTr4+ERGh55C2RrijdavafAcdlOeYhPIUsiM\nviA+Vd+1YJ/zFdZhzmViHuPpD1ZExuRdgFV4igK4P1uZlcwtgCNfgGR5mOJ/Fse9\nqkzvl5jC7xo1ALN4WdMa+J79RfMFigUK/lYUMBdlZrYMsAwHrcSSta4JEpdrXxdo\nd5RHRRkGPH74bUncwcDSSFVj3xqHYNG0vIS6/5M1WZUAM+TkVJFjho9qd1g0cgtC\nnrwoSJLKVmW6y7mAp3jQexatc2h8cPeUHD86PBJG3WPE2aKnl3kJfvLS6Z+QdN8w\n/IRJrdG5swBLYRdYtJvpbvK1TMkghMixIxalHN0CgYEA4uHqxBI4ngnUPoLVt/EI\nOJfH2R5zXJxsWO/0TgM+6ul1hk/5jjysygZroTv3c4lVVGTUGNbkWUxClOpx8lyI\ne1y+rIMyARNLOPEZXlPDwltdh/HDcFc2vPNODzEztFYtsZqJdNwv/yqz31cKBb4T\n9IvZblJ79ALlX0mZKEZKYu0CgYEA35sNU3BZMpLsH1SuG39uB4HMVW9c3y/7uANQ\nZZY2bVUmSLgeybAhBJd2f/u/BhPPRcnbYVJS5Xcnx3OAEfhaJnWjckVVLI24hLG2\nnsjh9sbKh96OT4OC3zcGLmtyqGXPr3BaGvmKX80hQg3XNB3mbXr+T/2XN83aZLV3\no3YDx90CgYBNgUelu2PD+S+cOy2vLJPWYWNP9GsMVBNfPnmCvPEdZqtTOrbRtECC\nszbJWabqvRt9PQSHh8FyD+8e2Agc9ydYnRI19It8eo7T4Oj9pDfXiUamThypn+F/\nIs6jufcjv9zUMyqJ1T5AOOJBhYZS99/xRmT8nwjhDqw0pPvBGmIG8QKBgC61evEl\nFNzlqAFbdQs1cUyMJpzqKGJO6awktRSjbjckhFzIaVYEPsFwykYt1ld0p+WSJwuL\nYNmiLGMTk3stf9ds13m1Vfd6m0LMxLMij2E3YXNEYEHn3Ny358imlUrsCZhCRfBA\nlFEyznG35m5ymIHiIWGgPYhgrfA/oAA7VMrZAoGBAIzTu5lS3H/gLPSiSgXaYWk9\nIGuf5A4hrue0drhSH4ySW/eOJpJZ+FR3tRUVyCENTxx6LATp9XXfF4d2rvJcYLqF\nYU6xEmLZDPZpMBdD21eyBSv8UY2E1qqa/x7Y/flrQzAsK5mjQ5CS6hsnoFfDVOoZ\nSwm0RzDNEhlwuOIJZwuH\n-----END PRIVATE KEY-----\n",
+    "client_email": "firebase-adminsdk-3aeuh@hybrid-heaven-363612.iam.gserviceaccount.com",
+    "client_id": "106183866981853155548",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-3aeuh%40hybrid-heaven-363612.iam.gserviceaccount.com",
+    "storagebucket": "hybrid-heaven-363612.appspot.com"
+
+}
