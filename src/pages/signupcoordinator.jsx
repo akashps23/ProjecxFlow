@@ -6,55 +6,101 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button, message } from "antd";
 import axios from "axios";
 
-export default function SignupCoordinator() {
+
+const SignupCoordinator = () => {
+  const navigate=useNavigate()
+  const [name, setname] = useState('');
+  const [phoneno, setPhoneno] = useState('');
+  const [email, setEmail] = useState('');
+  const [college, setCollege] = useState('');
+  const [dept, setDept] = useState('');
+  const [password, setPassword] = useState('');
+  const [fid, setFid] = useState('');
+  const [answer, setAnswer] = useState('');
+
+  const handlecoordinatorSignup = async (event) => {
+    event.preventDefault();
+
+    try {
+      // Send the form data to the backend API
+      const response = await axios.post('http://localhost:9014/api/v1/user/coordinatorsignup', {
+        name,
+        phoneno,
+        email,
+        college,
+        dept,
+        password,
+        fid,
+        answer
+      });
+      if (response.data.success) {
+        message.success("Registered Successfully", () => {
+          navigate("/coordinatorlogin");
+        });
+      } else {
+        message.error("Registration Failed");
+      }
+      console.log(response.data);
+    }catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <div className="sign_up">
       <div className="title">Creating an Account</div>
-      <form onSubmit={handlestudentSignup}>
+      <form onSubmit={handlecoordinatorSignup}>
         <input
           className="name"
           placeholder="Name"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={name}
+          onChange={(event) => setname(event.target.value)}
         />
         <input
           className="phno"
           placeholder="Phone Number"
           type="number"
-          onClick={(event) => (event.target.value = "")}
+          value={phoneno}
+          onChange={(event) => setPhoneno(event.target.value)}
         />
         <input
           className="email"
           placeholder="Email ID"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={email}
+          onChange={(event) => setEmail(event.target.value)}
         />
         <input
           className="clg"
           placeholder="College"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={college}
+          onChange={(event) => setCollege(event.target.value)}
         />
 
         <input
           className="dept"
           placeholder="Department"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={dept}
+          onChange={(event) => setDept(event.target.value)}
         />
 
         <input
           className="fid"
           placeholder="Faculty ID"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={fid}
+          onChange={(event) => setFid(event.target.value)}
         />
 
         <input
           className="pwd"
           type="password"
           placeholder="Password"
-          onClick={(event) => (event.target.value = "")}
+          value={password}
+          onChange={(event) => setPassword(event.target.value)}
         />
 
         <p className="quest">Which is your favorite Place ?</p>
@@ -64,7 +110,8 @@ export default function SignupCoordinator() {
           name="Answer"
           placeholder="Submit your answer"
           type="text"
-          onClick={(event) => (event.target.value = "")}
+          value={answer}
+          onChange={(event) => setAnswer(event.target.value)}
         />
 
         <button className="signup" type="submit">
@@ -76,6 +123,9 @@ export default function SignupCoordinator() {
     </div>
   );
 }
+
+export default  SignupCoordinator;
+
 
 // code connect with db
 // import React, { useState } from "react";

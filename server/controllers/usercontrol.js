@@ -99,26 +99,27 @@ const loginstudentController = async (req,res)=> {
 
 const loginguideController = async (req,res)=> {
     try {
-        const user = await guideModel.findOne({email:req.body.name})
+        const user = await guideModel.findOne({email:req.body.email})
         if(!user)
         {
-            return res.status(200).send({message:"user not found",success:false})
+            return res.status(204).send({message:"user not found",success:false})
 
         }
         const isMatch = await bcrypt.compare(req.body.password,user.password)
         if(!isMatch)
         {
-            return res.status(200).send({message:"invalid email or password", success:false})
+            return res.status(204).send({message:"invalid email or password", success:false})
 
         }
+        const guideId= user._id
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});
         
-        res.status(200).send({message:'Login successful', success: true, token:token})
+        res.status(200).send({message:'Login successful', success: true, token:token, guideId:guideId})
 
         
     } catch (error) {
         console.log(error)
-        res.status(500).send({success:false, message:`signup error ${error.message}`})
+        res.status(500).send({success:false, message:`login error ${error.message}`})
     
     }
     
@@ -131,21 +132,22 @@ const loginguideController = async (req,res)=> {
 
 const logincordinatorController = async (req,res)=> {
     try {
-        const user = await cordinatorModel.findOne({email:req.body.name})
+        const user = await cordinatorModel.findOne({email:req.body.email})
         if(!user)
         {
-            return res.status(200).send({message:"user not found",success:false})
+            return res.status(204).send({message:"user not found",success:false})
 
         }
         const isMatch = await bcrypt.compare(req.body.password,user.password)
         if(!isMatch)
         {
-            return res.status(200).send({message:"invalid email or password", success:false})
+            return res.status(204).send({message:"invalid email or password", success:false})
 
         }
+        const guideId= user._id
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});
         
-        res.status(200).send({message:'Login successful', success: true, token:token})
+        res.status(200).send({message:'Login successful', success: true, token:token, guideId:guideId})
         
     } catch (error) {
         console.log(error)
@@ -257,7 +259,6 @@ const authstudentController = async (req,res)=>{
                 rollno:user.rollno,
                 regno:user.regno,
                 password:user.password,
-                question:user.question,
                 answer:user.answer
 
             },
@@ -288,7 +289,7 @@ const authguideController = async (req,res)=>{
                 college:user.college,
                 dept:user.dept,
                 password:user.password,
-                question:user.question,
+                fid:user.fid,
                 answer:user.answer
 
 
@@ -320,7 +321,7 @@ const authcordinatorController = async (req,res)=>{
                 college:user.college,
                 dept:user.dept,
                 password:user.password,
-                question:user.question,
+                fid:user.fid,
                 answer:user.answer
 
             },

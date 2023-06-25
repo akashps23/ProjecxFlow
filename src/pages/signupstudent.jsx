@@ -23,6 +23,7 @@ const SignupStudent = () => {
 
     try {
       // Send the form data to the backend API
+<<<<<<< HEAD
       const response = await axios.post(
         "http://localhost:9013/api/v1/user/studentsignup",
         {
@@ -39,6 +40,21 @@ const SignupStudent = () => {
           answer,
         }
       );
+=======
+      const response = await axios.post('http://localhost:9014/api/v1/user/studentsignup', {
+        name,
+        phoneno,
+        email,
+        college,
+        dept,
+        sem,
+        admno,
+        rollno,
+        password,
+        regno,
+        answer
+      });
+>>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad
       if (response.data.success) {
         message.success("Registered Successfully", () => {
           navigate("/studentlogin");

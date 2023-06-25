@@ -4,26 +4,26 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { message } from "antd";
 
-export default function Login() {
+export default function LoginAdmin() {
   const navigate = useNavigate();
   const [email, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handlestudentLogin = async (event) => {
+  const handleadminLogin = async (event) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:9013/api/v1/user/studentlogin",
+      "http://localhost:9014/api/v1/user/adminlogin",
         {
           email,
           password,
-        }
-      );
+        });
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
+        localStorage.setItem("studentId", response.data.studentId)
         message.success("Login Successful");
-        // navigate("/studenthomepage");
-        console.log(response);
+       navigate("/adminhomepage");
+       console.log(response)
 
         // Reset the form
         setUsername("");
@@ -35,7 +35,7 @@ export default function Login() {
   };
   return (
     <div className="login_page">
-      <form onSubmit={handlestudentLogin}>
+      <form onSubmit={handleadminLogin}>
         <div className="rectangle"></div>
         <p className="projecx_flow">ProjecX flow</p>
         <button className="login_key" type="submit">
@@ -59,16 +59,16 @@ export default function Login() {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-      </form>
-      <Link to="/forgotpassword">
-        <p className="forgot_pass">Forgot Password</p>
-      </Link>
-      <Link to="/usertype">
-        <p className="create_acc">Create an Account</p>
-      </Link>
-      <p className="welcome">Welcome Back</p>
-      <div className="line"></div>
-      <p className="tagline">A Complete Solution for Managing Projects </p>
+        </form>
+        <Link to="/forgotpasswordstudent">
+          <p className="forgot_pass">Forgot Password</p>
+        </Link>
+        <Link to="/studentsignup">
+          <p className="create_acc">Create an Account</p>
+        </Link>
+        <p className="welcome">Welcome Back</p>
+        <div className="line"></div>
+        <p className="tagline">A Complete Solution for Managing Projects </p>
     </div>
   );
 }

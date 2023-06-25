@@ -22,8 +22,13 @@ export default function Home() {
 
       <img className="logo"></img>
 
+<<<<<<< HEAD
       <Link to="login">
         <div className="login_key">Login</div>
+=======
+      <Link to="/adminlogin">
+        <div className="login_key">Admin</div>
+>>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad
       </Link>
 
       <div className="search_rect"></div>
@@ -34,7 +39,6 @@ export default function Home() {
           id="searchpro"
           placeholder="Search Project"
           onChange={(e) => setVal(e.target.value)}
-          onClick={(event) => (event.target.value = "")}
         />
         <button className="searchimg" type="submit">
           Search
@@ -49,7 +53,11 @@ export default function Home() {
 
       <div className="main_rect"></div>
 
+<<<<<<< HEAD
       <Link to="/mainproject">
+=======
+      <Link to="./mainproject">
+>>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad
         <p className="mainproject">Main Project</p>
       </Link>
 
