@@ -7,13 +7,46 @@ export default function UserType() {
     <div className="select">
       <p className="title">Hey ! Welcome to ProjecXFlow</p>
       <p className="subtitle">Can You Please Select Your Role </p>
-      <div className="coordinator">Coordinator</div>
-      <div className="guide">Guide</div>
-      <div className="student">Student</div>
-      <Link to="/src/pages/loginpage.jsx">
-        <div className="loginkey">Login</div>
+      <Link to="/coordinatorlogin">
+        <div className="coordinator">Coordinator</div>
       </Link>
+      <Link to="/guidelogin">
+        <div className="guide">Guide</div>
+      </Link>
+      <Link to="/studentlogin">
+      <div className="student">Student</div> 
+      </Link>
+      
+      
       <div className="bgrect"></div>
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*<Link to="/src/pages/loginpage.jsx">
+        <div className="loginkey">Login</div>
+    </Link> */

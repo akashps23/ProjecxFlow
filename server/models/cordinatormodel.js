@@ -26,9 +26,9 @@ const cordinatorSchema=new mongoose.Schema({
         type:String,
         required:[true,'department field should be present']
     },
-    question:{
-        type:String,
-        required:[true,'question field should be present']
+    fid:{
+        type:Number,
+        required:[true,'fid should be present']
     },
     answer:{
         type:String,

@@ -1,17 +1,23 @@
 import Home from "./pages/homepage";
-import Login from "./pages/Login";
+import LoginStudent from "./pages/studentlogin";
 import UserType from "./pages/selectingtype";
-import AdminProfile from "./pages/profileadmin";
+import AdminHome from "./pages/profileadmin";
 import SignupStudent from "./pages/signupstudent";
 import MiniList from "./pages/miniprojectlist";
 import MainList from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
-import ForgotPassword from "./pages/forgotpassword";
+import ForgotPasswordStudent from "./pages/forgotpasswordstudent";
+import ForgotPasswordGuide from "./pages/forgotpasswordguide";
+import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
 import TeamCreate from "./pages/teamcreate";
-import ProfileCoordinator from "./pages/profilecoordinator";
-import ProfileGuide from "./pages/profileguide";
-import ProfileStudent from "./pages/profilestudent";
 import SignupCoordinator from "./pages/signupcoordinator";
+import SignupGuide from "./pages/signupguide";
+import LoginGuide from "./pages/guidelogin";
+import LoginCoordinator from "./pages/coordinatorlogin";
+import StudentHome from "./pages/profilestudent";
+import GuideHome from "./pages/profileguide";
+import CoordinatorHome from "./pages/profilecoordinator";
+import LoginAdmin from "./pages/adminlogin";
 
 import React from "react";
 import "./App.css";
@@ -24,21 +30,27 @@ function App() {
         <Routes>
           {/* home page */}
           <Route exact path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
+          <Route path="/studentlogin" element={<LoginStudent />} />
+          <Route path="/guidelogin" element={<LoginGuide />} />
+          <Route path="/adminlogin" element={<LoginAdmin />} />
+          <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
           <Route path="/miniproject" element={<MiniList />} />
           <Route path="/mainproject" element={<MainList />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/usertype" element={<UserType />} />
           {/* login page */}
-          <Route path="/forgotpassword" element={<ForgotPassword />} />
+          <Route path="/forgotpasswordstudent" element={<ForgotPasswordStudent />} />
+          <Route path="/forgotpasswordguide" element={<ForgotPasswordGuide />} />
+          <Route path="/forgotpasswordcoordinator" element={<ForgotPasswordCoordinator />} />
           {/* SignUp */}
-          <Route path="/signupcoordinator" element={<SignupCoordinator />} />
-          <Route path="/signupstudent" element={<SignupStudent />} />
+          <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
+          <Route path="/studentsignup" element={<SignupStudent />} />
+          <Route path="/guidesignup" element={<SignupGuide />} />
           {/* Profiles */}
-          <Route path="/profileadmin" element={<AdminProfile />} />
-          <Route path="/profileguide" element={<ProfileGuide />} />
-          <Route path="/profilestudent" element={<ProfileStudent />} />
-          <Route path="/profilecoordinator" element={<ProfileCoordinator />} />
+          <Route path="/guidehomepage" element={<GuideHome />} />
+          <Route path="/studenthomepage" element={<StudentHome />} />
+          <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
+          <Route path="/adminhomepage" element={<AdminHome />} />
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
         </Routes>

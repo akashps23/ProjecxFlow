@@ -23,7 +23,7 @@ const SignupStudent = () => {
 
     try {
       // Send the form data to the backend API
-      const response = await axios.post('http://localhost:9013/api/v1/user/studentsignup', {
+      const response = await axios.post('http://localhost:9014/api/v1/user/studentsignup', {
         name,
         phoneno,
         email,

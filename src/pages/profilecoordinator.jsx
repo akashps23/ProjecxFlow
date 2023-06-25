@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import "../styles/profilecoordinator.css";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 
-function ProfileCoordinator() {
+const CoordinatorHome = () => {
+  const [userData, setUserData] = useState(null);
+
+  const getUserData = async () => {
+    try {
+      const response = await axios.post(
+        'http://localhost:9014/api/v1/user/getCoordinatorData',
+        {},
+        {
+          headers: {
+            Authorization: 'Bearer ' + localStorage.getItem('token'),
+          },
+        }
+      );
+      if (response.data.success) {
+        setUserData(response.data.data);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+  useEffect(() => {
+    getUserData();
+  }, []);
+
   return (
     <div className="coordinator">
-      <p className="title">Welcome Coordinator</p>
+      {userData ? (
+        <>
+          <p className="title">Welcome {userData.name}</p>
+          <p>ID: {userData.id}</p>
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
       <button className="mini">
         <Link to="./miniprojectlist.jsx">Mini Projects</Link>
       </button>
@@ -29,4 +62,4 @@ function ProfileCoordinator() {
   );
 }
 
-export default ProfileCoordinator;
+export default CoordinatorHome;

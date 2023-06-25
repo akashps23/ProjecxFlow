@@ -5,6 +5,10 @@ const projectSchema=new mongoose.Schema({
         type:String,
         required:[true]
     },
+    type:{
+        type:String,
+        required:[true]
+    },
     abstract:{
         type:String,
         required:[false]

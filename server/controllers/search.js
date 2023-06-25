@@ -7,13 +7,25 @@ const searchController = async (req, res) => {
 
     // Perform the search using the searchQuery
     const projects = await projectModel.find({ title: { $regex: searchQuery, $options: 'i' } });
+    
     // Generate the cards based on the search results
-    const cards = projects.map((project) => ({
-      id: project._id,
-      title: project.title ? project.title : 'Title not found', // Handle the case where the title property is missing or undefined
-      // Add other relevant properties from the project model
-    }));
-    console.log(cards)
+    const cards = projects.map((project) => {
+      if (!project || !project.title) {
+        return {
+          id: 'N/A',
+          title: 'Title not found',
+          // Add other relevant properties from the project model
+        };
+      }
+
+      return {
+        id: project._id,
+        title: project.title,
+        // Add other relevant properties from the project model
+      };
+    });
+
+    console.log(cards);
     res.status(200).send({ success: true, results: cards });
   } catch (error) {
     console.log(error);

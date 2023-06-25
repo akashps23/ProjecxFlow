@@ -22,8 +22,8 @@ export default function Home() {
 
       <img className="logo"></img>
 
-      <Link to="/src/pages/loginpage.jsx">
-        <div className="login_key">Login</div>
+      <Link to="/adminlogin">
+        <div className="login_key">Admin</div>
       </Link>
 
       <div className="search_rect"></div>
@@ -34,7 +34,6 @@ export default function Home() {
           id="searchpro"
           placeholder="Search Project"
           onChange={(e) => setVal(e.target.value)}
-          onClick={(event) => (event.target.value = "")}
         />
         <button className="searchimg" type="submit">
           Search
@@ -43,13 +42,13 @@ export default function Home() {
       <div className="mini_rect"></div>
       <div className="bgrect"></div>
 
-      <Link to="./miniprojectlist.jsx">
+      <Link to="/miniproject">
         <p className="miniproject">Mini Project</p>
       </Link>
 
       <div className="main_rect"></div>
 
-      <Link to="./mainprojectlist.jsx">
+      <Link to="./mainproject">
         <p className="mainproject">Main Project</p>
       </Link>
 
@@ -57,7 +56,7 @@ export default function Home() {
 
       <div className="signup_rect"></div>
 
-      <Link to="/src/pages/selectingtype.jsx">
+      <Link to="/usertype">
         <p className="getstarted">Get Started</p>
       </Link>
     </div>
