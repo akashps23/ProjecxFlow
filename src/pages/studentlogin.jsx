@@ -13,17 +13,18 @@ export default function LoginStudent() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/studentlogin",
+        "http://localhost:9014/api/v1/user/studentlogin",
         {
           email,
           password,
-        });
+        }
+      );
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
-        localStorage.setItem("studentId", response.data.studentId)
+        localStorage.setItem("studentId", response.data.studentId);
         message.success("Login Successful");
-       navigate("/studenthomepage");
-       console.log(response)
+        navigate("/studenthomepage");
+        console.log(response);
 
         // Reset the form
         setUsername("");
@@ -59,16 +60,16 @@ export default function LoginStudent() {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-        </form>
-        <Link to="/forgotpasswordstudent">
-          <p className="forgot_pass">Forgot Password</p>
-        </Link>
-        <Link to="/studentsignup">
-          <p className="create_acc">Create an Account</p>
-        </Link>
-        <p className="welcome">Welcome Back</p>
-        <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
+      </form>
+      <Link to="/forgotpasswordstudent">
+        <p className="forgot_pass">Forgot Password</p>
+      </Link>
+      <Link to="/studentsignup">
+        <p className="create_acc">Create an Account</p>
+      </Link>
+      <p className="welcome">Welcome Back</p>
+      <div className="line"></div>
+      <p className="tagline">A Complete Solution for Managing Projects </p>
     </div>
   );
 }

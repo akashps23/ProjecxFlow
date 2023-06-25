@@ -14,38 +14,13 @@ export default function UserType() {
         <div className="guide">Guide</div>
       </Link>
       <Link to="/studentlogin">
-      <div className="student">Student</div> 
+        <div className="student">Student</div>
       </Link>
-      
-      
+
       <div className="bgrect"></div>
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*<Link to="/src/pages/loginpage.jsx">
         <div className="loginkey">Login</div>

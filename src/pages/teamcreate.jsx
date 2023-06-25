@@ -70,13 +70,7 @@ const TeamCreate = () => {
           <option>Main Project</option>
         </select>
         {/* <input className="protype" placeholder="Project Type" /> */}
-        {/* <select className="year" ref={yearRef}>
-          <option>a</option>
-          <option>b</option>
-          <option>c</option>
-          <option>d</option>
-          <option>e</option>
-        </select> */}
+
         <input
           className="year"
           placeholder="Year"
@@ -93,10 +87,23 @@ const TeamCreate = () => {
         <input className="coordinator01" placeholder="Coordinator's Email ID" type="email" value={coordinator} onChange={(event) => setcoordinator(event.target.value)}/>
         <input className="guide" placeholder="Guide's Email ID" type="email" value={guide} onChange={(event) => setguide(event.target.value)}/>
         <div className="bgrect"></div>
+<<<<<<< HEAD
         <button
           className="submit"
           type="submit">
             submit</button>
+=======
+        <Link to="profilestudent">
+          <input
+            className="submit"
+            type="submit"
+            value="Submit"
+            onClick={() => {
+              console.log("sdfsfd");
+            }}
+          />
+        </Link>
+>>>>>>> 96353d627cae1adb7dfe5afb690506f3514fa51a
       </form>
     </div>
   );
