@@ -14,16 +14,16 @@ const Student = require('../models/studentmodel');
 
 const loginadminController = async (req,res)=> {
     try {
-        const user = await adminModel.findOne({username:req.body.username})
+        const user = await adminModel.findOne({email:req.body.username})
         if(!user)
         {
-            return res.status(200).send({message:"user not found",success:false})
+            return res.status(404).send({message:"user not found",success:false})
 
         }
         const isMatch = await bcrypt.compare(req.body.password,user.password)
         if(!isMatch)
         {
-            return res.status(200).send({message:"invalid email or password", success:false})
+            return res.status(204).send({message:"invalid email or password", success:false})
 
         }
         const token = jwt.sign({id:user._id},process.env.JWT_SECRET,{expiresIn: "1d"});

@@ -30,7 +30,7 @@ router.post('/getGuideData',authmiddleware, authguideController)
 router.post('/getCoordinatorData',authmiddleware, authcordinatorController)
 
 
-router.post('/addteammembers',teamaddcontroller)
+router.post('/teamcreate',teamaddcontroller)
 router.post('/adminlogin',loginadminController)
 router.post('/search',searchController)
 

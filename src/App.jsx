@@ -11,6 +11,7 @@ import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
 import TeamCreate from "./pages/teamcreate";
 import SignupCoordinator from "./pages/signupcoordinator";
+<<<<<<< Updated upstream
 import StudentList from "./pages/studentlist";
 import ProjectDetails from "./pages/projectdetails";
 import GuideHome from "./pages/profileguide";
@@ -19,6 +20,9 @@ import LoginGuide from "./pages/guidelogin";
 import LoginCoordinator from "./pages/coordinatorlogin";
 import SignupGuide from "./pages/signupguide";
 // import StudentHome from "./pages/"
+=======
+import Timeline from "./pages/timeline";
+>>>>>>> Stashed changes
 
 import React from "react";
 import "./App.css";
@@ -30,11 +34,16 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* home page */}
+<<<<<<< Updated upstream
           <Route exact path="/" element={<Home />} />
           <Route path="/studentlogin" element={<LoginStudent />} />
           <Route path="/guidelogin" element={<LoginGuide />} />
           <Route path="/adminlogin" element={<LoginAdmin />} />
           <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
+=======
+          <Route exact path="/" element={<Timeline />} />
+          <Route path="/login" element={<Login />} />
+>>>>>>> Stashed changes
           <Route path="/miniproject" element={<MiniList />} />
           <Route path="/mainproject" element={<MainList />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
@@ -63,8 +72,12 @@ function App() {
           <Route path="/adminhomepage" element={<AdminHome />} />
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
+<<<<<<< Updated upstream
           <Route path="/ studentlist" element={<StudentList />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
+=======
+          <Route path="/timepage" element={<Timeline />} />
+>>>>>>> Stashed changes
         </Routes>
       </BrowserRouter>
     </>
