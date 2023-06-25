@@ -22,7 +22,7 @@ export default function Home() {
 
       <img className="logo"></img>
 
-      <Link to="/src/pages/loginpage.jsx">
+      <Link to="login">
         <div className="login_key">Login</div>
       </Link>
 
@@ -43,13 +43,13 @@ export default function Home() {
       <div className="mini_rect"></div>
       <div className="bgrect"></div>
 
-      <Link to="./miniprojectlist.jsx">
+      <Link to="/miniproject">
         <p className="miniproject">Mini Project</p>
       </Link>
 
       <div className="main_rect"></div>
 
-      <Link to="./mainprojectlist.jsx">
+      <Link to="/mainproject">
         <p className="mainproject">Main Project</p>
       </Link>
 
@@ -57,7 +57,7 @@ export default function Home() {
 
       <div className="signup_rect"></div>
 
-      <Link to="/src/pages/selectingtype.jsx">
+      <Link to="/usertype">
         <p className="getstarted">Get Started</p>
       </Link>
     </div>

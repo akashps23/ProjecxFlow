@@ -18,7 +18,7 @@ export default function ForgotPassword() {
         placeholder={"Answer"}
         onClick={(event) => (event.target.value = "")}
       ></input>
-      <Link to="/src/pages/loginpage.jsx">
+      <Link to="/login">
         <div className="submit">Submit</div>
       </Link>
     </div>

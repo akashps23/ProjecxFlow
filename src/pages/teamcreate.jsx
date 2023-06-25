@@ -24,13 +24,7 @@ function TeamCreate() {
           <option>Main Project</option>
         </select>
         {/* <input className="protype" placeholder="Project Type" /> */}
-        {/* <select className="year" ref={yearRef}>
-          <option>a</option>
-          <option>b</option>
-          <option>c</option>
-          <option>d</option>
-          <option>e</option>
-        </select> */}
+
         <input
           className="year"
           placeholder="Year"
@@ -46,14 +40,16 @@ function TeamCreate() {
         <input className="coordinator02" placeholder="Coordinator's Email ID" />
         <input className="guide" placeholder="Guide's Email ID" />
         <div className="bgrect"></div>
-        <input
-          className="submit"
-          type="submit"
-          value="Submit"
-          onClick={() => {
-            console.log("sdfsfd");
-          }}
-        />
+        <Link to="profilestudent">
+          <input
+            className="submit"
+            type="submit"
+            value="Submit"
+            onClick={() => {
+              console.log("sdfsfd");
+            }}
+          />
+        </Link>
       </form>
     </div>
   );

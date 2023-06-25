@@ -12,6 +12,8 @@ import ProfileCoordinator from "./pages/profilecoordinator";
 import ProfileGuide from "./pages/profileguide";
 import ProfileStudent from "./pages/profilestudent";
 import SignupCoordinator from "./pages/signupcoordinator";
+// import StudentList from "./pages/studentlist";
+import ProjectDetails from "./pages/projectdetails";
 
 import React from "react";
 import "./App.css";
@@ -41,6 +43,8 @@ function App() {
           <Route path="/profilecoordinator" element={<ProfileCoordinator />} />
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
+          {/* <Route path="/ studentlist" element={<StudentList />} /> */}
+          <Route path="/projectdetails" element={<ProjectDetails />} />
         </Routes>
       </BrowserRouter>
     </>

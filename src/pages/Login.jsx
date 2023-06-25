@@ -13,16 +13,17 @@ export default function Login() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9013/api/v1/user/studentlogin",
+        "http://localhost:9013/api/v1/user/studentlogin",
         {
           email,
           password,
-        });
+        }
+      );
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         message.success("Login Successful");
-       // navigate("/studenthomepage");
-       console.log(response)
+        // navigate("/studenthomepage");
+        console.log(response);
 
         // Reset the form
         setUsername("");
@@ -58,16 +59,16 @@ export default function Login() {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-        </form>
-        <Link to="/src/pages/forgotpassword.jsx">
-          <p className="forgot_pass">Forgot Password</p>
-        </Link>
-        <Link to="/src/pages/selectingtype.jsx">
-          <p className="create_acc">Create an Account</p>
-        </Link>
-        <p className="welcome">Welcome Back</p>
-        <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
+      </form>
+      <Link to="/forgotpassword">
+        <p className="forgot_pass">Forgot Password</p>
+      </Link>
+      <Link to="/usertype">
+        <p className="create_acc">Create an Account</p>
+      </Link>
+      <p className="welcome">Welcome Back</p>
+      <div className="line"></div>
+      <p className="tagline">A Complete Solution for Managing Projects </p>
     </div>
   );
 }
