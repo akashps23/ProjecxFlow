@@ -13,11 +13,7 @@ export default function LoginStudent() {
     event.preventDefault();
     try {
       const response = await axios.post(
-<<<<<<< HEAD:src/pages/Login.jsx
-        "http://localhost:9013/api/v1/user/studentlogin",
-=======
-      "http://localhost:9014/api/v1/user/studentlogin",
->>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad:src/pages/studentlogin.jsx
+        "http://localhost:9014/api/v1/user/studentlogin",
         {
           email,
           password,
@@ -25,15 +21,10 @@ export default function LoginStudent() {
       );
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
-        localStorage.setItem("studentId", response.data.studentId)
+        localStorage.setItem("studentId", response.data.studentId);
         message.success("Login Successful");
-<<<<<<< HEAD:src/pages/Login.jsx
-        // navigate("/studenthomepage");
+        navigate("/studenthomepage");
         console.log(response);
-=======
-       navigate("/studenthomepage");
-       console.log(response)
->>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad:src/pages/studentlogin.jsx
 
         // Reset the form
         setUsername("");
@@ -69,29 +60,16 @@ export default function LoginStudent() {
           placeholder="Password"
           onChange={(event) => setPassword(event.target.value)}
         />
-<<<<<<< HEAD:src/pages/Login.jsx
       </form>
-      <Link to="/forgotpassword">
+      <Link to="/forgotpasswordstudent">
         <p className="forgot_pass">Forgot Password</p>
       </Link>
-      <Link to="/usertype">
+      <Link to="/studentsignup">
         <p className="create_acc">Create an Account</p>
       </Link>
       <p className="welcome">Welcome Back</p>
       <div className="line"></div>
       <p className="tagline">A Complete Solution for Managing Projects </p>
-=======
-        </form>
-        <Link to="/forgotpasswordstudent">
-          <p className="forgot_pass">Forgot Password</p>
-        </Link>
-        <Link to="/studentsignup">
-          <p className="create_acc">Create an Account</p>
-        </Link>
-        <p className="welcome">Welcome Back</p>
-        <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
->>>>>>> 7fa7ad6c283dc372a69dbcf3fe0f0a4d19bf90ad:src/pages/studentlogin.jsx
     </div>
   );
 }
