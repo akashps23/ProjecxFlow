@@ -28,9 +28,9 @@ html {
 	height: 5%;
 	align-content: center;
 	left: calc(55% - 30%);
-	top: 3%;
+	top: 3.5%;
     z-index: 1;
-	font-size: 10rem;
+	font-size: 6rem;
 	font-family: 'Helvetica';
 	font-weight: 600;
 	color: #292929;
@@ -189,24 +189,7 @@ html {
 	padding: 20px;
 	width: 25%;
 	height: 2%;
-	left: 5%;
-	top: 75%;
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 600;
-	font-size: 19px;
-	line-height: 36px;
-	background-color: #E2E2E2;
-	border-radius: 10px;
-	color: #000000;
-  }
-  .team .coordinator02{
-	position: absolute;
-	align-content: center;
-	padding: 20px;
-	width: 25%;
-	height: 2%;
-	left: 36%;
+	left: 15%;
 	top: 75%;
 	font-family: 'Poppins';
 	font-style: normal;
@@ -223,7 +206,7 @@ html {
 	padding: 20px;
 	width: 25%;
 	height: 2%;
-	left: 66%;
+	left: 55%;
 	top: 75%;
 	font-family: 'Poppins';
 	font-style: normal;
@@ -236,15 +219,13 @@ html {
 	
   }
   .team .submit {
-	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 45%;
-	top: 88%;
+	position: relative;
+	top: 100rem;
+	left: 0px;
 	text-align: center;
-	font-family: 'Helvetica';
 	font-weight: 600;
 	font-size: 1.2vw;
+	z-index: 1;
 	line-height: 1;
 	color: #ffffff;
 	background-color: #1d1d1d;
@@ -253,7 +234,7 @@ html {
 }
   .team .bgrect {
 	width: 100vw;
-	height: 30rem;
+	height: 20rem;
 	position: absolute;
 	top: 0rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

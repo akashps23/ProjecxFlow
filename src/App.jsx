@@ -1,28 +1,35 @@
+//home
 import Home from "./pages/homepage";
-import LoginStudent from "./pages/studentlogin";
 import UserType from "./pages/selectingtype";
-import AdminHome from "./pages/profileadmin";
+import TeamCreate from "./pages/teamcreate";
+
+//login pages
+import LoginStudent from "./pages/studentlogin";
+import LoginCoordinator from "./pages/coordinatorlogin";
+import LoginGuide from "./pages/guidelogin";
+import LoginAdmin from "./pages/adminlogin";
+
+//signup pages
 import SignupStudent from "./pages/signupstudent";
-import MiniList from "./pages/miniprojectlist";
-import MainList from "./pages/mainprojectlist";
-import ProjectSearch from "./pages/projectsearch";
+import SignupCoordinator from "./pages/signupcoordinator";
+import SignupGuide from "./pages/signupguide";
+
+//forgot password
 import ForgotPasswordStudent from "./pages/forgotpasswordstudent";
 import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
-import TeamCreate from "./pages/teamcreate";
-import SignupCoordinator from "./pages/signupcoordinator";
-<<<<<<< Updated upstream
-import StudentList from "./pages/studentlist";
-import ProjectDetails from "./pages/projectdetails";
-import GuideHome from "./pages/profileguide";
-import LoginAdmin from "./pages/adminlogin";
-import LoginGuide from "./pages/guidelogin";
-import LoginCoordinator from "./pages/coordinatorlogin";
-import SignupGuide from "./pages/signupguide";
-// import StudentHome from "./pages/"
-=======
+
+//features
+import MiniList from "./pages/miniprojectlist";
+import MainList from "./pages/mainprojectlist";
+import ProjectSearch from "./pages/projectsearch";
 import Timeline from "./pages/timeline";
->>>>>>> Stashed changes
+
+//home profile
+import AdminHome from "./pages/profileadmin";
+import CoordinatorHome from "./pages/profilecoordinator";
+import GuideHome from "./pages/profileguide";
+import StudentHome from "./pages/profilestudent";
 
 import React from "react";
 import "./App.css";
@@ -34,21 +41,23 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* home page */}
-<<<<<<< Updated upstream
           <Route exact path="/" element={<Home />} />
-          <Route path="/studentlogin" element={<LoginStudent />} />
-          <Route path="/guidelogin" element={<LoginGuide />} />
-          <Route path="/adminlogin" element={<LoginAdmin />} />
-          <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
-=======
-          <Route exact path="/" element={<Timeline />} />
-          <Route path="/login" element={<Login />} />
->>>>>>> Stashed changes
+
+          {/* features */}
           <Route path="/miniproject" element={<MiniList />} />
           <Route path="/mainproject" element={<MainList />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
+          <Route path="/teamcreate" element={<TeamCreate />} />
+          <Route path="/timepage" element={<Timeline />} />
+
+          {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
-          {/* login page */}
+          <Route path="/studentlogin" element={<LoginStudent />} />
+          <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
+          <Route path="/guidelogin" element={<LoginGuide />} />
+          <Route path="/adminlogin" element={<LoginAdmin />} />
+
+          {/* Forgot Password */}
           <Route
             path="/forgotpasswordstudent"
             element={<ForgotPasswordStudent />}
@@ -61,23 +70,18 @@ function App() {
             path="/forgotpasswordcoordinator"
             element={<ForgotPasswordCoordinator />}
           />
-          {/* SignUp */}
+
+          {/* SignUp Pages */}
+
           <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
           <Route path="/studentsignup" element={<SignupStudent />} />
           <Route path="/guidesignup" element={<SignupGuide />} />
-          {/* Profiles */}
-          <Route path="/guidehomepage" element={<GuideHome />} />
-          {/* <Route path="/studenthomepage" element={<StudentHome />} /> */}
-          {/* <Route path="/coordinatorhomepage" element={<CoordinatorHome />} /> */}
+
+          {/* Home Pages */}
           <Route path="/adminhomepage" element={<AdminHome />} />
-          {/* Team Create */}
-          <Route path="/teamcreate" element={<TeamCreate />} />
-<<<<<<< Updated upstream
-          <Route path="/ studentlist" element={<StudentList />} />
-          <Route path="/projectdetails" element={<ProjectDetails />} />
-=======
-          <Route path="/timepage" element={<Timeline />} />
->>>>>>> Stashed changes
+          <Route path="/guidehomepage" element={<GuideHome />} />
+          <Route path="/studenthomepage" element={<StudentHome />} />
+          <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
         </Routes>
       </BrowserRouter>
     </>
