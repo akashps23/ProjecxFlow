@@ -26,12 +26,17 @@ app.use(morgan('dev'))
 
 //routes
 
-/*app.get("/",(req,res) => {
-    res.status(200).send({
-        message:"server running",  
-    });
+// /*app.get("/",(req,res) => {
+//     res.status(200).send({
+//         message:"server running",  
+//     });
 
-});*/
+// });*/
+
+
+app.get('/',(req,res)=>{
+    res.status(200).json({message:"Hello world"})
+})
 const userroute = require('./routes/userroute');
 app.use('/api/v1/user', userroute);
 //listen
