@@ -25,10 +25,8 @@ body {
 }
 .projectsearch .title {
     position: relative;
-	width: 45%;
-	height: 4%;
+
 	align-content: center;
-	left:13%;
 	top: 9.2%;
     z-index: 1;
 	font-size: 3rem;
@@ -36,19 +34,7 @@ body {
 	font-weight: 500;
 	color: #292929;
 }
-.projectsearch .search {
-    position: relative;
-	width: 45%;
-	height: 4%;
-	text-align: left;
-	left:36%;
-	top: 5%;
-    z-index: 1;
-	font-size: 3rem;
-	font-family: 'Helvetica';
-	font-weight: 600;
-	color: #292929;
-}
+
 .projectsearch .search_rect {
 	position: relative;
 	width: 60%;
@@ -76,10 +62,14 @@ body {
 	background-position: center;
 
 }
+.projectsearch .searchResults{
+	top :10rem;
+	
+}
 
 .projectsearch .bgrect {
 	width: 100vw;
-	height: 15rem;
+	height: 20rem;
 	position: relative;
 	top: -24rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

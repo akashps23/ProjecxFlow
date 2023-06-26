@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "../styles/profileguide.css";
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
 const GuideHome = () => {
   const [userData, setUserData] = useState(null);
@@ -9,11 +9,11 @@ const GuideHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:9014/api/v1/user/getGuideData',
+        "http://localhost:9014/api/v1/user/getGuideData",
         {},
         {
           headers: {
-            Authorization: 'Bearer ' + localStorage.getItem('token'),
+            Authorization: "Bearer " + localStorage.getItem("token"),
           },
         }
       );
@@ -31,11 +31,11 @@ const GuideHome = () => {
   return (
     <div className="guide">
       <button className="mini">
-        <Link to="./miniprojectlist.jsx">Mini Projects</Link>
+        <Link to="/miniproject">Mini Projects</Link>
       </button>
 
       <button className="main">
-        <Link to="./mainprojectlist.jsx">Main Projects</Link>
+        <Link to="/mainproject">Main Projects</Link>
       </button>
       {userData ? (
         <>
@@ -47,16 +47,22 @@ const GuideHome = () => {
       )}
 
       <button className="student">
-        <Link to="./studentlist.jsx">Students List</Link>
+        <Link to="/studentlist">Students List</Link>
       </button>
 
       <button className="mine">
-        <Link to="./myprojects.jsx">Under My Guidance</Link>
+        <Link to="/myprojects">Under My Guidance</Link>
       </button>
-
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Project Guide</p>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
+      <div className="bgrect"></div>
       <div className="bgrect"></div>
     </div>
   );
-}
+};
 
 export default GuideHome;

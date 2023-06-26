@@ -24,6 +24,12 @@ import MiniList from "./pages/miniprojectlist";
 import MainList from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
 import Timeline from "./pages/timeline";
+import StudentList from "./pages/studentlist";
+import GuideList from "./pages/guidelist";
+import MyProjects from "./pages/myprojects";
+import GuidanceProject from "./pages/guidanceproject";
+import CoordinatorList from "./pages/coordinatorlist";
+import History from "./pages/history";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
@@ -49,6 +55,12 @@ function App() {
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/timepage" element={<Timeline />} />
+          <Route path="/studentlist" element={<StudentList />} />
+          <Route path="/guidelist" element={<GuideList />} />
+          <Route path="/myprojects" element={<MyProjects />} />
+          <Route path="/guidanceproject" element={<GuidanceProject />} />
+          <Route path="/coordinatorlist" element={<CoordinatorList />} />
+          <Route path="/history" element={<History />} />
 
           {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
