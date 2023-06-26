@@ -20,7 +20,7 @@ import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
 import StudentList from "./pages/studentlist";
 import ProjectDetails from "./pages/projectdetails";
-import Calendar from "./pages/calendar";
+// import Calendar from "./pages/calendar";
 // import StudentHome from "./pages/"
 //import Timeline from "./pages/timeline";
 
@@ -73,7 +73,6 @@ function App() {
 
           {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
-          <Route path="/calendar" element={<Calendar />} />
           {/* login page */}
           <Route
             path="/forgotpasswordstudent"
