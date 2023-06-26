@@ -9,7 +9,7 @@ const StudentHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/getStudentData",
+        "https://server-bfex.onrender.com/api/v1/user/getStudentData",
         {},
         {
           headers: {

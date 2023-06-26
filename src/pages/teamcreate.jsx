@@ -24,7 +24,7 @@ const TeamCreate = () => {
     try {
       // Send the form data to the backend API
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/teamcreate",
+        "https://server-bfex.onrender.com/api/v1/user/teamcreate",
         {
           title,
           type,

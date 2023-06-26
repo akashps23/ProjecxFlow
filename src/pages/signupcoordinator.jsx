@@ -23,7 +23,7 @@ const SignupCoordinator = () => {
 
     try {
       // Send the form data to the backend API
-      const response = await axios.post('http://localhost:9014/api/v1/user/coordinatorsignup', {
+      const response = await axios.post('https://server-bfex.onrender.com/api/v1/user/coordinatorsignup', {
         name,
         phoneno,
         email,
