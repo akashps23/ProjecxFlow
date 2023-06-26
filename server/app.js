@@ -4,6 +4,8 @@ const morgan = require('morgan')
 const dotenv= require('dotenv');
 const connectdb = require('./config/db');
 const cors = require('cors');
+const userroute = require('./routes/userroute');
+
 
 //rest obj
 const app = express()
@@ -44,7 +46,6 @@ app.listen(port,() =>{
 app.get('/',(req,res)=>{
     res.status(200).json({message:"Hello world"})
 })
-const userroute = require('./routes/userroute');
 app.use('/api/v1/user', userroute);
 
 
