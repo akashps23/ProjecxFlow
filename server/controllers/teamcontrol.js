@@ -2,6 +2,10 @@ const teamModel = require('../models/teammodel')
 const guideModel = require('../models/guidemodel')
 const studentModel = require('../models/studentmodel')
 const cordinatorModel = require('../models/cordinatormodel')
+const projectModel =require('../models/projectmodel')
+const jwt =require('jsonwebtoken');
+const express = require('express');
+const app = express();
 
 
 const teamaddcontroller = async (req, res) => {
@@ -22,6 +26,11 @@ const teamaddcontroller = async (req, res) => {
   
       const newUser = new teamModel(req.body);
       await newUser.save();
+      const newProject = new projectModel()
+      newProject.title=req.body.title
+      newProject.year=req.body.year
+      newProject.type=req.body.type
+      await newProject.save();
       const token = jwt.sign({id:newUser._id},process.env.JWT_SECRET,{expiresIn: "1d"});
       res.status(200).send({message:'Team creation successful', success: true, token:token})
     } catch (error) {

@@ -2,6 +2,7 @@ const express = require('express')
 const { loginstudentController, loginguideController, logincordinatorController, signupstudentController, signupguideController , signupcordinatorController , authstudentController , authguideController , authcordinatorController , loginadminController } = require('../controllers/usercontrol')
 const {teamaddcontroller}  = require('../controllers/teamcontrol')
 const {searchController} = require('../controllers/search')
+const {calendargetAllEvents,calendardeleteEvent,calendarcreateEvent} =require('../controllers/calendar')
 const {forgotpasswordstudentController,forgotpasswordguideController,forgotpasswordcoordinatorController} = require('../controllers/passwordcontrol')
 const authmiddleware = require('../middleware/authmiddleware')
 
@@ -38,5 +39,9 @@ router.post('/search',searchController)
 router.post('/forgotpasswordstudent',forgotpasswordstudentController)
 router.post('/forgotpasswordguide',forgotpasswordguideController)
 router.post('/forgotpasswordcoordinator',forgotpasswordcoordinatorController)
+
+router.post('/events', calendargetAllEvents);
+router.post('/events', calendarcreateEvent);
+router.post('/events/:id', calendardeleteEvent);
 
 module.exports=router

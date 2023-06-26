@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { message } from 'antd';
 
 import "../styles/teamcreate.css";
 
 const TeamCreate = () => {
     // alert(yearRef.current.value);
   const [title, settitle] = useState('');
-    const [type, settype] = useState('');
+  const [type, settype] = useState('Mini Project');
     const [coordinator, setcoordinator] = useState('');
     const [guide, setguide] = useState('');
     const [member1, setmember1] = useState('');
@@ -40,7 +41,7 @@ const TeamCreate = () => {
   if (response.data.success) {
     localStorage.setItem("token", response.data.token);
     message.success("Team creation Successful");
-   navigate("/teamhomepage");
+   //navigate("/teamhomepage");
 
     // Reset the form
     settitle("");
@@ -54,6 +55,7 @@ const TeamCreate = () => {
     setmember4("");
 
   }
+
 } catch (error) {
   console.error(error);
 }
@@ -87,23 +89,8 @@ const TeamCreate = () => {
         <input className="coordinator01" placeholder="Coordinator's Email ID" type="email" value={coordinator} onChange={(event) => setcoordinator(event.target.value)}/>
         <input className="guide" placeholder="Guide's Email ID" type="email" value={guide} onChange={(event) => setguide(event.target.value)}/>
         <div className="bgrect"></div>
-<<<<<<< HEAD
-        <button
-          className="submit"
-          type="submit">
-            submit</button>
-=======
-        <Link to="profilestudent">
-          <input
-            className="submit"
-            type="submit"
-            value="Submit"
-            onClick={() => {
-              console.log("sdfsfd");
-            }}
-          />
-        </Link>
->>>>>>> 96353d627cae1adb7dfe5afb690506f3514fa51a
+        <button className="submit" type="submit">submit</button>
+        
       </form>
     </div>
   );

@@ -11,7 +11,6 @@ import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
 import TeamCreate from "./pages/teamcreate";
 import SignupCoordinator from "./pages/signupcoordinator";
-<<<<<<< Updated upstream
 import StudentList from "./pages/studentlist";
 import ProjectDetails from "./pages/projectdetails";
 import GuideHome from "./pages/profileguide";
@@ -19,10 +18,9 @@ import LoginAdmin from "./pages/adminlogin";
 import LoginGuide from "./pages/guidelogin";
 import LoginCoordinator from "./pages/coordinatorlogin";
 import SignupGuide from "./pages/signupguide";
+import Calendar from "./pages/calendar";
 // import StudentHome from "./pages/"
-=======
-import Timeline from "./pages/timeline";
->>>>>>> Stashed changes
+//import Timeline from "./pages/timeline";
 
 import React from "react";
 import "./App.css";
@@ -34,20 +32,17 @@ function App() {
       <BrowserRouter>
         <Routes>
           {/* home page */}
-<<<<<<< Updated upstream
           <Route exact path="/" element={<Home />} />
           <Route path="/studentlogin" element={<LoginStudent />} />
           <Route path="/guidelogin" element={<LoginGuide />} />
           <Route path="/adminlogin" element={<LoginAdmin />} />
           <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
-=======
-          <Route exact path="/" element={<Timeline />} />
-          <Route path="/login" element={<Login />} />
->>>>>>> Stashed changes
+          
           <Route path="/miniproject" element={<MiniList />} />
           <Route path="/mainproject" element={<MainList />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/usertype" element={<UserType />} />
+          <Route path="/calendar" element={<Calendar />} />
           {/* login page */}
           <Route
             path="/forgotpasswordstudent"
@@ -72,12 +67,9 @@ function App() {
           <Route path="/adminhomepage" element={<AdminHome />} />
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
-<<<<<<< Updated upstream
           <Route path="/ studentlist" element={<StudentList />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
-=======
-          <Route path="/timepage" element={<Timeline />} />
->>>>>>> Stashed changes
+          
         </Routes>
       </BrowserRouter>
     </>
@@ -85,3 +77,9 @@ function App() {
 }
 
 export default App;
+
+
+
+
+//<Route  path="/timeline" element={<Timeline />} />
+//<Route path="/timepage" element={<Timeline />} />
