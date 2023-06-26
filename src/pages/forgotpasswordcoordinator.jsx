@@ -13,7 +13,7 @@ export default function ForgotPasswordCoordinator() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/forgotpasswordcoordinator",
+      "https://server-bfex.onrender.com/api/v1/user/forgotpasswordcoordinator",
         {
           email,
           answer,

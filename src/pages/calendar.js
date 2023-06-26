@@ -44,7 +44,7 @@ async function saveEvent() {
     };
 
     try {
-      const response = await axios.post('http://localhost:9014/api/v1/user/events', newEvent);
+      const response = await axios.post('https://server-bfex.onrender.com/api/v1/user/events', newEvent);
       events.push(response.data);
       closeModal();
     } catch (error) {
@@ -57,7 +57,7 @@ async function saveEvent() {
 
 async function deleteEvent() {
   try {
-    await axios.delete(`http://localhost:9014/api/v1/user/events/${clicked}`);
+    await axios.delete(`https://server-bfex.onrender.com/api/v1/user/events/${clicked}`);
     events = events.filter(e => e.date !== clicked);
     closeModal();
   } catch (error) {
