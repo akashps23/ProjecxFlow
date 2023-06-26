@@ -28,77 +28,131 @@ html {
 	height: 5%;
 	align-content: center;
 	left: calc(55% - 30%);
-	top: 25%;
+	top: 20%;
     z-index: 1;
-	
-	font-size: 10rem;
+	font-size: 6rem;
 	font-family: 'Helvetica';
-	font-weight: 600;
+	font-weight: 550;
 	color: #000000;
   }
   .coordinator .mini{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
-	left : 15%;
+	left :15%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
   .coordinator .main{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
 	left :39%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
   .coordinator .student{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
 	left :65%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
   .coordinator .guide{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
 	left :15%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
   .coordinator .mine{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
 	left :39%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
   .coordinator .guidance{
-	width: 75rem;
-	height : 30rem;
+	width: 40rem;
+	height : 20rem;
 	position: absolute;
 	left :65%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 8rem;
+	font-size: 4.5rem;
   }
+	.coordinator .logo {
+	width: 6rem;  
+	height: 4rem;
+	position: absolute;
+	left: 5rem;
+	top: 3.5rem;
+	z-index: 1;
+	background-size: 100% 120%;
+	background-position: 0rem;
+	background-image: url('../assets/logo.png');
+	object-fit: cover;
+	vertical-align: top;
+  }
+  .coordinator .usertype {
+	width: 24.4rem;
+	height: 6.7rem;
+	position: absolute;
+	left: 14rem;
+	top: 5rem;
+	z-index: 1;
+	font-size: 3.5rem;
+	font-weight: 500;
+	line-height: 1.1075;
+	color: #050505;
+	word-spacing: 0rem;
+	font-family: 'Source Sans Pro';
+	white-space: nowrap;
+  }
+  .coordinator .line {
+	width: 0.2rem;
+	height: 5rem;
+	position: absolute;
+	z-index: 1;
+	left: 15rem;
+	top: 4.5rem;
+	opacity: 45%;
+	background-color: #000000;
+  }
+  .coordinator .logout{
+	position: relative;
+	width: 8%;
+	height: 6%;
+	left: 215rem;
+	top: 2.5rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+
+}
   .coordinator .bgrect {
 	width: 100vw;
-	height: 25rem;
+	height: 15rem;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;

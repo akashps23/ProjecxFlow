@@ -6,33 +6,35 @@ import { Link, useNavigate } from "react-router-dom";
 import { Button, message } from "antd";
 import axios from "axios";
 
-
 const SignupGuide = () => {
-  const navigate=useNavigate()
-  const [name, setname] = useState('');
-  const [phoneno, setPhoneno] = useState('');
-  const [email, setEmail] = useState('');
-  const [college, setCollege] = useState('');
-  const [dept, setDept] = useState('');
-  const [password, setPassword] = useState('');
-  const [fid, setFid] = useState('');
-  const [answer, setAnswer] = useState('');
+  const navigate = useNavigate();
+  const [name, setname] = useState("");
+  const [phoneno, setPhoneno] = useState("");
+  const [email, setEmail] = useState("");
+  const [college, setCollege] = useState("");
+  const [dept, setDept] = useState("");
+  const [password, setPassword] = useState("");
+  const [fid, setFid] = useState("");
+  const [answer, setAnswer] = useState("");
 
   const handleguideSignup = async (event) => {
     event.preventDefault();
 
     try {
       // Send the form data to the backend API
-      const response = await axios.post('http://localhost:9014/api/v1/user/guidesignup', {
-        name,
-        phoneno,
-        email,
-        college,
-        dept,
-        password,
-        fid,
-        answer
-      });
+      const response = await axios.post(
+        "http://localhost:9014/api/v1/user/guidesignup",
+        {
+          name,
+          phoneno,
+          email,
+          college,
+          dept,
+          password,
+          fid,
+          answer,
+        }
+      );
       if (response.data.success) {
         message.success("Registered Successfully", () => {
           navigate("/guidelogin");
@@ -41,7 +43,7 @@ const SignupGuide = () => {
         message.error("Registration Failed");
       }
       console.log(response.data);
-    }catch (error) {
+    } catch (error) {
       console.error(error);
     }
   };
@@ -122,8 +124,6 @@ const SignupGuide = () => {
       </form>
     </div>
   );
-}
+};
 
-export default  SignupGuide;
-
-
+export default SignupGuide;

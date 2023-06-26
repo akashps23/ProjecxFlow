@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import "../styles/profilestudent.css";
+import { Link } from "react-router-dom";
 
 const StudentHome = () => {
   const [userData, setUserData] = useState(null);
@@ -8,11 +9,11 @@ const StudentHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:9014/api/v1/user/getStudentData',
+        "http://localhost:9014/api/v1/user/getStudentData",
         {},
         {
           headers: {
-            Authorization: 'Bearer ' + localStorage.getItem('token'),
+            Authorization: "Bearer " + localStorage.getItem("token"),
           },
         }
       );
@@ -38,9 +39,16 @@ const StudentHome = () => {
       ) : (
         <p>Loading...</p>
       )}
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Student</p>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
+      <div className="bgrect"></div>
       <div className="bgrect"></div>
     </div>
   );
-}
+};
 
 export default StudentHome;

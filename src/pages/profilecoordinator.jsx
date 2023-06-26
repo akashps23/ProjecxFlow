@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 import "../styles/profilecoordinator.css";
 import { Link } from "react-router-dom";
-import axios from 'axios';
+import axios from "axios";
 
 const CoordinatorHome = () => {
   const [userData, setUserData] = useState(null);
@@ -9,11 +9,11 @@ const CoordinatorHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        'http://localhost:9014/api/v1/user/getCoordinatorData',
+        "http://localhost:9014/api/v1/user/getCoordinatorData",
         {},
         {
           headers: {
-            Authorization: 'Bearer ' + localStorage.getItem('token'),
+            Authorization: "Bearer " + localStorage.getItem("token"),
           },
         }
       );
@@ -39,27 +39,35 @@ const CoordinatorHome = () => {
       ) : (
         <p>Loading...</p>
       )}
-      <button className="mini">
-        <Link to="./miniprojectlist.jsx">Mini Projects</Link>
-      </button>
-      <button className="main">
-        <Link to="./mainprojectlist.jsx">Main Projects</Link>
-      </button>
-      <button className="student">
-        <Link to="./studentlist.jsx">Students List</Link>
-      </button>
-      <button className="guide">
-        <Link to="./guidelist.jsx">Guides List</Link>
-      </button>
-      <button className="mine">
-        <Link to="./myprojects.jsx">My Projects</Link>
-      </button>
-      <button className="guidance">
-        <Link to="./guidanceproject.jsx">Under My Guidance</Link>
-      </button>
+
+      <Link to="/miniproject">
+        <button className="mini">Mini Projects</button>
+      </Link>
+
+      <Link to="/mainproject">
+        <button className="main">Main Projects</button>
+      </Link>
+      <Link to="/studentlist">
+        <button className="student">Students List</button>
+      </Link>
+      <Link to="/guidelist">
+        <button className="guide">Guides List</button>
+      </Link>
+      <Link to="/myprojects">
+        <button className="mine">My Projects</button>
+      </Link>
+      <Link to="/guidanceproject">
+        <button className="guidance">Under My Guidance</button>
+      </Link>
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Coordinator</p>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
       <div className="bgrect"></div>
     </div>
   );
-}
+};
 
 export default CoordinatorHome;

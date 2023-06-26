@@ -12,13 +12,16 @@ export default function ProjectSearch() {
   useEffect(() => {
     const fetchSearchResults = async () => {
       try {
-        const response = await fetch("http://localhost:9014/api/v1/user/search", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ searchQuery: txt }),
-        });
+        const response = await fetch(
+          "http://localhost:9014/api/v1/user/search",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ searchQuery: txt }),
+          }
+        );
 
         if (response.ok) {
           const data = await response.json();
@@ -39,7 +42,7 @@ export default function ProjectSearch() {
       <div className="projectsearch">
         <div className="search_rect"></div>
         <img className="searchimg"></img>
-        <p className="title">Similar Projects Like {txt}</p>
+        <p className="title">Similar projects like " {txt} "</p>
         <div className="bgrect"></div>
       </div>
       <div className="searchResults">

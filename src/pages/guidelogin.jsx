@@ -66,6 +66,13 @@ export default function LoginGuide() {
         <Link to="/guidesignup">
           <p className="create_acc">Create an Account</p>
         </Link>
+        <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Coordinator</p>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
+      <div className="bgrect"></div>
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>
         <p className="tagline">A Complete Solution for Managing Projects </p>

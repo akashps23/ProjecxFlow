@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function AdminHome() {
   return (
     <div className="admin_profile">
-      <p className="title">Welcome Admin</p>
+      <p className="title">Welcome</p>
       <button className="mini">
         <Link to="/miniproject">Mini Projects</Link>
       </button>
@@ -16,14 +16,21 @@ export default function AdminHome() {
         <Link to="/studentlist">Students List</Link>
       </button>
       <button className="guide">
-        <Link to="./guidelist.jsx">Guides List</Link>
+        <Link to="/guidelist">Guides List</Link>
       </button>
       <button className="coordinator">
-        <Link to="./coordinatorlist.jsx">Coordinators List</Link>
+        <Link to="/coordinatorlist">Coordinators List</Link>
       </button>
       <button className="move">
-        <Link to="./history.jsx">Moved Projects</Link>
+        <Link to="/history">Projects History</Link>
       </button>
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Administrator</p>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
+      <div className="bgrect"></div>
       <div className="bgrect"></div>
     </div>
   );
