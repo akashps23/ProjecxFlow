@@ -35,11 +35,11 @@ app.use(morgan('dev'))
 const userroute = require('./routes/userroute');
 app.use('/api/v1/user', userroute);
 //listen
-//const port= process.env.PORT
-//app.listen(port,() =>{
-   // console.log(`SERver running in port ${port} `.bgCyan.white );
+const port= 9014
+app.listen(port,() =>{
+   console.log(`SERver running in port ${port} `.bgCyan.white );
+})
 
-;
 
 
 
