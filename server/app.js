@@ -34,18 +34,18 @@ app.use(morgan('dev'))
 // });*/
 
 
-app.get('/',(req,res)=>{
-    res.status(200).json({message:"Hello world"})
-})
-const userroute = require('./routes/userroute');
-app.use('/api/v1/user', userroute);
+
 //listen
 const port= 9014
 app.listen(port,() =>{
    console.log(`SERver running in port ${port} `.bgCyan.white );
 })
 
-
+app.get('/',(req,res)=>{
+    res.status(200).json({message:"Hello world"})
+})
+const userroute = require('./routes/userroute');
+app.use('/api/v1/user', userroute);
 
 
 
