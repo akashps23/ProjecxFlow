@@ -25,8 +25,8 @@ import ProjectDetails from "./pages/projectdetails";
 //import Timeline from "./pages/timeline";
 
 //features
-import MiniList from "./pages/miniprojectlist";
-import MainList from "./pages/mainprojectlist";
+import Miniproject from "./pages/miniprojectlist";
+import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
 import Timeline from "./pages/timeline";
 import GuideList from "./pages/guidelist";
@@ -59,8 +59,8 @@ function App() {
           
 
           {/* features */}
-          <Route path="/miniproject" element={<MiniList />} />
-          <Route path="/mainproject" element={<MainList />} />
+          <Route path="/miniproject" element={<Miniproject />} />
+          <Route path="/mainproject" element={<Mainproject />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/timepage" element={<Timeline />} />
