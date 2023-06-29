@@ -13,7 +13,7 @@ export default function ProjectSearch() {
     const fetchSearchResults = async () => {
       try {
         const response = await fetch(
-          "https://server-bfex.onrender.com/api/v1/user/search",
+          "http://localhost:9014/api/v1/user/search",
           {
             method: "POST",
             headers: {

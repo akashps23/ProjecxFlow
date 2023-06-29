@@ -18,7 +18,6 @@ import SignupGuide from "./pages/signupguide";
 import ForgotPasswordStudent from "./pages/forgotpasswordstudent";
 import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
-import StudentList from "./pages/studentlist";
 import ProjectDetails from "./pages/projectdetails";
 // import Calendar from "./pages/calendar";
 // import StudentHome from "./pages/"
@@ -29,17 +28,19 @@ import Miniproject from "./pages/miniprojectlist";
 import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
 import Timeline from "./pages/timeline";
-import GuideList from "./pages/guidelist";
+import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
-import CoordinatorList from "./pages/coordinatorlist";
+import Coordinatorlist from "./pages/coordinatorlist";
 import History from "./pages/history";
+import Projectlist from "./pages/projectlist";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
 import CoordinatorHome from "./pages/profilecoordinator";
 import GuideHome from "./pages/profileguide";
 import StudentHome from "./pages/profilestudent";
+import Studentlist from "./pages/studentlist";
 
 import React from "react";
 import "./App.css";
@@ -64,11 +65,12 @@ function App() {
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/timepage" element={<Timeline />} />
-          <Route path="/studentlist" element={<StudentList />} />
-          <Route path="/guidelist" element={<GuideList />} />
+          <Route path="/studentlist" element={<Studentlist />} />
+          <Route path="/guidelist" element={<Guidelist />} />
           <Route path="/myprojects" element={<MyProjects />} />
           <Route path="/guidanceproject" element={<GuidanceProject />} />
-          <Route path="/coordinatorlist" element={<CoordinatorList />} />
+          <Route path="/coordinatorlist" element={<Coordinatorlist />} />
+          <Route path="/projectlist" element={<Projectlist/>} />
           <Route path="/history" element={<History />} />
 
           {/* login pages */}
@@ -97,7 +99,6 @@ function App() {
           <Route path="/adminhomepage" element={<AdminHome />} />
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
-          <Route path="/ studentlist" element={<StudentList />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
           
           <Route path="/guidehomepage" element={<GuideHome />} />

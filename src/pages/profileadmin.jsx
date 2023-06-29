@@ -22,7 +22,7 @@ export default function AdminHome() {
         <Link to="/coordinatorlist">Coordinators List</Link>
       </button>
       <button className="move">
-        <Link to="/history">Projects History</Link>
+        <Link to="/projectlist">Projects History</Link>
       </button>
       <img className="logo" />
       <div className="line"></div>

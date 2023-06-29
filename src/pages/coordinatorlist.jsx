@@ -1,11 +1,38 @@
-import React from "react";
-import "../styles/coordinatorlist.css";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
-export default function CoordinatorList() {
+const Coordinatorlist = () => {
+  const [coordinators, setCoordinantors] = useState([]);
+
+  useEffect(() => {
+    fetchCoordinators();
+  }, []);
+
+  const fetchCoordinators = async () => {
+    try {
+      const response = await axios.get('http://localhost:9014/api/v1/user/coordinatorlist');
+      console.log(response)
+      setCoordinantors(response.data.coordinators);
+    } catch (error) {
+      console.error('Error fetching coordinators list:', error);
+    }
+  };
+
   return (
-    <div className="coordinator">
-      <p className="title">List of Coordinators</p>
-      <div className="bgrect"></div>
+    <div>
+      <h2>Coordinators List</h2>
+      {coordinators.map((coordinator) => (
+        <div key={coordinator}>
+          <h3>Name:{coordinator.name}</h3>
+          <p>Email:{coordinator.email}</p>
+          <p>Phone Number:{coordinator.phoneno}</p>
+          <p>Faculty ID:{coordinator.fid}</p>
+          <p>Department:{coordinator.dept}</p>
+          <p>College:{coordinator.college}</p>
+        </div>
+      ))}
     </div>
   );
-}
+};
+
+export default Coordinatorlist;

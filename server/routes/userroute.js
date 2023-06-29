@@ -5,7 +5,7 @@ const {searchController} = require('../controllers/search')
 const {calendargetAllEvents,calendardeleteEvent,calendarcreateEvent} =require('../controllers/calendar')
 const {forgotpasswordstudentController,forgotpasswordguideController,forgotpasswordcoordinatorController} = require('../controllers/passwordcontrol')
 const authmiddleware = require('../middleware/authmiddleware')
-const { listmainController, listminiController } = require('../controllers/listcontrol')
+const { listmainController, listminiController, liststudentController,listguideController,listcoordinatorController,listprojectController } = require('../controllers/listcontrol')
 
 
 
@@ -47,5 +47,9 @@ router.post('/events/:id', calendardeleteEvent);
 
 router.get('/projectmain', listmainController)
 router.get('/projectmini', listminiController)
+router.get('/studentlist',liststudentController)
+router.get('/guidelist',listguideController)
+router.get('/coordinatorlist',listcoordinatorController)
+router.get('/projectlist',listprojectController)
 
 module.exports=router

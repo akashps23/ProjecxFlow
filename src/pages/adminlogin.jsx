@@ -13,7 +13,7 @@ export default function LoginAdmin() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "https://server-bfex.onrender.com/api/v1/user/adminlogin",
+      "http://localhost:9014/api/v1/user/adminlogin",
         {
           email,
           password,
