@@ -9,7 +9,7 @@ const CoordinatorHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        "https://server-bfex.onrender.com/api/v1/user/getCoordinatorData",
+        "http://localhost:9014/api/v1/user/getCoordinatorData",
         {},
         {
           headers: {
@@ -35,6 +35,11 @@ const CoordinatorHome = () => {
         <>
           <p className="title">Welcome {userData.name}</p>
           <p>ID: {userData.id}</p>
+          {userData.email && (
+            <Link to={`/myprojects?coordinatorId=${userData.email}`}>
+              <button className="mine">My Projects</button>
+            </Link>
+          )}
         </>
       ) : (
         <p>Loading...</p>
@@ -52,9 +57,6 @@ const CoordinatorHome = () => {
       </Link>
       <Link to="/guidelist">
         <button className="guide">Guides List</button>
-      </Link>
-      <Link to="/myprojects">
-        <button className="mine">My Projects</button>
       </Link>
       <Link to="/guidanceproject">
         <button className="guidance">Under My Guidance</button>

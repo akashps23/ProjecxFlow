@@ -2,22 +2,22 @@ import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
 
-const MyProjects = () => {
+const MyguideProjects = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-  const coordinatorId = searchParams.get('coordinatorId');
+  const guideId = searchParams.get('guideId');
 
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    if (coordinatorId) {
+    if (guideId) {
       fetchProjects();
     }
-  }, [coordinatorId]);
+  }, [guideId]);
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`http://localhost:9014/api/v1/user/projects?coordinatorId=${coordinatorId}`);
+      const response = await axios.get(`http://localhost:9014/api/v1/user/guideprojects?guideId=${guideId}`);
       setProjects(response.data.projects);
     } catch (error) {
       console.error(error);
@@ -26,7 +26,7 @@ const MyProjects = () => {
 
   return (
     <div>
-      <h1>Projects of Coordinator {coordinatorId}</h1>
+      <h1>Projects of Guide {guideId}</h1>
       <ul>
         {projects.map((project, index) => (
           <li key={index}>
@@ -40,4 +40,4 @@ const MyProjects = () => {
   );
 };
 
-export default MyProjects;
+export default MyguideProjects;

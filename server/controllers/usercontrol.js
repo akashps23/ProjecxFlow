@@ -249,6 +249,7 @@ const authstudentController = async (req,res)=>{
         else{
            // const userdata = await 
             res.status(200).send({success:true, data :{
+                id:user.id,
                 name:user.name,
                 phoneno:user.phoneno,
                 email:user.email,
@@ -283,6 +284,7 @@ const authguideController = async (req,res)=>{
         else{
            // const userdata = await 
             res.status(200).send({success:true, data :{
+                id:user.id,
                 name:user.name,
                 phoneno:user.phoneno,
                 email:user.email,
@@ -315,6 +317,7 @@ const authcordinatorController = async (req,res)=>{
         else{
            // const userdata = await 
             res.status(200).send({success:true, data :{
+                id:user.id,
                 name:user.name,
                 phoneno:user.phoneno,
                 email:user.email,

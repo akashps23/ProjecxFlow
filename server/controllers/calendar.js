@@ -1,9 +1,8 @@
-const express = require('express');
-const Event = require('../models/eventmodel');
+const eventModel = require('../models/eventmodel');
 
 const calendargetAllEvents = async (req, res) => {
     try {
-      const events = await Event.find();
+      const events = await eventModel.find();
       res.json(events);
     } catch (error) {
       console.error(error);
@@ -17,8 +16,10 @@ const calendargetAllEvents = async (req, res) => {
   const calendarcreateEvent = async (req, res) => {
     try {
       const { date, title } = req.body;
-      const newEvent = new Event({ date, title });
+      console.log(req.body)
+      const newEvent = new eventModel({ date, title });
       const savedEvent = await newEvent.save();
+      console.log(savedEvent)
       res.status(201).json(savedEvent);
     } catch (error) {
       console.error(error);
@@ -29,14 +30,17 @@ const calendargetAllEvents = async (req, res) => {
   const calendardeleteEvent = async (req, res) => {
     try {
       const eventId = req.params.id;
-      await Event.findByIdAndDelete(eventId);
+      await eventModel.findByIdAndDelete(eventId);
       res.sendStatus(204);
     } catch (error) {
       console.error(error);
       res.status(500).json({ message: 'Server Error' });
     }
   }
+  
 
+
+  
 
 // Routes
 

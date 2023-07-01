@@ -9,7 +9,7 @@ const GuideHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        "https://server-bfex.onrender.com/api/v1/user/getGuideData",
+        "http://localhost:9014/api/v1/user/getGuideData",
         {},
         {
           headers: {
@@ -30,6 +30,19 @@ const GuideHome = () => {
   }, []);
   return (
     <div className="guide">
+      {userData ? (
+        <>
+          <p className="title">Welcome {userData.name}</p>
+          <p>ID: {userData.id}</p>
+          {userData.email && (
+            <Link to={`/myguideprojects?guideId=${userData.email}`}>
+              <button className="mine">Under My Guidance</button>
+            </Link>
+          )}
+        </>
+      ) : (
+        <p>Loading...</p>
+      )}
       <button className="mini">
         <Link to="/miniproject">Mini Projects</Link>
       </button>
@@ -37,22 +50,12 @@ const GuideHome = () => {
       <button className="main">
         <Link to="/mainproject">Main Projects</Link>
       </button>
-      {userData ? (
-        <>
-          <p className="title">Welcome {userData.name}</p>
-          <p>ID: {userData.id}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
 
       <button className="student">
         <Link to="/studentlist">Students List</Link>
       </button>
 
-      <button className="mine">
-        <Link to="/myprojects">Under My Guidance</Link>
-      </button>
+      
       <img className="logo" />
       <div className="line"></div>
       <p className="usertype">Project Guide</p>

@@ -4,6 +4,7 @@ const projectModel = require('../models/projectmodel');
 const studentModel = require('../models/studentmodel');
 const guideModel = require('../models/guidemodel')
 const coordinatorModel = require('../models/cordinatormodel')
+const teamModel = require('../models/teammodel')
 
 const listmainController = (req, res) => {
   projectModel.find({ type: 'Main Project', title: { $exists: true }, year: { $exists: true } })
@@ -37,6 +38,75 @@ const listminiController = (req, res) => {
     res.setHeader('Cache-Control', 'no-store');
 
 };
+
+
+
+
+
+// Assuming teamModel is an array of team objects with coordinator and project properties
+
+const getProjectsByCoordinatorId = async (req, res) => {
+  try {
+    const { coordinatorId } = req.query;
+
+    // Find teams that have the specified coordinator ID
+    const teams = await teamModel.find({ coordinator: coordinatorId });
+
+    // Extract the title, year, and type properties from the teams
+    const projects = teams.map((team) => ({
+      title: team.title,
+      year: team.year,
+      type: team.type,
+    }));
+    console.log(projects)
+
+    res.status(200).json({ projects, message: 'Listing successful', success: true });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server Error' });
+  }
+};
+
+
+
+
+const getProjectsByGuideId = async (req, res) => {
+  try {
+    const { guideId } = req.query;
+
+    // Find teams that have the specified coordinator ID
+    const teams = await teamModel.find({ guide: guideId });
+
+    // Extract the title, year, and type properties from the teams
+    const projects = teams.map((team) => ({
+      title: team.title,
+      year: team.year,
+      type: team.type,
+    }));
+    console.log(projects)
+
+    res.status(200).json({ projects, message: 'Listing successful', success: true });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server Error' });
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -90,6 +160,8 @@ const listprojectController = async (req, res) => {
 
 
 
-module.exports = { listminiController,listmainController,liststudentController,listguideController,listcoordinatorController,listprojectController };
+
+
+module.exports = { listminiController,listmainController,liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId };
 
 

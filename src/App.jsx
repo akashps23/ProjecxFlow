@@ -27,7 +27,7 @@ import ProjectDetails from "./pages/projectdetails";
 import Miniproject from "./pages/miniprojectlist";
 import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
-import Timeline from "./pages/timeline";
+//import Calendar from "./pages/calendar";
 import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
@@ -41,6 +41,7 @@ import CoordinatorHome from "./pages/profilecoordinator";
 import GuideHome from "./pages/profileguide";
 import StudentHome from "./pages/profilestudent";
 import Studentlist from "./pages/studentlist";
+import MyguideProjects from "./pages/myguideprojects";
 
 import React from "react";
 import "./App.css";
@@ -64,7 +65,7 @@ function App() {
           <Route path="/mainproject" element={<Mainproject />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
-          <Route path="/timepage" element={<Timeline />} />
+          
           <Route path="/studentlist" element={<Studentlist />} />
           <Route path="/guidelist" element={<Guidelist />} />
           <Route path="/myprojects" element={<MyProjects />} />
@@ -72,6 +73,7 @@ function App() {
           <Route path="/coordinatorlist" element={<Coordinatorlist />} />
           <Route path="/projectlist" element={<Projectlist/>} />
           <Route path="/history" element={<History />} />
+          <Route path="/myguideprojects" element={<MyguideProjects />} />
 
           {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
@@ -112,7 +114,7 @@ function App() {
 
 export default App;
 
-
+/*<Route path="/calendar" element={<Calendar />} /> */
 
 
 //<Route  path="/timeline" element={<Timeline />} />
