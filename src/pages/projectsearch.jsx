@@ -47,7 +47,8 @@ export default function ProjectSearch() {
       </div>
       <div className="searchResults">
         {searchResults.map((result) => (
-          <CardComponent key={result.id} title={result.title} />
+          <CardComponent key={result.id} 
+          title={result.title} />
         ))}
       </div>
     </div>

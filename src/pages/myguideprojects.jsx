@@ -8,6 +8,7 @@ const MyguideProjects = () => {
   const guideId = searchParams.get('guideId');
 
   const [projects, setProjects] = useState([]);
+  const [guideName, setGuideName ] = useState([]);
 
   useEffect(() => {
     if (guideId) {
@@ -19,6 +20,8 @@ const MyguideProjects = () => {
     try {
       const response = await axios.get(`http://localhost:9014/api/v1/user/guideprojects?guideId=${guideId}`);
       setProjects(response.data.projects);
+      setGuideName(response.data.guideName);
+      console.log(guideName.name)
     } catch (error) {
       console.error(error);
     }
@@ -26,7 +29,10 @@ const MyguideProjects = () => {
 
   return (
     <div>
-      <h1>Projects of Guide {guideId}</h1>
+      {guideName.map((guide, index) => (
+        <h1 key={index}>Projects of Guide {guideName.name}</h1>
+      ))}
+      
       <ul>
         {projects.map((project, index) => (
           <li key={index}>

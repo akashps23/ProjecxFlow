@@ -23,8 +23,7 @@ const Mainproject = () => {
       <h2>Main Projects</h2>
       {projects.map((project) => (
         <div key={project._id}>
-          <h3>{project.title}</h3>
-          <p>{project.year}</p>
+          <h3>{project.title} - {project.year}</h3>
         </div>
       ))}
     </div>

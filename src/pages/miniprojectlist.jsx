@@ -23,8 +23,8 @@ const Mainproject = () => {
       <h2>Mini Projects</h2>
       {projects.map((project) => (
         <div key={project._id}>
-          <h3>{project.title}</h3>
-          <p>{project.year}</p>
+          <h3>{project.title} - {project.year}</h3>
+          
         </div>
       ))}
     </div>
@@ -32,3 +32,4 @@ const Mainproject = () => {
 };
 
 export default Mainproject;
+//<p>{project.year}</p>

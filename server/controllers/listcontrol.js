@@ -83,9 +83,12 @@ const getProjectsByGuideId = async (req, res) => {
       year: team.year,
       type: team.type,
     }));
+    const guides = await guideModel.findone({ email: guideId});
+    const guideName = guides.name
     console.log(projects)
+    console.log(guideName)
 
-    res.status(200).json({ projects, message: 'Listing successful', success: true });
+    res.status(200).json({ projects,guideName, message: 'Listing successful', success: true });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: 'Server Error' });

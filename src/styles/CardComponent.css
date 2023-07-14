@@ -1,21 +1,24 @@
-.card {
-  background-color: #efe7e7;
-  padding: 10px;
-  border-radius: 4px;
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-
-  /* Additional styles to center the content */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
 .searchResults {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-gap: 20px;
-  align-items: flex-start; /* Adjust vertical alignment to top */
+  align-items: stretch; /* Adjust vertical alignment to top */
+  grid-auto-rows: 200px;
+  overflow-y: hidden;
+}
+
+.card {
+  position: relative;
+  background-color: #efe7e7;
+  padding: 10px;
+  border-radius: 4px;
+  max-height: 200px;
+  margin-bottom: 20px;
+
+  /* Additional styles to center the content */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  align-self: auto;
 }

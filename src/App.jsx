@@ -27,7 +27,7 @@ import ProjectDetails from "./pages/projectdetails";
 import Miniproject from "./pages/miniprojectlist";
 import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
-//import Calendar from "./pages/calendar";
+import Calendar from "./pages/calendar";
 import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
@@ -42,6 +42,14 @@ import GuideHome from "./pages/profileguide";
 import StudentHome from "./pages/profilestudent";
 import Studentlist from "./pages/studentlist";
 import MyguideProjects from "./pages/myguideprojects";
+
+
+//announcement
+import Announce from "./pages/makeannouncement";
+import Announcements from "./pages/announcement";
+
+
+
 
 import React from "react";
 import "./App.css";
@@ -102,10 +110,14 @@ function App() {
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
+          <Route path="/calendar" element={<Calendar />} /> 
           
           <Route path="/guidehomepage" element={<GuideHome />} />
           <Route path="/studenthomepage" element={<StudentHome />} />
           <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
+          <Route path="/makeannouncement" element={<Announce />} />
+          <Route path="/announcements" element={<Announcements />} />
+          
         </Routes>
       </BrowserRouter>
     </>
@@ -114,8 +126,4 @@ function App() {
 
 export default App;
 
-/*<Route path="/calendar" element={<Calendar />} /> */
-
-
-//<Route  path="/timeline" element={<Timeline />} />
-//<Route path="/timepage" element={<Timeline />} />
+/*<Route path="/makeannouncement" element={<Announce />} /> */
