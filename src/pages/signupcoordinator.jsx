@@ -1,5 +1,4 @@
-// import React from "react";
-// import "../styles/signupfaculties.css";
+
 import React, { useState } from "react";
 import "../styles/signupfaculties.css";
 import { Link, useNavigate } from "react-router-dom";

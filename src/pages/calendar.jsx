@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import '../styles/calendar.css';
 
@@ -194,3 +194,38 @@ const Calendar = () => {
 };
 
 export default Calendar;
+
+
+
+
+
+import React, { useState } from 'react';
+import Calendar from 'react-calendar';
+
+function calendar() {
+  const [date, setDate] = useState(new Date());
+  const [events, setEvents] = useState([]);
+
+  function handleDateClick(date) {
+    setEvents((events => [...events, date]));
+  }
+
+  return (
+    <div>
+      <h1>Simple Calendar</h1>
+      <Calendar
+        onChange={setDate}
+        value={date}
+        onDateClick={handleDateClick}
+      />
+      <ul>
+        {events.map((event, index) => (
+          <li key={index}>{event}</li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+export default calendar;
+*/

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
 const Coordinatorlist = () => {
   const [coordinators, setCoordinantors] = useState([]);
@@ -31,6 +32,9 @@ const Coordinatorlist = () => {
           <p>College:{coordinator.college}</p>
         </div>
       ))}
+      <button className="deletecoordinator">
+        <Link to="/deletecoordinator">Remove coordinator</Link>
+      </button>
     </div>
   );
 };

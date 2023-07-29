@@ -7,6 +7,7 @@ const {forgotpasswordstudentController,forgotpasswordguideController,forgotpassw
 const authmiddleware = require('../middleware/authmiddleware')
 const { listmainController, listminiController, liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId } = require('../controllers/listcontrol')
 const { makeannouncementController, showannouncementController } = require('../controllers/announcecontroller')
+const { deletestudentController,deleteguideController,deletecoordinatorController} = require('../controllers/deletioncontroller');
 
 
 
@@ -49,6 +50,8 @@ router.post('/events/:id', calendardeleteEvent);
 router.get('/projectmain', listmainController)
 router.get('/projectmini', listminiController)
 router.get('/studentlist',liststudentController)
+router.get('/studentlistadmin',liststudentController)
+router.get('/guidelistadmin',listguideController)
 router.get('/guidelist',listguideController)
 router.get('/coordinatorlist',listcoordinatorController)
 router.get('/projectlist',listprojectController)
@@ -63,5 +66,8 @@ router.get('/guideprojects', getProjectsByGuideId)
 
 router.post('/announce',makeannouncementController );
 router.get('/showannouncements', showannouncementController)
+router.post('/deletestudent', deletestudentController )
+router.post('/deleteguide', deleteguideController )
+router.post('/deletecoordinator', deletecoordinatorController )
 
 module.exports=router

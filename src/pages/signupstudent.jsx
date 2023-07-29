@@ -24,7 +24,7 @@ const SignupStudent = () => {
     try {
       // Send the form data to the backend API
       const response = await axios.post(
-        "https://server-bfex.onrender.com/api/v1/user/studentsignup",
+        "http://localhost:9014/api/v1/user/studentsignup",
         {
           name,
           phoneno,
@@ -156,11 +156,9 @@ const SignupStudent = () => {
           value={answer}
           onChange={(event) => setAnswer(event.target.value)}
         />
-        <Link to="/teamcreate">
           <button className="signup" type="submit">
             Submit
           </button>
-        </Link>
 
         <div className="bgrect"></div>
       </form>

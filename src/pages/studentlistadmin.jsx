@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import { Link } from "react-router-dom";
 
-const Studentlist = () => {
+const StudentlistAdmin = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
@@ -10,7 +11,7 @@ const Studentlist = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/studentlist');
+      const response = await axios.get('http://localhost:9014/api/v1/user/studentlistadmin');
       console.log(response)
       setStudents(response.data.students);
     } catch (error) {
@@ -33,11 +34,13 @@ const Studentlist = () => {
           <p>Department:{student.dept}</p>
           <p>Roll Number:{student.rollno}</p>
           <p>College:{student.college}</p>
-          <button></button>
         </div>
       ))}
+    <button className="deletestudent">
+        <Link to="/deletestudent">Remove Student</Link>
+      </button>
     </div>
   );
 };
 
-export default Studentlist;
+export default StudentlistAdmin;

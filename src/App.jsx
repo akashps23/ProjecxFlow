@@ -27,7 +27,7 @@ import ProjectDetails from "./pages/projectdetails";
 import Miniproject from "./pages/miniprojectlist";
 import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
-import Calendar from "./pages/calendar";
+//import Calendar from "./pages/calendar";
 import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
@@ -41,7 +41,12 @@ import CoordinatorHome from "./pages/profilecoordinator";
 import GuideHome from "./pages/profileguide";
 import StudentHome from "./pages/profilestudent";
 import Studentlist from "./pages/studentlist";
+import StudentlistAdmin from "./pages/studentlistadmin"
 import MyguideProjects from "./pages/myguideprojects";
+import DeleteStudent from "./pages/deletestudent";
+import GuidelistAdmin from "./pages/guidelistadmin";
+import DeleteGuide from "./pages/deleteguide";
+import DeleteCoordinator from "./pages/deletecoordinator";
 
 
 //announcement
@@ -75,13 +80,19 @@ function App() {
           <Route path="/teamcreate" element={<TeamCreate />} />
           
           <Route path="/studentlist" element={<Studentlist />} />
+          <Route path="/studentlistadmin" element={<StudentlistAdmin />} />
           <Route path="/guidelist" element={<Guidelist />} />
+          <Route path="/guidelistadmin" element={<GuidelistAdmin />} />
           <Route path="/myprojects" element={<MyProjects />} />
           <Route path="/guidanceproject" element={<GuidanceProject />} />
           <Route path="/coordinatorlist" element={<Coordinatorlist />} />
           <Route path="/projectlist" element={<Projectlist/>} />
           <Route path="/history" element={<History />} />
           <Route path="/myguideprojects" element={<MyguideProjects />} />
+          <Route path="/deletestudent" element={<DeleteStudent />} />
+          <Route path="/deleteguide" element={<DeleteGuide />} />
+          <Route path="/deletecoordinator" element={<DeleteCoordinator />} />
+
 
           {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
@@ -110,7 +121,7 @@ function App() {
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
-          <Route path="/calendar" element={<Calendar />} /> 
+           
           
           <Route path="/guidehomepage" element={<GuideHome />} />
           <Route path="/studenthomepage" element={<StudentHome />} />
@@ -127,3 +138,4 @@ function App() {
 export default App;
 
 /*<Route path="/makeannouncement" element={<Announce />} /> */
+/*<Route path="/calendar" element={<Calendar />} /> */

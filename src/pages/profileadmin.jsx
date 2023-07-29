@@ -13,10 +13,10 @@ export default function AdminHome() {
         <Link to="/mainproject">Main Projects</Link>
       </button>
       <button className="student">
-        <Link to="/studentlist">Students List</Link>
+        <Link to="/studentlistadmin">Students List</Link>
       </button>
       <button className="guide">
-        <Link to="/guidelist">Guides List</Link>
+        <Link to="/guidelistadmin">Guides List</Link>
       </button>
       <button className="coordinator">
         <Link to="/coordinatorlist">Coordinators List</Link>
