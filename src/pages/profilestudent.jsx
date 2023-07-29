@@ -5,6 +5,17 @@ import { Link } from "react-router-dom";
 
 const StudentHome = () => {
   const [userData, setUserData] = useState(null);
+  const [projects, setProjects] = useState([]);
+
+  const fetchProjects = async () => {
+    try {
+      const response = await axios.get(`http://localhost:9014/api/v1/user/getdashboard?studentId=${userData.email}`);
+      console.log(response)
+      setProjects(response.data.projects);
+    } catch (error) {
+      console.error('Error fetching projects list:', error);
+    }
+  };
 
   const getUserData = async () => {
     try {
@@ -19,11 +30,13 @@ const StudentHome = () => {
       );
       if (response.data.success) {
         setUserData(response.data.data);
+        fetchProjects();
       }
     } catch (error) {
       console.log(error);
     }
   };
+
 
   useEffect(() => {
     getUserData();
@@ -47,6 +60,14 @@ const StudentHome = () => {
       </Link>
       <div className="bgrect"></div>
       <div className="bgrect"></div>
+      <h2>Dashboards</h2>
+      {projects.map((project) => (
+        <div key={project}>
+          <h3>Title:{project.title}</h3>
+          <p>Type:{project.type}</p>
+          <p>Year:{project.year}</p>
+        </div>
+      ))}
     </div>
   );
 };

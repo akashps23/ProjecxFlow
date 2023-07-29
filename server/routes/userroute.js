@@ -5,7 +5,7 @@ const {searchController} = require('../controllers/search')
 const {calendargetAllEvents,calendardeleteEvent,calendarcreateEvent} =require('../controllers/calendar')
 const {forgotpasswordstudentController,forgotpasswordguideController,forgotpasswordcoordinatorController} = require('../controllers/passwordcontrol')
 const authmiddleware = require('../middleware/authmiddleware')
-const { listmainController, listminiController, liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId } = require('../controllers/listcontrol')
+const { listmainController, listminiController, liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId,getdashboardController } = require('../controllers/listcontrol')
 const { makeannouncementController, showannouncementController } = require('../controllers/announcecontroller')
 const { deletestudentController,deleteguideController,deletecoordinatorController} = require('../controllers/deletioncontroller');
 
@@ -69,5 +69,6 @@ router.get('/showannouncements', showannouncementController)
 router.post('/deletestudent', deletestudentController )
 router.post('/deleteguide', deleteguideController )
 router.post('/deletecoordinator', deletecoordinatorController )
+router.get('/getdashboard', getdashboardController)
 
 module.exports=router

@@ -159,12 +159,40 @@ const listprojectController = async (req, res) => {
   }
 };
 
+const getdashboardController = async (req, res) => {
+  try {
+    const { studentId } = req.query;
+
+    // Find teams that have the specified coordinator ID
+    const teams = await teamModel.find({
+      $or: [
+        { member1: studentId },
+        { member2: studentId },
+        { member3: studentId },
+        { member4: studentId }
+      ]
+    });
+
+    // Extract the title, year, and type properties from the teams
+    const projects = teams.map((team) => ({
+      title: team.title,
+      year: team.year,
+      type: team.type,
+    }));
+    console.log(projects)
+
+    res.status(200).json({ projects, message: 'Listing successful', success: true });
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ message: 'Server Error' });
+  }
+};
 
 
 
 
 
 
-module.exports = { listminiController,listmainController,liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId };
+module.exports = { listminiController,listmainController,liststudentController,listguideController,listcoordinatorController,listprojectController,getProjectsByCoordinatorId,getProjectsByGuideId,getdashboardController };
 
 
