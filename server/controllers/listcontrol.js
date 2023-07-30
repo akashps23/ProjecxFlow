@@ -173,13 +173,17 @@ const getdashboardController = async (req, res) => {
       ]
     });
 
-    // Extract the title, year, and type properties from the teams
-    const projects = teams.map((team) => ({
-      title: team.title,
-      year: team.year,
-      type: team.type,
-    }));
-    console.log(projects)
+    // Create a Set to store unique projects
+    const uniqueProjects = new Set();
+
+    // Extract the title, year, and type properties from the teams and add them to the Set
+    teams.forEach((team) => {
+      const { title, year, type } = team;
+      uniqueProjects.add(JSON.stringify({ title, year, type }));
+    });
+
+    // Convert the Set back to an array
+    const projects = Array.from(uniqueProjects).map((projectJSON) => JSON.parse(projectJSON));
 
     res.status(200).json({ projects, message: 'Listing successful', success: true });
   } catch (error) {
@@ -187,6 +191,7 @@ const getdashboardController = async (req, res) => {
     res.status(500).json({ message: 'Server Error' });
   }
 };
+
 
 
 

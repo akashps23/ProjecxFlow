@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../styles/mainprojectlist.css"
 
 const Mainproject = () => {
   const [projects, setProjects] = useState([]);

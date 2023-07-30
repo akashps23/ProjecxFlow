@@ -48,7 +48,7 @@ export default function Home() {
 
       <div className="main_rect"></div>
 
-      <Link to="./mainproject">
+      <Link to="/mainproject">
         <p className="mainproject">Main Project</p>
       </Link>
 

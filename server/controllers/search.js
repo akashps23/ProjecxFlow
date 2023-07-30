@@ -21,6 +21,8 @@ const searchController = async (req, res) => {
       return {
         id: project._id,
         title: project.title,
+        type:project.type,
+        year:project.year
         // Add other relevant properties from the project model
       };
     });

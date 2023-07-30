@@ -1,24 +1,35 @@
-.searchResults {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  align-items: stretch; /* Adjust vertical alignment to top */
-  grid-auto-rows: 200px;
-  overflow-y: hidden;
-}
-
 .card {
-  position: relative;
-  background-color: #efe7e7;
+  background-color: #dfdfdf;
+  color: black;
   padding: 10px;
   border-radius: 4px;
-  max-height: 200px;
+  height: 200px;
+  width: 200px;
   margin-bottom: 20px;
-
   /* Additional styles to center the content */
   display: grid;
   justify-content: center;
   align-items: center;
   text-align: center;
-  align-self: auto;
+  text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+}
+.card:hover {
+  background-color: #cfcfcf;
+  cursor: pointer;
+  scale: 1.07;
+}
+.card-content h1{
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.card-content p{
+  font-size: 2rem;
+}
+.searchResults_s{
+  padding: 0px 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
 }

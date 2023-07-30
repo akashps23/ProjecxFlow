@@ -13,7 +13,7 @@ export default function ForgotPasswordGuide() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "https://server-bfex.onrender.com/api/v1/user/forgotpasswordguide",
+      "http://localhost:9014/api/v1/user/forgotpasswordguide",
         {
           email,
           answer,

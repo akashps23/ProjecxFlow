@@ -47,7 +47,8 @@ import DeleteStudent from "./pages/deletestudent";
 import GuidelistAdmin from "./pages/guidelistadmin";
 import DeleteGuide from "./pages/deleteguide";
 import DeleteCoordinator from "./pages/deletecoordinator";
-
+import TeamDashboard from './pages/teamdashboard'
+import Members from "./pages/members";
 
 //announcement
 import Announce from "./pages/makeannouncement";
@@ -121,6 +122,8 @@ function App() {
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
+          <Route path="/teamdashboard" element={<TeamDashboard />} />
+          <Route path="/teammembers" element={<Members />} />
            
           
           <Route path="/guidehomepage" element={<GuideHome />} />

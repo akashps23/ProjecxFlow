@@ -19,7 +19,7 @@ html {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
-	overflow: hidden;
+	overflow-x: hidden;
 	background-color: #ffffff;
   }
   .student .title{
@@ -97,4 +97,8 @@ html {
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;
+}
+.projectsmap{
+	transform: translateY(33rem);
+	padding-top: 2rem;
 }

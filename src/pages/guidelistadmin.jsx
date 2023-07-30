@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  React,{ useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
 
@@ -21,7 +21,7 @@ const GuidelistAdmin = () => {
 
   return (
     <div>
-      <h2>Guides List</h2>
+      <h2 color='black'>Guides List</h2>
       {guides.map((guide) => (
         <div key={guide}>
           <h3>Name:{guide.name}</h3>

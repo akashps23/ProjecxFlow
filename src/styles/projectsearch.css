@@ -1,76 +1,46 @@
-html {
-	font-size:40%;
-}
 * {
 	margin: 0;
 	padding: 0;
-}
-ul, li {
+  }
+  ul,
+  li {
 	list-style: none;
-}
-input {
+  }
+  input {
 	border: none;
-}
-body {
-   max-width: 100%;
-   max-height: 100%;
-   height: auto;
-}
-.projectsearch {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  overflow: hidden;
-  background-color: #ffffff;
-}
-.projectsearch .title {
-    position: relative;
-
-	align-content: center;
-	top: 9.2%;
-    z-index: 1;
-	font-size: 3rem;
-	font-family: 'Helvetica';
-	font-weight: 500;
-	color: #292929;
-}
-
-.projectsearch .search_rect {
-	position: relative;
-	width: 60%;
-	height: 8%;
-	left: calc(50% - 30%);
-	top: 20%;
-	background: #DFDFDF;
-	border-radius: 45px;
-}
-.projectsearch .searchimg {
-	
+  }
+  body {
+	background-color: #ffffff!important;
+  }
+  .projectsearch_s {
+	width: 100%;
+	height: 100vh;
+  }
+  .search_rect_s {
+	width: 50%;
+	height: 50px;
+	background-color: #DFDFDF;
+	border-radius: 15px;
+	color: black;
+	margin: 10rem auto;
+	display: flex;
+	align-items: center;
+	padding: 0px 10px;
+  }
+  .searchimg_s {
 	width: 5rem;
 	height: 5rem;
-	left: -66rem;
-	top: 15.5rem;
-	position: relative;
-	
-	z-index: 1;
-    opacity: 50%;
+	opacity: 50%;
 	object-fit: cover;
 	background-color: #ffffff00;
-	
-	background-image: url('../assets/glass.png');
+	background-image: url("../assets/glass.png");
 	background-size: cover;
 	background-position: center;
-
-}
-.projectsearch .searchResults{
-	top :10rem;
-	
-}
-
-.projectsearch .bgrect {
-	width: 100vw;
-	height: 20rem;
-	position: relative;
-	top: -24rem;
-	background-color: rgba(154, 170, 255, 0.9900000095);
-}
+  }
+  .title_s {
+	flex: auto;
+	font-size: 3rem;
+	font-family: "Helvetica";
+	font-weight: 500;
+	color: #292929;
+  }

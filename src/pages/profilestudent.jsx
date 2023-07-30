@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/profilestudent.css";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import CardComponent from '../pages/cardcomponent'
 
 const StudentHome = () => {
+  const navigate = useNavigate()
   const [userData, setUserData] = useState(null);
   const [projects, setProjects] = useState([]);
 
-  const fetchProjects = async () => {
+  const fetchProjects = async (email) => {
     try {
-      const response = await axios.get(`http://localhost:9014/api/v1/user/getdashboard?studentId=${userData.email}`);
+      const response = await axios.get(`http://localhost:9014/api/v1/user/getdashboard?studentId=${email}`);
       console.log(response)
       setProjects(response.data.projects);
     } catch (error) {
@@ -30,7 +32,7 @@ const StudentHome = () => {
       );
       if (response.data.success) {
         setUserData(response.data.data);
-        fetchProjects();
+        await fetchProjects(response.data.data.email);
       }
     } catch (error) {
       console.log(error);
@@ -61,13 +63,16 @@ const StudentHome = () => {
       <div className="bgrect"></div>
       <div className="bgrect"></div>
       <h2>Dashboards</h2>
-      {projects.map((project) => (
-        <div key={project}>
-          <h3>Title:{project.title}</h3>
-          <p>Type:{project.type}</p>
-          <p>Year:{project.year}</p>
-        </div>
-      ))}
+      <button className="searchResults_s projectsmap" onClick={()=>{
+        navigate('/teamdashboard')
+      }}>
+      {projects.map((project, index) => (
+        <CardComponent key={index} 
+        title={project.title}
+        type={project.type}
+        year={project.year} />
+        ))}
+        </button>
     </div>
   );
 };

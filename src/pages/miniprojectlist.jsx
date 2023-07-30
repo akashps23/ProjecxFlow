@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const Mainproject = () => {
+const Miniproject = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -11,8 +11,8 @@ const Mainproject = () => {
   const fetchProjects = async () => {
     try {
       const response = await axios.get('http://localhost:9014/api/v1/user/projectmini');
-      console.log(response)
       setProjects(response.data.projects);
+      console.log(response);
     } catch (error) {
       console.error('Error fetching projects:', error);
     }
@@ -31,5 +31,5 @@ const Mainproject = () => {
   );
 };
 
-export default Mainproject;
+export default Miniproject;
 //<p>{project.year}</p>

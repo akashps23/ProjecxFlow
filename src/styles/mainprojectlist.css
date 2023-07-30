@@ -36,6 +36,13 @@ body {
 	font-weight: 600;
 	color: #292929;
 }
+
+.h2{
+    color: black;
+}
+.h3{
+    color: black;
+}
 /* .mainlist .back {
  
     position: relative;

@@ -38,19 +38,20 @@ export default function ProjectSearch() {
   }, [txt]);
 
   return (
-    <div>
-      <div className="projectsearch">
-        <div className="search_rect"></div>
-        <img className="searchimg"></img>
-        <p className="title">Similar projects like " {txt} "</p>
-        <div className="bgrect"></div>
-      </div>
-      <div className="searchResults">
+    <div className="projectsearch_s">
+        <div className="search_rect_s">
+        <img className="searchimg_s"></img>
+        <p className="title_s">Similar projects like " {txt} "</p>
+        </div>
+        <div className="searchResults_s">
         {searchResults.map((result) => (
           <CardComponent key={result.id} 
-          title={result.title} />
-        ))}
-      </div>
+          title={result.title}
+          type={result.type}
+          year={result.year} />
+        ))}        
+        </div>
     </div>
   );
 }
+
