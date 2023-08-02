@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import axios from "axios";
 import "../styles/profilestudent.css";
 import { Link, useNavigate } from "react-router-dom";
@@ -12,7 +12,7 @@ const StudentHome = () => {
   const fetchProjects = async (email) => {
     try {
       const response = await axios.get(`http://localhost:9014/api/v1/user/getdashboard?studentId=${email}`);
-      console.log(response)
+      console.log(response.data.projects)
       setProjects(response.data.projects);
     } catch (error) {
       console.error('Error fetching projects list:', error);
@@ -39,42 +39,86 @@ const StudentHome = () => {
     }
   };
 
+  const handleClick = (projectId) => {
+    console.log(projectId)
+    localStorage.setItem('projectId', projectId);
+    navigate('/teammembers');
+  };
 
   useEffect(() => {
     getUserData();
   }, []);
 
-  return (
-    <div className="student">
-      {userData ? (
-        <>
-          <p className="title">Welcome {userData.name}</p>
-          <p>ID: {userData.id}</p>
-        </>
-      ) : (
-        <p>Loading...</p>
-      )}
-      <img className="logo" />
-      <div className="line"></div>
-      <p className="usertype">Student</p>
-      <Link to="/">
-        <p className="logout">Log Out</p>
-      </Link>
-      <div className="bgrect"></div>
-      <div className="bgrect"></div>
-      <h2>Dashboards</h2>
-      <button className="searchResults_s projectsmap" onClick={()=>{
-        navigate('/teamdashboard')
-      }}>
-      {projects.map((project, index) => (
-        <CardComponent key={index} 
-        title={project.title}
-        type={project.type}
-        year={project.year} />
+
+  if(projects.length!=0){
+    return (
+      <div className="student">
+        {userData ? (
+          <>
+            <p className="title">Welcome {userData.name}</p>
+            <p>ID: {userData.id}</p>
+          </>
+        ) : (
+          <p>Loading...</p>
+        )}
+        <img className="logo" />
+        <div className="line"></div>
+        <p className="usertype">Student</p>
+        <Link to="/">
+          <p className="logout">Log Out</p>
+        </Link>
+        <Link to="/teamcreate">
+          <p className="create">Create Dashboard</p>
+        </Link>
+        <div className="bgrect"></div>
+        <div className="bgrect"></div>
+        <h2>Dashboards</h2>
+        <div className="searchResults_s" style={{marginTop:`30rem`}}>
+        {projects.map((project, index) => (
+          <CardComponent
+            key={index}
+            title={project.title}
+            type={project.type}
+            year={project.year}
+            handleClick={() => handleClick(project.id)}
+          />
         ))}
-        </button>
-    </div>
-  );
+        </div>
+        
+      </div>
+    );
+  }
+  else{
+      return (
+      <div className="student">
+        {userData ? (
+          <>
+            <p className="title">Welcome {userData.name}</p>
+            <p>ID: {userData.id}</p>
+          <p className="title" style={{marginTop:`15rem`,lineHeight:`100%`,fontSize:`3rem`}}>oh!You don't have any Dashboard yet,Create a team for u</p>
+            <div className="Dashboard">
+        </div>
+          </>
+        ) : (
+          <p>Loading...</p>
+        )}
+        <img className="logo" />
+        <div className="line"></div>
+        <p className="usertype">Student</p>
+        <Link to="/">
+          <p className="logout">Log Out</p>
+        </Link>
+        <Link to="/teamcreate">
+          <p className="create">Create Dashboard</p>
+        </Link>
+        <div className="bgrect"></div>
+        <div className="bgrect"></div>
+        
+        </div>
+    )
+  }
+
+  
 };
 
 export default StudentHome;

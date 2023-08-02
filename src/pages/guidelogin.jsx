@@ -29,6 +29,9 @@ export default function LoginGuide() {
         setUsername("");
         setPassword("");
       }
+      else{
+        message.error("Something Went Wrong!!")
+      }
     } catch (error) {
       console.error(error);
     }

@@ -1,231 +1,196 @@
-/*import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import '../styles/calendar.css';
+import Popover from "../components/calendar/Popover";
+import Day from "../components/calendar/day";
+import "../styles/calendar.css";
+import React, { useState, useEffect } from "react";
+const months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+const currentDate = new Date();
+const currentMonth = months[currentDate.getMonth()];
+const currentYear = currentDate.getFullYear();
 
 const Calendar = () => {
-  const [nav, setNav] = useState(0);
-  const [clicked, setClicked] = useState(null);
+  const [month, setMonth] = useState(currentMonth);
+  const [year, setYear] = useState(currentYear);
+  const [week1, setWeek1] = useState([]);
+  const [week2, setWeek2] = useState([]);
+  const [week3, setWeek3] = useState([]);
+  const [week4, setWeek4] = useState([]);
+  const [week5, setWeek5] = useState([]);
+  const [week6, setWeek6] = useState([]);
   const [events, setEvents] = useState([]);
-  const [newEventModalVisible, setNewEventModalVisible] = useState(false);
-  const [deleteModalVisible, setDeleteModalVisible] = useState(false);
-  const [clickedEvent, setClickedEvent] = useState('');
-  const [eventTitle, setEventTitle] = useState('');
-  const [eventTitleError, setEventTitleError] = useState(false);
+  const [showPopover, setShowPopover] = useState(false);
+  const [clickedDate, setClickedDate] = useState("");
 
+  const getEvents = async () => {
+    try {
+      const response = await axios.get(
+        "http://localhost:9014/api/v1/user/events",
+        {
+          teamid: localStorage.getItem("teamId"),
+        }
+      );
+      if (response.data.success) {
+
+      }
+    } catch (error) {
+      console.error(error);
+    }
+  };
+  const updateCalendar = (month, year) => {
+    const firstDay = new Date(year, month, 1).getDay();
+    const daysInMonth = new Date(year, month + 1, 0).getDate();
+    let days = [];
+    for (let i = 0; i < firstDay; i++) days.push(0);
+
+    for (let i = 1; i <= daysInMonth; i++) days.push(i);
+
+    setWeek1(days.slice(0, 7));
+    setWeek2(days.slice(7, 14));
+    setWeek3(days.slice(14, 21));
+    setWeek4(days.slice(21, 28));
+    setWeek5(days.slice(28, 35));
+    setWeek6(days.slice(35));
+    console.log(days);
+  };
+  // update calendar on load
   useEffect(() => {
-    loadEvents();
+    updateCalendar(currentDate.getMonth(), currentDate.getFullYear());
+    getEvents();
   }, []);
 
-  const weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-
-  const openModal = (date) => {
-    setClicked(date);
-
-    const eventForDay = events.find((e) => e.date === date);
-
-    if (eventForDay) {
-      setClickedEvent(eventForDay.title);
-      setDeleteModalVisible(true);
-    } else {
-      setNewEventModalVisible(true);
+  const handlePreviousMonth = () => {
+    let newMonthIndex = months.indexOf(month) - 1;
+    let newYear = year;
+    if (month === "January") {
+      newMonthIndex = months.indexOf("December");
+      newYear = year - 1;
     }
+    setMonth(months[newMonthIndex]);
+    setYear(newYear);
+    updateCalendar(newMonthIndex, newYear);
   };
 
-  const loadEvents = async () => {
-    try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/events');
-      setEvents(response.data);
-    } catch (error) {
-      console.error(error);
+  const handleNextMonth = () => {
+    let newMonthIndex = months.indexOf(month) + 1;
+    let newYear = year;
+    if (month === "December") {
+      newMonthIndex = months.indexOf("January");
+      newYear = year + 1;
     }
+    setMonth(months[newMonthIndex]);
+    setYear(newYear);
+    updateCalendar(newMonthIndex, newYear);
   };
+  const handleClick = (day) => {
+    const date = day.target.innerHTML;
+    let m = months.indexOf(month) + 1;
+    if (!date || date === "") return;
+    const clickedDate =
+      (date < 10 ? "0" + date : date) +
+      "/" +
+      (m < 10 ? "0" + m : m) +
+      "/" +
+      year;
 
-  const saveEvent = async () => {
-    if (eventTitle) {
-      setEventTitleError(false);
-
-      const newEvent = {
-        date: clicked,
-        title: eventTitle,
-      };
-
-      try {
-        const response = await axios.post('http://localhost:9014/api/v1/user/events', newEvent);
-        setEvents([...events, response.data]);
-        closeModal();
-      } catch (error) {
-        console.error(error);
-      }
-    } else {
-      setEventTitleError(true);
-    }
-  };
-
-  const deleteEvent = async () => {
-    try {
-      await axios.delete(`http://localhost:9014/api/v1/user/events/${clicked}`);
-      setEvents(events.filter((e) => e.date !== clicked));
-      closeModal();
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  const closeModal = () => {
-    setEventTitle('');
-    setNewEventModalVisible(false);
-    setDeleteModalVisible(false);
-    setClicked(null);
-  };
-
-  const renderCalendar = () => {
-    const dt = new Date();
-
-    if (nav !== 0) {
-      dt.setMonth(new Date().getMonth() + nav);
-    }
-
-    const day = dt.getDate();
-    const month = dt.getMonth();
-    const year = dt.getFullYear();
-
-    const firstDayOfMonth = new Date(year, month, 1);
-    const daysInMonth = new Date(year, month + 1, 0).getDate();
-
-    const dateString = firstDayOfMonth.toLocaleDateString('en-us', {
-      weekday: 'long',
-      year: 'numeric',
-      month: 'numeric',
-      day: 'numeric',
-    });
-    const paddingDays = weekdays.indexOf(dateString.split(', ')[0]);
-
-    const calendarDays = [];
-
-    for (let i = 1; i <= paddingDays + daysInMonth; i++) {
-      const dayString = `${month + 1}/${i - paddingDays}/${year}`;
-
-      if (i > paddingDays) {
-        const eventForDay = events.find((event) => event.date === dayString);
-
-        calendarDays.push(
-          <div
-            className={`day${eventForDay ? ' event' : ''}`}
-            key={i}
-            onClick={() => openModal(dayString)}
-          >
-            <span className="day">{i - paddingDays}</span>
-            {eventForDay && <span className="event-dot"></span>}
-          </div>
-        );
-      } else {
-        calendarDays.push(
-          <div className="empty-day" key={i}>
-            <span className="day-placeholder"></span>
-          </div>
-        );
-      }
-    }
-
-    return calendarDays;
+    setClickedDate(clickedDate);
+    setShowPopover(true);
   };
 
   return (
-    <div className="calendar">
-      <div id="header">
-        <button onClick={() => setNav(nav - 1)}>Previous</button>
-        <h1>Calendar</h1>
-        <button onClick={() => setNav(nav + 1)}>Next</button>
-      </div>
-
+    <div className="calendar_section">
       <div id="container">
+        <div id="header">
+          <div id="monthDisplay">
+            {month} {year}
+          </div>
+          <div id="buttonContainer">
+            <button id="backButton" onClick={handlePreviousMonth}>
+              Back
+            </button>
+            <button id="nextButton" onClick={handleNextMonth}>
+              Next
+            </button>
+          </div>
+        </div>
         <div id="weekdays">
-          {weekdays.map((weekday) => (
-            <div className="weekday" key={weekday}>
-              {weekday}
-            </div>
+          <div className="weekday">Sun</div>
+          <div className="weekday">Mon</div>
+          <div className="weekday">Tue</div>
+          <div className="weekday">Wed</div>
+          <div className="weekday">Thu</div>
+          <div className="weekday">Fri</div>
+          <div className="weekday">Sat</div>
+        </div>
+        <div className="week1">
+          {week1.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
           ))}
         </div>
-        <div id="calendar">{renderCalendar()}</div>
-      </div>
-
-      <div id="newEventModal" className={`modal${newEventModalVisible ? ' visible' : ''}`}>
-        <div className="modal-content">
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <h2>New Event</h2>
-          <input
-            type="text"
-            id="eventTitleInput"
-            placeholder="Event title"
-            value={eventTitle}
-            onChange={(e) => setEventTitle(e.target.value)}
-          />
-          {eventTitleError && <p className="error">Please enter an event title</p>}
-          <button id="saveButton" onClick={saveEvent}>
-            Save
-          </button>
-          <button id="cancelButton" onClick={closeModal}>
-            Cancel
-          </button>
+        <div className="week2">
+          {week2.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
+          ))}
+        </div>
+        <div className="week3">
+          {week3.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
+          ))}
+        </div>
+        <div className="week4">
+          {week4.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
+          ))}
+        </div>
+        <div className="week5">
+          {week5.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
+          ))}
+        </div>
+        <div className="week6">
+          {week6.map((day, index) => (
+            <Day day={day} key={index} handleClick={handleClick} />
+          ))}
         </div>
       </div>
+      <div className="events">
+        <h2>Events of the month</h2>
 
-      <div id="deleteEventModal" className={`modal${deleteModalVisible ? ' visible' : ''}`}>
-        <div className="modal-content">
-          <span className="close" onClick={closeModal}>
-            &times;
-          </span>
-          <h2>Delete Event</h2>
-          <p id="eventText">{clickedEvent}</p>
-          <button id="deleteButton" onClick={deleteEvent}>
-            Delete
-          </button>
-          <button id="cancelButton" onClick={closeModal}>
-            Cancel
-          </button>
+        <div className="event_calendar">
+          02/03/2023 - <span className="event_name">Submission of report</span>
+        </div>
+        <div className="event_calendar">
+          04/03/2023 - <span className="event_name">Submission of folder</span>
+        </div>
+        <div className="event_calendar">
+          06/03/2023 -
+          <span className="event_name">Submission of project presentation</span>
+        </div>
+        <div className="event_calendar">
+          08/03/2023 - <span className="event_name">Submission of project</span>
+        </div>
+        <div className="event_calendar">
+          10/03/2023 - <span className="event_name">Submission of project</span>
         </div>
       </div>
-
-      <div id="modalBackDrop"></div>
+      <Popover
+        showPopover={showPopover}
+        clickedDate={clickedDate}
+        setShowPopover={setShowPopover}
+      />
     </div>
   );
 };
 
 export default Calendar;
-
-
-
-
-
-import React, { useState } from 'react';
-import Calendar from 'react-calendar';
-
-function calendar() {
-  const [date, setDate] = useState(new Date());
-  const [events, setEvents] = useState([]);
-
-  function handleDateClick(date) {
-    setEvents((events => [...events, date]));
-  }
-
-  return (
-    <div>
-      <h1>Simple Calendar</h1>
-      <Calendar
-        onChange={setDate}
-        value={date}
-        onDateClick={handleDateClick}
-      />
-      <ul>
-        {events.map((event, index) => (
-          <li key={index}>{event}</li>
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-export default calendar;
-*/

@@ -91,12 +91,33 @@ html {
 	border-radius: 10px;
 
 }
+.student .create{
+	position: relative;
+	width: 8%;
+	height: 6%;
+	left: 190rem;
+	top: 0.01rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+
+}
   .student .bgrect {
 	width: 100vw;
 	height: 15rem;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;
+}
+.student.Dashboard {
+	color: black;
+	transform: translate(50px,50px);
 }
 .projectsmap{
 	transform: translateY(33rem);

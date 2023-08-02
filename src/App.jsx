@@ -19,7 +19,7 @@ import ForgotPasswordStudent from "./pages/forgotpasswordstudent";
 import ForgotPasswordGuide from "./pages/forgotpasswordguide";
 import ForgotPasswordCoordinator from "./pages/forgotpasswordcoordinator";
 import ProjectDetails from "./pages/projectdetails";
-// import Calendar from "./pages/calendar";
+import Calendar from "./pages/calendar";
 // import StudentHome from "./pages/"
 //import Timeline from "./pages/timeline";
 
@@ -27,7 +27,6 @@ import ProjectDetails from "./pages/projectdetails";
 import Miniproject from "./pages/miniprojectlist";
 import Mainproject from "./pages/mainprojectlist";
 import ProjectSearch from "./pages/projectsearch";
-//import Calendar from "./pages/calendar";
 import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
@@ -49,6 +48,7 @@ import DeleteGuide from "./pages/deleteguide";
 import DeleteCoordinator from "./pages/deletecoordinator";
 import TeamDashboard from './pages/teamdashboard'
 import Members from "./pages/members";
+import FileUploader from "./pages/fileupload";
 
 //announcement
 import Announce from "./pages/makeannouncement";
@@ -73,6 +73,7 @@ function App() {
           <Route path="/adminlogin" element={<LoginAdmin />} />
           <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
           
+          
 
           {/* features */}
           <Route path="/miniproject" element={<Miniproject />} />
@@ -93,6 +94,7 @@ function App() {
           <Route path="/deletestudent" element={<DeleteStudent />} />
           <Route path="/deleteguide" element={<DeleteGuide />} />
           <Route path="/deletecoordinator" element={<DeleteCoordinator />} />
+          <Route path="/fileupload" element={<FileUploader />} />
 
 
           {/* login pages */}
@@ -116,6 +118,7 @@ function App() {
           <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
           <Route path="/studentsignup" element={<SignupStudent />} />
           <Route path="/guidesignup" element={<SignupGuide />} />
+          
 
           {/* Home Pages */}
           <Route path="/adminhomepage" element={<AdminHome />} />
@@ -131,7 +134,8 @@ function App() {
           <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
           <Route path="/makeannouncement" element={<Announce />} />
           <Route path="/announcements" element={<Announcements />} />
-          
+<Route path="/calendar" element={<Calendar />} /> 
+
         </Routes>
       </BrowserRouter>
     </>
@@ -141,4 +145,3 @@ function App() {
 export default App;
 
 /*<Route path="/makeannouncement" element={<Announce />} /> */
-/*<Route path="/calendar" element={<Calendar />} /> */

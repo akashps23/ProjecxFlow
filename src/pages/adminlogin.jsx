@@ -60,12 +60,7 @@ export default function LoginAdmin() {
           onChange={(event) => setPassword(event.target.value)}
         />
         </form>
-        <Link to="/forgotpasswordstudent">
-          <p className="forgot_pass">Forgot Password</p>3
-        </Link>
-        <Link to="/studentsignup">
-          <p className="create_acc">Create an Account</p>
-        </Link>
+        
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>
         <p className="tagline">A Complete Solution for Managing Projects </p>

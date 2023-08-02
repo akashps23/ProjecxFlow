@@ -30,6 +30,9 @@ export default function LoginStudent() {
         setUsername("");
         setPassword("");
       }
+      else{
+        message.error("Something went Wrong!!")
+      }
     } catch (error) {
       console.error(error);
     }
