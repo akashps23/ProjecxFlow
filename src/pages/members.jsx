@@ -9,13 +9,13 @@ const Members = () =>{
 
     const getTeamData = async () => {
         try {
-          const teamId = localStorage.getItem("projectId")
+          const teamId = localStorage.getItem("teamId")
           console.log(teamId)
           const response = await axios.get(
             `http://localhost:9014/api/v1/user/getTeamData?teamId=${teamId}`
           );
-          console.log(response)
           if (response.data.success) {
+            localStorage.setItem("projectId",response.data.data.projectId);
             SetTeamdata(response.data.data);
           }
         } catch (error) {
@@ -42,6 +42,11 @@ const Members = () =>{
             <button>
             <Link to="/calendar">
               Calendar
+              </Link>
+            </button>
+            <button>
+            <Link to="/fileupload">
+              attachments
               </Link>
             </button>
               

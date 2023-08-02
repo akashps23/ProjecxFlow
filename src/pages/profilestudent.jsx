@@ -39,9 +39,9 @@ const StudentHome = () => {
     }
   };
 
-  const handleClick = (projectId) => {
-    console.log(projectId)
-    localStorage.setItem('projectId', projectId);
+  const handleClick = (teamId) => {
+    console.log(teamId)
+    localStorage.setItem('teamId', teamId);
     navigate('/teammembers');
   };
 
