@@ -1,7 +1,11 @@
+import { message } from "antd";
 import Popover from "../components/calendar/Popover";
 import Day from "../components/calendar/day";
+import Events from "../components/calendar/Events";
 import "../styles/calendar.css";
 import React, { useState, useEffect } from "react";
+import axios from "axios";
+import { Link } from "react-router-dom";
 const months = [
   "January",
   "February",
@@ -29,25 +33,36 @@ const Calendar = () => {
   const [week4, setWeek4] = useState([]);
   const [week5, setWeek5] = useState([]);
   const [week6, setWeek6] = useState([]);
-  const [events, setEvents] = useState([]);
+  const [events, setEvents] = useState(null);
+  const [eventsOfThisMonth, setEventsOfThisMonth] = useState(null);
   const [showPopover, setShowPopover] = useState(false);
   const [clickedDate, setClickedDate] = useState("");
-
+  const findEventsOfThisMonth = (events, month) => {
+    if(!events || !month) return
+    const filteredEvents = events.filter(event => {
+      const m = event.date.split('/')[1];
+      let temp = months.indexOf(month) + 1;
+      let monthFiltered = temp < 10 ? "0" + temp : temp
+      return m === monthFiltered;
+    });
+    if(filteredEvents) setEventsOfThisMonth(filteredEvents);
+  };
   const getEvents = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:9014/api/v1/user/events",
-        {
-          teamid: localStorage.getItem("teamId"),
-        }
-      );
-      if (response.data.success) {
-
-      }
+        `http://localhost:9014/api/v1/user/events/${localStorage.getItem("projectId")}`,);
+      if (response.data.length!==0) {
+        setEvents(response.data);
+        findEventsOfThisMonth(response.data, month)
+        message.success("retrieved successfully");
+      }else setEvents([]);
+      console.log(response);
     } catch (error) {
       console.error(error);
     }
   };
+
+  
   const updateCalendar = (month, year) => {
     const firstDay = new Date(year, month, 1).getDay();
     const daysInMonth = new Date(year, month + 1, 0).getDate();
@@ -62,7 +77,6 @@ const Calendar = () => {
     setWeek4(days.slice(21, 28));
     setWeek5(days.slice(28, 35));
     setWeek6(days.slice(35));
-    console.log(days);
   };
   // update calendar on load
   useEffect(() => {
@@ -79,6 +93,7 @@ const Calendar = () => {
     }
     setMonth(months[newMonthIndex]);
     setYear(newYear);
+    findEventsOfThisMonth(events, months[newMonthIndex])
     updateCalendar(newMonthIndex, newYear);
   };
 
@@ -91,6 +106,7 @@ const Calendar = () => {
     }
     setMonth(months[newMonthIndex]);
     setYear(newYear);
+    findEventsOfThisMonth(events, months[newMonthIndex])
     updateCalendar(newMonthIndex, newYear);
   };
   const handleClick = (day) => {
@@ -164,25 +180,30 @@ const Calendar = () => {
           ))}
         </div>
       </div>
-      <div className="events">
+      <div className="events" style={{display:'flex', flexDirection:'column', gap:'2rem'}}>
         <h2>Events of the month</h2>
+        <div id="buttonContainer">
+            <button id="backButton" onClick={getEvents}>
+              Refresh events
+            </button>
+            <button id="nextButton">
+              <Link to="/teammembers">
+              Go Back
+              </Link>
+            </button>
+        </div>
+        <div className="events_component">
+            {
+  eventsOfThisMonth
+    ? eventsOfThisMonth.length !== 0
+      ? eventsOfThisMonth?.map((event, index) => (
+          <Events key={index} date={event.date} title={event.title} id={event._id} />
+        ))
+      : "No events to show"
+    : "Loading..."
+}
 
-        <div className="event_calendar">
-          02/03/2023 - <span className="event_name">Submission of report</span>
-        </div>
-        <div className="event_calendar">
-          04/03/2023 - <span className="event_name">Submission of folder</span>
-        </div>
-        <div className="event_calendar">
-          06/03/2023 -
-          <span className="event_name">Submission of project presentation</span>
-        </div>
-        <div className="event_calendar">
-          08/03/2023 - <span className="event_name">Submission of project</span>
-        </div>
-        <div className="event_calendar">
-          10/03/2023 - <span className="event_name">Submission of project</span>
-        </div>
+            </div>
       </div>
       <Popover
         showPopover={showPopover}

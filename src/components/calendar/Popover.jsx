@@ -1,13 +1,45 @@
 import { useRef, useState } from "react";
 import "../../styles/popover.css";
+import { message } from "antd";
+import axios from "axios";
 
 export default function Popover(props) {
   const nameRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const onGoToRoom = (e) => {
+  const sendData = async (temp)=>{
+    try{
+      const response = await axios.post("http://localhost:9014/api/v1/user/events",temp);
+      console.log(response);
+      if(response.status===201)
+      {
+        message.success("added successfully");
+      }
+      else
+      {
+        message.error("Something went wrong!");
+      }
+    }catch(err){
+      console.log(err);
+    }
+  }
+
+
+  const onGoToRoom = async(e) => {
     e.preventDefault();
-    alert(props.clickedDate);
+    const teamId=localStorage.getItem('projectId')
+    const name = nameRef?.current?.value
+    if(!teamId || !name){
+      console.log("No team Id found")
+      return
+    }
     props.setShowPopover(false);
+    let temp = {
+      date: props.clickedDate,
+      teamId: teamId,
+      title: name,
+    }
+    await sendData(temp)
+    nameRef.current.value=""
   };
   return (
     <form

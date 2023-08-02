@@ -4,7 +4,9 @@
 	height: 420px;
 	width: 500px;
 	position: absolute;
-	bottom: 1%;
+	top: 20%;
+	left: 50%;
+	transform: translateX(-50%);
 	border-radius: 15px;
 	overflow: hidden;
 	display: grid;
