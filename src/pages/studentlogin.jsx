@@ -72,7 +72,7 @@ export default function LoginStudent() {
       </Link>
       <p className="welcome">Welcome Back</p>
       <div className="line"></div>
-      <p className="tagline">A Complete Solution for Managing Projects </p>
+      
     </div>
   );
 }

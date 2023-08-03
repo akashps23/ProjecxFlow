@@ -35,27 +35,27 @@ body {
   width: 24.4rem;
   height: 6.7rem;
   position: absolute;
-  left: 37rem;
-  top: 80.5rem;
+  left: 14%;
+  top: 74.5%;
   font-size: 6rem;
   font-weight: 600;
   line-height: 1.1075;
   color: #050505;
-  font-family: 'Source Sans Pro';
+  font-family: Helvetica;
   white-space: nowrap;
 }
 .login_page .login_key {
-  /* width: 16rem; */
+  width: 16rem;
   height: 6rem;
   position: absolute;
-  left: 164rem;
+  left: 70%;
   top: 65rem;
   font-size: 2.4rem;
   font-weight: 400;
   display: flex;
   align-items: center;
   text-align: center;
-  padding: 0px 50px;
+  padding: 0px 30px;
   color: #ffffff;
   background-color: #191919;
   border-radius: 1.2rem;
@@ -77,10 +77,11 @@ body {
   width: 8rem;  
   height: 6rem;
   position: absolute;
-  left: 25rem;
+  left: 8%;
   top: 80rem;
+  scale: 70%;
   background-size: 100% 120%;
-  background-position: 0 -12rem;
+  background-position: 0 -20rem;
   background-image: url('../assets/logo.png');
   object-fit: cover;
   vertical-align: top;
@@ -129,7 +130,7 @@ body {
   font-weight: 450;
   line-height: 1.5;
   color: #000000;
-  font-family: Helvetica, 'Source Sans Pro';
+  font-family: Helvetica, '';
   white-space: nowrap;
 }
 .login_page .forgot_pass {

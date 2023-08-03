@@ -50,7 +50,7 @@ const Calendar = () => {
   const getEvents = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:9014/api/v1/user/events/${localStorage.getItem("teamId")}`,);
+        `${process.env.VITE_API_URL}/user/events/${localStorage.getItem("teamId")}`,);
       if (response.data.length!==0) {
         setEvents(response.data);
         findEventsOfThisMonth(response.data, month)

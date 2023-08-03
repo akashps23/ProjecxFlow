@@ -31,7 +31,6 @@ import Guidelist from "./pages/guidelist";
 import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
 import Coordinatorlist from "./pages/coordinatorlist";
-import History from "./pages/history";
 import Projectlist from "./pages/projectlist";
 
 //home profile
@@ -40,22 +39,19 @@ import CoordinatorHome from "./pages/profilecoordinator";
 import GuideHome from "./pages/profileguide";
 import StudentHome from "./pages/profilestudent";
 import Studentlist from "./pages/studentlist";
-import StudentlistAdmin from "./pages/studentlistadmin"
+import StudentlistAdmin from "./pages/studentlistadmin";
 import MyguideProjects from "./pages/myguideprojects";
 import DeleteStudent from "./pages/deletestudent";
 import GuidelistAdmin from "./pages/guidelistadmin";
 import DeleteGuide from "./pages/deleteguide";
 import DeleteCoordinator from "./pages/deletecoordinator";
-import TeamDashboard from './pages/teamdashboard'
+import TeamDashboard from "./pages/teamdashboard";
 import Members from "./pages/members";
 import FileUploader from "./pages/fileupload";
 
 //announcement
 import Announce from "./pages/makeannouncement";
 import Announcements from "./pages/announcement";
-
-
-
 
 import React from "react";
 import "./App.css";
@@ -72,34 +68,20 @@ function App() {
           <Route path="/guidelogin" element={<LoginGuide />} />
           <Route path="/adminlogin" element={<LoginAdmin />} />
           <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
-          
-          
 
           {/* features */}
           <Route path="/miniproject" element={<Miniproject />} />
           <Route path="/mainproject" element={<Mainproject />} />
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/teamcreate" element={<TeamCreate />} />
-          
-          <Route path="/studentlist" element={<Studentlist />} />
-          <Route path="/studentlistadmin" element={<StudentlistAdmin />} />
-          <Route path="/guidelist" element={<Guidelist />} />
-          <Route path="/guidelistadmin" element={<GuidelistAdmin />} />
-          <Route path="/myprojects" element={<MyProjects />} />
-          <Route path="/guidanceproject" element={<GuidanceProject />} />
-          <Route path="/coordinatorlist" element={<Coordinatorlist />} />
-          <Route path="/projectlist" element={<Projectlist/>} />
-          <Route path="/history" element={<History />} />
           <Route path="/myguideprojects" element={<MyguideProjects />} />
           <Route path="/deletestudent" element={<DeleteStudent />} />
           <Route path="/deleteguide" element={<DeleteGuide />} />
           <Route path="/deletecoordinator" element={<DeleteCoordinator />} />
           <Route path="/fileupload" element={<FileUploader />} />
 
-
           {/* login pages */}
           <Route path="/usertype" element={<UserType />} />
-          {/* login page */}
           <Route
             path="/forgotpasswordstudent"
             element={<ForgotPasswordStudent />}
@@ -118,24 +100,32 @@ function App() {
           <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
           <Route path="/studentsignup" element={<SignupStudent />} />
           <Route path="/guidesignup" element={<SignupGuide />} />
-          
 
           {/* Home Pages */}
           <Route path="/adminhomepage" element={<AdminHome />} />
+
           {/* Team Create */}
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
           <Route path="/teamdashboard" element={<TeamDashboard />} />
           <Route path="/teammembers" element={<Members />} />
-           
-          
+
           <Route path="/guidehomepage" element={<GuideHome />} />
           <Route path="/studenthomepage" element={<StudentHome />} />
           <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
           <Route path="/makeannouncement" element={<Announce />} />
           <Route path="/announcements" element={<Announcements />} />
-<Route path="/calendar" element={<Calendar />} /> 
+          <Route path="/calendar" element={<Calendar />} />
 
+          {/* list pages */}
+          <Route path="/studentlist" element={<Studentlist />} />
+          <Route path="/studentlistadmin" element={<StudentlistAdmin />} />
+          <Route path="/guidelist" element={<Guidelist />} />
+          <Route path="/guidelistadmin" element={<GuidelistAdmin />} />
+          <Route path="/myprojects" element={<MyProjects />} />
+          <Route path="/guidanceproject" element={<GuidanceProject />} />
+          <Route path="/coordinatorlist" element={<Coordinatorlist />} />
+          <Route path="/projectlist" element={<Projectlist />} />
         </Routes>
       </BrowserRouter>
     </>
