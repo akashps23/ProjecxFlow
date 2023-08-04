@@ -53,7 +53,7 @@ export default function Popover(props) {
     >
       <input
         type="text"
-        placeholder="Enter your name"
+        placeholder="Enter the event details"
         className={"input"}
         ref={nameRef}
         autoComplete="off"

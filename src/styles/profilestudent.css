@@ -54,7 +54,7 @@ html {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 12rem;
+	left: 15rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
@@ -142,6 +142,7 @@ html {
   .student .bgrect {
 	width: 100vw;
 	height: 15rem;
+	z-index: 0;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;

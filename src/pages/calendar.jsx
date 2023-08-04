@@ -130,6 +130,24 @@ const Calendar = () => {
 
   return (
     <div className="calendar_section">
+      <Link to="/calendar">
+        <div className="goto_cal">CALENDER</div>
+      </Link>
+
+      <Link to="/viewannouncement">
+        <div className="goto_ann">ANNOUNCEMENTS</div>
+      </Link>
+
+      <Link to="/teammembers">
+        <div className="goto_mem">TEAM MEMBERS</div>
+      </Link>
+      <p className="usertype">Calender</p>
+      <div className="bgrect"></div>
+      <img className="logo" />
+      <div className="line"></div>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
       <div id="container">
         <div id="header">
           <div id="monthDisplay">

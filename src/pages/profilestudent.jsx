@@ -63,7 +63,7 @@ const StudentHome = () => {
         )}
         <img className="logo" />
         <div className="line"></div>
-        <p className="usertype">Student</p>
+        <p className="usertype">Dashboard</p>
         <Link to="/">
           <p className="logout">Log Out</p>
         </Link>
@@ -104,7 +104,7 @@ const StudentHome = () => {
         )}
         <img className="logo" />
         <div className="line"></div>
-        <p className="usertype">Student</p>
+        <p className="usertype">Dashboard</p>
         <Link to="/">
           <p className="logout">Log Out</p>
         </Link>

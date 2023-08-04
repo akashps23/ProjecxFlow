@@ -222,6 +222,7 @@ html {
 	position: relative;
 	top: 100rem;
 	left: 0px;
+	width: 35rem;
 	text-align: center;
 	font-weight: 600;
 	font-size: 1.2vw;
@@ -234,6 +235,7 @@ html {
   .team .bgrect {
 	width: 100vw;
 	height: 20rem;
+	z-index: 0;
 	position: absolute;
 	top: 0rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

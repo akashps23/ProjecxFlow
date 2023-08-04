@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "../styles/fileupload.css";
 import { message } from "antd";
+import { Link } from "react-router-dom";
 
 const FileUploader = () => {
   const [file, setFile] = useState(null);
@@ -52,10 +54,10 @@ const FileUploader = () => {
   const fetchLinkFromFile = async (route) => {
     try {
       const response = await axios.get(
-        `http://localhost:9014/api/v1/pdf/view${route}/${projectId}`
+        `${import.meta.env.VITE_API_URL}/pdf/view${route}/${projectId}`
       );
-      let link = response.data
-      if(link==="") message.error("File not uploaded yet!")
+      let link = response.data;
+      if (link === "") message.error("File not uploaded yet!");
       else window.open(link);
     } catch (error) {
       console.log(error);
@@ -120,14 +122,34 @@ const FileUploader = () => {
   };
 
   const buttonStyles = {
-    fontSize: "2rem",
-    margin: "0rem 1rem",
+    fontSize: "3rem",
+
+    margin: "1rem 3rem",
   };
 
   return (
-    <div style={{ fontSize: "4rem" }}>
-      <h2>File Uploader</h2>
-      <input type="file" onChange={handleFileChange} />
+    <div className="file_upload">
+      <h2 className="file_title">Upload A File</h2>
+      <h2 className="file_title2">Choose The File Type</h2>
+      <Link to="/calendar">
+        <div className="goto_cal">CALENDER</div>
+      </Link>
+
+      <Link to="/viewannouncement">
+        <div className="goto_ann">ANNOUNCEMENTS</div>
+      </Link>
+
+      <Link to="/teammembers">
+        <div className="goto_mem">TEAM MEMBERS</div>
+      </Link>
+      <p className="usertype">Attachments</p>
+      <div className="bgrect"></div>
+      <img className="logo" />
+      <div className="line"></div>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
+      <input className="fileuploadkey" type="file" onChange={handleFileChange} />
       {file && (
         <div>
           <h3>Selected File:</h3>
@@ -136,54 +158,82 @@ const FileUploader = () => {
           <p>Type: {file.type}</p>
         </div>
       )}
-      <div>
+      <div className="upload_button">
         <br></br>
-        <button style={{ ...buttonStyles }} onClick={handleUploadabstract}>
-          Upload Abstract
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadabstract}>
+          Abstract
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleUploadsrs}>
-          Upload SRS
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadsrs}>
+          SRS
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleUploadsdd}>
-          Upload SDD
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadsdd}>
+          SDD
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleUploadppt}>
-          Upload PPT
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadppt}>
+          PPT
         </button>
-        <button
+        <button className="upload_button"
           style={{ ...buttonStyles }}
           onClick={handleUploadimplementation}
         >
-          Upload Implementation
+          Implementation
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleUploaddiary}>
-          Upload Diary
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploaddiary}>
+          Diary
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleUploadreport}>
-          Upload Report
+        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadreport}>
+          Report
         </button>
       </div>
 
-      <div>
-        <button style={{ ...buttonStyles }} onClick={handleViewabstract}>
+      <div className="view_button">
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewabstract}
+        >
           View Abstract
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewsrs}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewsrs}
+        >
           View SRS
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewsdd}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewsdd}
+        >
           View SDD
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewppt}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewppt}
+        >
           View PPT
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewimplementation}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewimplementation}
+        >
           View Implementation
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewdiary}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewdiary}
+        >
           View Diary
         </button>
-        <button style={{ ...buttonStyles }} onClick={handleViewreport}>
+        <button
+          className="view_button"
+          style={{ ...buttonStyles }}
+          onClick={handleViewreport}
+        >
           View Report
         </button>
       </div>

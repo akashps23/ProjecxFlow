@@ -48,7 +48,7 @@ html {
 	position: relative;
 	left: -10%;
 	top: 6.3%;
-
+	scale: 90%;
 	object-fit: cover;
 	background-color: #ffffff00;
 	border-color: #00000000 ;	
@@ -161,7 +161,7 @@ html {
 	width: 15%;
 	height: 6%;
 	left: 100rem;
-	top: -10rem;
+	top: -12rem;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
@@ -176,6 +176,7 @@ html {
 .home_page .bgrect {
 	width: 100vw;
 	height: 45rem;
+	z-index: 0;
 	position: relative;
 	top: 26rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

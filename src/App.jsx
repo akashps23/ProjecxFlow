@@ -52,6 +52,7 @@ import FileUploader from "./pages/fileupload";
 //announcement
 import Announce from "./pages/makeannouncement";
 import Announcements from "./pages/announcement";
+import ViewAnnouncement from "./pages/viewannouncement";
 
 import React from "react";
 import "./App.css";
@@ -113,8 +114,6 @@ function App() {
           <Route path="/guidehomepage" element={<GuideHome />} />
           <Route path="/studenthomepage" element={<StudentHome />} />
           <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
-          <Route path="/makeannouncement" element={<Announce />} />
-          <Route path="/announcements" element={<Announcements />} />
           <Route path="/calendar" element={<Calendar />} />
 
           {/* list pages */}
@@ -126,6 +125,11 @@ function App() {
           <Route path="/guidanceproject" element={<GuidanceProject />} />
           <Route path="/coordinatorlist" element={<Coordinatorlist />} />
           <Route path="/projectlist" element={<Projectlist />} />
+
+          {/* Announcements */}
+          <Route path="/viewannouncement" element={<ViewAnnouncement />} />
+          <Route path="/makeannouncement" element={<Announce />} />
+          <Route path="/announcements" element={<Announcements />} />
         </Routes>
       </BrowserRouter>
     </>

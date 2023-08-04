@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/viewannouncement.css";
+import { Link } from "react-router-dom";
 
-const Announcements = () => {
+const ViewAnnouncement = () => {
   const [announcements, setAnnouncements] = useState([]);
   useEffect(() => {
     fetchAnnouncements();
@@ -22,12 +23,29 @@ const Announcements = () => {
 
   return (
     <div className="announcement">
+      <Link to="/calendar">
+        <div className="goto_cal">CALENDER</div>
+      </Link>
+
+      <Link to="/fileupload">
+        <div className="goto_ann">ATTACHMENTS</div>
+      </Link>
+
+      <Link to="/teammembers">
+        <div className="goto_mem">TEAM MEMBERS</div>
+      </Link>
+      <p className="usertype">Attachments</p>
       <div className="bgrect"></div>
-      <h2 className="title">Announcements</h2>
+      <img className="logo" />
+      <div className="line"></div>
+      <Link to="/">
+        <p className="logout">Log Out</p>
+      </Link>
       {announcements.map((announcement) => (
-        <div key={announcement}>
-          <h3>
-            {announcement.announcement} - {announcement.date}
+        <div className="anno_key" key={announcement}>
+          <p className="anno_date">{announcement.date}</p>
+          <h3 className="data">
+            {announcement.announcement}
           </h3>
         </div>
       ))}
@@ -35,4 +53,4 @@ const Announcements = () => {
   );
 };
 
-export default Announcements;
+export default ViewAnnouncement;
