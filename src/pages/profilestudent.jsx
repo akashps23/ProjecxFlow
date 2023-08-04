@@ -72,7 +72,7 @@ const StudentHome = () => {
         </Link>
         <div className="bgrect"></div>
         <div className="bgrect"></div>
-        <h2>Dashboards</h2>
+        {/* <h2>Dashboards</h2> */}
         <div className="searchResults_s" style={{marginTop:`30rem`}}>
         {projects.map((project, index) => (
           <CardComponent
@@ -95,7 +95,7 @@ const StudentHome = () => {
           <>
             <p className="title">Welcome {userData.name}</p>
             <p>ID: {userData.id}</p>
-          <p className="title" style={{marginTop:`15rem`,lineHeight:`100%`,fontSize:`3rem`}}>oh!You don't have any Dashboard yet,Create a team for u</p>
+          <p className="msg"> You Don't Have Any Dashboard Yet</p>
             <div className="Dashboard">
         </div>
           </>
@@ -109,7 +109,7 @@ const StudentHome = () => {
           <p className="logout">Log Out</p>
         </Link>
         <Link to="/teamcreate">
-          <p className="create">Create Dashboard</p>
+          <p className="create2">Create a new dashboard</p>
         </Link>
         <div className="bgrect"></div>
         <div className="bgrect"></div>

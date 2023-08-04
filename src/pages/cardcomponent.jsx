@@ -4,11 +4,13 @@ import '../styles/CardComponent.css';
 const CardComponent = ({ title,type,year,handleClick }) => {
   return (
     <div className="card">
-      <button className="card-content" onClick={handleClick} style={{color:'white', opacity:'0.8'}}>
+      <div className="card-content" onClick={handleClick} style={{color:'white', opacity:'0.8'}}>
         <h1 className="card-title">{title}</h1>
+        <div className='holder_title'>
         <p className="card-type">{type}</p>
-        <p className="card-year">{year}</p>
-      </button>
+        <h2 className="card-year">{year}</h2>
+        </div>
+      </div>
     </div>
   );
 };

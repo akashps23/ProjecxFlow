@@ -36,7 +36,21 @@
 	font-family: 'Helvetica';
 	font-weight: 600;
 }
+/* .minilist .list {
 
+   width: 43.8rem;
+   height: 6rem;
+   position: absolute;
+   left: 153rem;
+   background-color: #ffffff;
+   border-radius: 1.5rem;
+   font-size: 2.4rem;
+   font-weight: 450;
+   line-height: 1.5;
+   color: #000000;
+   font-family: Helvetica;
+      
+} */
 .minilist .bgrect {
 	width: 100vw;
 	height: 15rem;

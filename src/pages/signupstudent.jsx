@@ -66,7 +66,7 @@ const SignupStudent = () => {
     }
   };
   return (
-    <div className="sign_up">
+    <div className="signup_student">
       <div className="title">Creating an Account</div>
       <form onSubmit={handlestudentSignup}>
         <input

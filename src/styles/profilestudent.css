@@ -40,9 +40,10 @@ html {
 	width: 6rem;  
 	height: 4rem;
 	position: absolute;
-	left: 5rem;
-	top: 3.5rem;
+	left: 3rem;
+	top: 0.8rem;
 	z-index: 1;
+	scale: 50%;
 	background-size: 100% 120%;
 	background-position: 0rem;
 	background-image: url('../assets/logo.png');
@@ -53,15 +54,15 @@ html {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 11rem;
+	left: 12rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
-	font-weight: 500;
+	font-weight: 700;
 	line-height: 1.1075;
 	color: #050505;
 	word-spacing: 0rem;
-	font-family: 'Source Sans Pro';
+	font-family: Helvetica;
 	white-space: nowrap;
   }
   .student .line {
@@ -79,7 +80,7 @@ html {
 	width: 8%;
 	height: 6%;
 	left: 215rem;
-	top: 2.5rem;
+	top: 0rem;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
@@ -93,10 +94,40 @@ html {
 }
 .student .create{
 	position: relative;
-	width: 8%;
+	width: 15%;
 	height: 6%;
-	left: 190rem;
-	top: 0.01rem;
+	left: 175rem;
+	top: -6.7rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+}
+.student .msg{
+	position: absolute;
+	width: 45%;
+	height: 5%;
+	align-content: center;
+	left: calc(55% - 30%);
+	top: 50%;
+    z-index: 1;
+	
+	font-size: 6rem;
+	font-family: 'Arial';
+	font-weight: 500;
+	color: #000000;
+  }
+.student .create2{
+	position: relative;
+	width: 18%;
+	height: 6%;
+	left: 39%;
+	top: 55%;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
