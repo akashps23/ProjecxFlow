@@ -22,39 +22,11 @@ export default function ProjectSearch() {
             body: JSON.stringify({ searchQuery: txt }),
           }
         );
-
         if (response.ok) {
           const data = await response.json();
-          setSearchResults(data.results); 
-        return (
-          <div className="projectsearch_s">
-              <div className="search_rect_s">
-              <img className="searchimg_s"></img>
-              <p className="title_s">Similar projects like " {txt} "</p>
-              </div>
-              <div className="searchResults_s">
-              {searchResults.map((result) => (
-                <CardComponent key={result.id} 
-                title={result.title}
-                type={result.type}
-                year={result.year} />
-              ))}        
-              </div>
-          </div>
-        )
-              }
-        else
-        {
-          return (
-            <div className="projectsearch_s">
-                <div className="search_rect_s">
-                <img className="searchimg_s"></img>
-                <p className="title_s">Oops! No result found</p>
-                </div>
-            </div>
-          );
+          setSearchResults(data.results);
         }
-} catch (error) {
+      } catch (error) {
         console.error("Error fetching search results:", error);
       }
     };
@@ -62,5 +34,33 @@ export default function ProjectSearch() {
     fetchSearchResults();
   }, [txt]);
 
+  if (searchResults.length > 0)
+    return (
+      <div className="projectsearch_s">
+        <div className="search_rect_s">
+          <img className="searchimg_s"></img>
+          <p className="title_s">Similar projects like " {txt} "</p>
+        </div>
+        <div className="searchResults_s">
+          {searchResults.map((result) => (
+            <CardComponent
+              key={result.id}
+              title={result.title}
+              type={result.type}
+              year={result.year}
+            />
+          ))}
+        </div>
+      </div>
+    );
+  else {
+    return (
+      <div className="projectsearch_s">
+        <div className="search_rect_s">
+          <img className="searchimg_s"></img>
+          <p className="title_s">Oops! No result found</p>
+        </div>
+      </div>
+    );
+  }
 }
-
