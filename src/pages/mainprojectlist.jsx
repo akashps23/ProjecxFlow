@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/mainprojectlist.css";
 
-
 const Mainproject = () => {
   const [projects, setProjects] = useState([]);
 
@@ -15,7 +14,7 @@ const Mainproject = () => {
       const response = await axios.get(
         `${import.meta.env.VITE_API_URL}/user/projectmain`
       );
-      console.log(response);
+      //console.log(response);
       setProjects(response.data.projects);
     } catch (error) {
       console.error("Error fetching projects:", error);
