@@ -22,7 +22,7 @@ const StudentHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/getStudentData",
+        `${process.env.VITE_API_URL}/user/getStudentData`,
         {},
         {
           headers: {

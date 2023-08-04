@@ -11,7 +11,7 @@ const GuidelistAdmin = () => {
 
   const fetchGuides = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/guidelistadmin');
+      const response = await axios.get(`${process.env.VITE_API_URL}/user/guidelistadmin`);
       console.log(response)
       setGuides(response.data.guides);
     } catch (error) {

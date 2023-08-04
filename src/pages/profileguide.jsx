@@ -9,7 +9,7 @@ const GuideHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/getGuideData",
+        `${process.env.VITE_API_URL}/user/getGuideData`,
         {},
         {
           headers: {

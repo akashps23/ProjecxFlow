@@ -32,7 +32,7 @@ const FileUploader = () => {
       const formData = new FormData();
       formData.append("pdf", file);
       const response = await axios.post(
-        `http://localhost:9014/api/v1/pdf/${route}/${projectId}`,
+        `${process.env.VITE_API_URL}/pdf/${route}/${projectId}`,
         formData,
         {
           headers: {

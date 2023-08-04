@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../styles/miniprojectlist.css"
 
 const Miniproject = () => {
   const [projects, setProjects] = useState([]);
@@ -10,7 +11,7 @@ const Miniproject = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/projectmini');
+      const response = await axios.get(`${process.env.VITE_API_URL}/user/projectmini`);
       setProjects(response.data.projects);
       console.log(response);
     } catch (error) {
@@ -19,8 +20,9 @@ const Miniproject = () => {
   };
 
   return (
-    <div>
-      <h2>Mini Projects</h2>
+    <div className='minilist'>
+      <h2 className='title'>Mini Projects</h2>
+      <div className='bgrect'></div>
       {projects.map((project) => (
         <div key={project._id}>
           <h3>{project.title} - {project.year}</h3>

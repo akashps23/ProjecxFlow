@@ -8,17 +8,21 @@ export default function LoginStudent() {
   const navigate = useNavigate();
   const [email, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [isEmpty, setIsEmpty] = useState(true);
 
   const handlestudentLogin = async (event) => {
     event.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/studentlogin",
+        `${process.env.VITE_API_URL}/user/studentlogin`,
         {
           email,
           password,
         }
       );
+      // if (setIsEmpty(value === "")) {
+      //   message.error("Enter a Username or Password");
+      // } else {
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
         localStorage.setItem("studentId", response.data.studentId);
@@ -29,9 +33,8 @@ export default function LoginStudent() {
         // Reset the form
         setUsername("");
         setPassword("");
-      }
-      else{
-        message.error("Something went Wrong!!")
+      } else {
+        message.error("Something went Wrong!!");
       }
     } catch (error) {
       console.error(error);
@@ -72,8 +75,6 @@ export default function LoginStudent() {
       </Link>
       <p className="welcome">Welcome Back</p>
       <div className="line"></div>
-      
     </div>
   );
 }
-

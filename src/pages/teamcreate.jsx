@@ -1,22 +1,22 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { message } from 'antd';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import { message } from "antd";
 
 import "../styles/teamcreate.css";
 
 const TeamCreate = () => {
-  const navigate=useNavigate();
-    // alert(yearRef.current.value);
-  const [title, settitle] = useState('');
-  const [type, settype] = useState('Mini Project');
-    const [coordinator, setcoordinator] = useState('');
-    const [guide, setguide] = useState('');
-    const [member1, setmember1] = useState('');
-    const [member2, setmember2] = useState('');
-    const [member3, setmember3] = useState('');
-    const [member4, setmember4] = useState('');
-    const [year,setYear] = useState('');
+  const navigate = useNavigate();
+  // alert(yearRef.current.value);
+  const [title, settitle] = useState("");
+  const [type, settype] = useState("Mini Project");
+  const [coordinator, setcoordinator] = useState("");
+  const [guide, setguide] = useState("");
+  const [member1, setmember1] = useState("");
+  const [member2, setmember2] = useState("");
+  const [member3, setmember3] = useState("");
+  const [member4, setmember4] = useState("");
+  const [year, setYear] = useState("");
 
   const handleteamadd = async (event) => {
     event.preventDefault();
@@ -26,7 +26,7 @@ const TeamCreate = () => {
     try {
       // Send the form data to the backend API
       const response = await axios.post(
-        "http://localhost:9014/api/v1/user/teamcreate",
+        `${process.env.VITE_API_URL}/user/teamcreate`,
         {
           title,
           type,
@@ -136,8 +136,9 @@ const TeamCreate = () => {
           onChange={(event) => setguide(event.target.value)}
         />
         <div className="bgrect"></div>
-        <button className="submit" type="submit">submit</button>
-        
+        <button className="submit" type="submit">
+          submit
+        </button>
       </form>
     </div>
   );

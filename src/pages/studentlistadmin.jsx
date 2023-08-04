@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 
 const StudentlistAdmin = () => {
@@ -11,14 +11,15 @@ const StudentlistAdmin = () => {
 
   const fetchStudents = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/studentlistadmin');
-      console.log(response)
+      const response = await axios.get(
+        `${process.env.VITE_API_URL}/user/studentlistadmin`
+      );
+      console.log(response);
       setStudents(response.data.students);
     } catch (error) {
-      console.error('Error fetching students list:', error);
+      console.error("Error fetching students list:", error);
     }
   };
-
 
   return (
     <div>
@@ -36,7 +37,7 @@ const StudentlistAdmin = () => {
           <p>College:{student.college}</p>
         </div>
       ))}
-    <button className="deletestudent">
+      <button className="deletestudent">
         <Link to="/deletestudent">Remove Student</Link>
       </button>
     </div>
