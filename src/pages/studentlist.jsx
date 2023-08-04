@@ -12,7 +12,7 @@ const Studentlist = () => {
   const fetchStudents = async () => {
     try {
       const response = await axios.get(
-        `${process.env.VITE_API_URL}/user/studentlist`
+        `${import.meta.env.VITE_API_URL}/user/studentlist`
       );
       console.log(response);
       setStudents(response.data.students);

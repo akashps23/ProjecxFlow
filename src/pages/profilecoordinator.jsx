@@ -9,7 +9,7 @@ const CoordinatorHome = () => {
   const getUserData = async () => {
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/getCoordinatorData`,
+        `${import.meta.env.VITE_API_URL}/user/getCoordinatorData`,
         {},
         {
           headers: {

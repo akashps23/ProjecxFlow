@@ -12,7 +12,7 @@ const Members = () =>{
           const teamId = localStorage.getItem("teamId")
           console.log(teamId)
           const response = await axios.get(
-            `${process.env.VITE_API_URL}/user/getTeamData?teamId=${teamId}`
+            `${import.meta.env.VITE_API_URL}/user/getTeamData?teamId=${teamId}`
           );
           if (response.data.success) {
             localStorage.setItem("projectId",response.data.data.projectId);

@@ -13,7 +13,7 @@ export default function ForgotPasswordGuide() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/forgotpasswordguide`,
+        `${import.meta.env.VITE_API_URL}/user/forgotpasswordguide`,
         {
           email,
           answer,

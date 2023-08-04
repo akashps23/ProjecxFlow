@@ -13,7 +13,7 @@ export default function LoginGuide() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      `${process.env.VITE_API_URL}/user/guidelogin`,
+      `${import.meta.env.VITE_API_URL}/user/guidelogin`,
         {
           email,
           password,

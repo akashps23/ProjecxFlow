@@ -13,7 +13,7 @@ export default function ForgotPasswordCoordinator() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/forgotpasswordcoordinator`,
+        `${import.meta.env.VITE_API_URL}/user/forgotpasswordcoordinator`,
         {
           email,
           answer,

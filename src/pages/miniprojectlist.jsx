@@ -11,7 +11,7 @@ const Miniproject = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`${process.env.VITE_API_URL}/user/projectmini`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/projectmini`);
       setProjects(response.data.projects);
       console.log(response);
     } catch (error) {

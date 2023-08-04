@@ -14,7 +14,7 @@ export default function LoginStudent() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/studentlogin`,
+        `${import.meta.env.VITE_API_URL}/user/studentlogin`,
         {
           email,
           password,

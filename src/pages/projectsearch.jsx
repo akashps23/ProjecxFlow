@@ -13,7 +13,7 @@ export default function ProjectSearch() {
     const fetchSearchResults = async () => {
       try {
         const response = await fetch(
-          `${process.env.VITE_API_URL}/user/search`,
+          `${import.meta.env.VITE_API_URL}/user/search`,
           {
             method: "POST",
             headers: {

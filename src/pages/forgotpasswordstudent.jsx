@@ -13,7 +13,7 @@ export default function ForgotPasswordStudent() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/forgotpasswordstudent`,
+        `${import.meta.env.VITE_API_URL}/user/forgotpasswordstudent`,
         {
           email,
           answer,

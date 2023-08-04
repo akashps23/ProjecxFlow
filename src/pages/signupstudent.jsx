@@ -24,7 +24,7 @@ const SignupStudent = () => {
     try {
       // Send the form data to the backend API
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/studentsignup`,
+        `${import.meta.env.VITE_API_URL}/user/studentsignup`,
         {
           name,
           phoneno,

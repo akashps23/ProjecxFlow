@@ -12,7 +12,7 @@ const DeleteStudent = () =>{
         event.preventDefault();
         try{
             const response = await axios.post(
-                `${process.env.VITE_API_URL}/user/deletestudent`,
+                `${import.meta.env.VITE_API_URL}/user/deletestudent`,
                   {
                     useremail,
                   });

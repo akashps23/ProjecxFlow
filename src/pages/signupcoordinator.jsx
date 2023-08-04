@@ -22,7 +22,7 @@ const SignupCoordinator = () => {
 
     try {
       // Send the form data to the backend API
-      const response = await axios.post(`${process.env.VITE_API_URL}/user/coordinatorsignup`, {
+      const response = await axios.post(`${import.meta.env.VITE_API_URL}/user/coordinatorsignup`, {
         name,
         phoneno,
         email,

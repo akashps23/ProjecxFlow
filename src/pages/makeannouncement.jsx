@@ -13,7 +13,7 @@ const Announce = () => {
         console.log(announcement);
         console.log(date);
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/announce`,
+        `${import.meta.env.VITE_API_URL}/user/announce`,
         {
           announcement,
           date,
