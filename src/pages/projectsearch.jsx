@@ -1,10 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "../styles/projectsearch.css";
-import { useLocation } from "react-router-dom";
+import { useLocation,useNavigate } from "react-router-dom";
 import CardComponent from "./cardcomponent";
+import axios from "axios";
+import { message } from "antd";
 
 export default function ProjectSearch() {
   const txt = useLocation().state?.txt;
+  const navigate =useNavigate();
   console.log(txt);
 
   const [searchResults, setSearchResults] = useState([]);
@@ -32,7 +35,25 @@ export default function ProjectSearch() {
     };
 
     fetchSearchResults();
+
+
   }, [txt]);
+
+  const handleClick = async(projectId) => {
+    console.log(projectId)
+    try {
+      const response = await axios.get(
+        `http://localhost:9014/api/v1/pdf/viewabstract/${projectId}`
+      );
+      console.log(response.data);
+      let link = response.data
+      if(link==="") message.error("File not uploaded yet!")
+      else window.open(link);
+    } catch (error) {
+      console.log(error);
+    }
+    
+  };
 
   if (searchResults.length > 0)
     return (
@@ -48,6 +69,7 @@ export default function ProjectSearch() {
               title={result.title}
               type={result.type}
               year={result.year}
+              handleClick={() => handleClick(result.id)}
             />
           ))}
         </div>
