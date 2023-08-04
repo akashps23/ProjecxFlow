@@ -12,6 +12,7 @@ export default function ForgotPasswordStudent() {
   const handlestudentPassword = async (event) => {
     event.preventDefault();
     try {
+      localStorage.setItem("email", email);
       const response = await axios.post(
       "http://localhost:9014/api/v1/user/forgotpasswordstudent",
         {
@@ -20,7 +21,7 @@ export default function ForgotPasswordStudent() {
         });
       if (response.data.success) {
         localStorage.setItem("token", response.data.token);
-       navigate("/studenthomepage");
+       navigate("/passwordresetstudent");
        message.success("recovered successfully")
        console.log(response)
 
