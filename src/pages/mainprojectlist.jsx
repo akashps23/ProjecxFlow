@@ -20,18 +20,32 @@ const Mainproject = () => {
       console.error("Error fetching projects:", error);
     }
   };
+  const handleClick = async(projectId) => {
+    console.log(projectId)
+    try {
+      const response = await axios.get(
+        `http://localhost:9014/api/v1/pdf/viewabstract/${projectId}`
+      );
+      console.log(response.data);
+      let link = response.data
+      if(link==="") message.error("File not uploaded yet!")
+      else window.open(link);
+    } catch (error) {
+      console.log(error);
+    }
+    
+  };
 
   return (
     <div className="mainlist ">
       <h2 className="title">Main Projects</h2>
-      <div className="bgrect"></div>
+      <div className="flex gap-2">
       {projects.map((project) => (
-        <div key={project._id}>
-          <h3>
-            {project.title} - {project.year}
-          </h3>
+        <div className='card' key={project._id}  onClick={() => handleClick(project._id)}>
+          <h3 className='card-title'>{project.title} - {project.year}</h3> 
         </div>
       ))}
+    </div>
     </div>
   );
 };

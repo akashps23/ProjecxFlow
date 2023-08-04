@@ -11,7 +11,7 @@ const handleDelete = async(e)=>{
 console.log("DELETE STARTED")
 console.log(props.id)
   try{
-    const response= await axios.delete(`${process.env.VITE_API_URL}/user/events/${props.id}`)
+    const response= await axios.delete(`${import.meta.env.VITE_API_URL}/user/events/${props.id}`)
     console.log(response);
     if(response.status===204) message.success("Deleted successfully");
     else message.error("something went wrong!");

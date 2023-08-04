@@ -38,6 +38,7 @@ const Calendar = () => {
   const [showPopover, setShowPopover] = useState(false);
   const [clickedDate, setClickedDate] = useState("");
   const findEventsOfThisMonth = (events, month) => {
+    console.log("oombi")
     if(!events || !month) return
     const filteredEvents = events.filter(event => {
       const m = event.date.split('/')[1];
@@ -45,12 +46,15 @@ const Calendar = () => {
       let monthFiltered = temp < 10 ? "0" + temp : temp
       return m === monthFiltered;
     });
+    console.log(filteredEvents)
     if(filteredEvents) setEventsOfThisMonth(filteredEvents);
   };
   const getEvents = async () => {
     try {
+      console.log(localStorage.getItem("teamId"))
       const response = await axios.get(
         `${import.meta.env.VITE_API_URL}/user/events/${localStorage.getItem("teamId")}`,);
+        console.log(response.data);
       if (response.data.length!==0) {
         setEvents(response.data);
         findEventsOfThisMonth(response.data, month)
@@ -193,14 +197,15 @@ const Calendar = () => {
             </button>
         </div>
         <div className="events_component">
+
             {
   eventsOfThisMonth
     ? eventsOfThisMonth.length !== 0
       ? eventsOfThisMonth?.map((event, index) => (
           <Events key={index} date={event.date} title={event.title} id={event._id} />
         ))
-      : "No events to show"
-    : "Loading..."
+        : "No events to show"
+        : "Loading..."
 }
 
             </div>

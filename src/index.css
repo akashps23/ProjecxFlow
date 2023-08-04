@@ -79,3 +79,21 @@ button:focus-visible {
     color: var(--color-text-hover);
   }
 }
+
+.flex{
+  display: flex;
+}
+
+.gap-2{
+  gap:2rem;
+}
+
+.stickcy{
+  position: sticky;
+}
+.top-0{
+  top:0;
+}
+.left-0{
+  left: 0;
+}
