@@ -14,7 +14,7 @@ export default function ForgotPasswordStudent() {
     try {
       localStorage.setItem("email", email);
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/forgotpasswordstudent",
+        `${import.meta.env.VITE_API_URL}/user/forgotpasswordstudent`,
         {
           email,
           answer,

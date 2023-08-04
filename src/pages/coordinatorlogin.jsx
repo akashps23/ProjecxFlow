@@ -13,7 +13,7 @@ export default function LoginCoordinator() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/coordinatorlogin`,
+        `${import.meta.env.VITE_API_URL}/user/coordinatorlogin`,
         {
           email,
           password,
@@ -68,7 +68,7 @@ export default function LoginCoordinator() {
         </Link>
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
+        
     </div>
   );
 }

@@ -17,7 +17,7 @@ const MyProjects = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`http://localhost:9014/api/v1/user/projects?coordinatorId=${coordinatorId}`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/projects?coordinatorId=${coordinatorId}`);
       setProjects(response.data.projects);
     } catch (error) {
       console.error(error);

@@ -10,7 +10,7 @@ const Guidelist = () => {
 
   const fetchGuides = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/guidelist');
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/guidelist`);
       console.log(response)
       setGuides(response.data.guides);
     } catch (error) {

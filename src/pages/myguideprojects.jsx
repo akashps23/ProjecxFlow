@@ -18,7 +18,7 @@ const MyguideProjects = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`http://localhost:9014/api/v1/user/guideprojects?guideId=${guideId}`);
+      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/guideprojects?guideId=${guideId}`);
       setProjects(response.data.projects);
       setGuideName(response.data.guideName);
       console.log(guideName.name)

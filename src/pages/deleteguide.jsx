@@ -12,7 +12,7 @@ const DeleteGuide = () =>{
         event.preventDefault();
         try{
             const response = await axios.post(
-                "http://localhost:9014/api/v1/user/deleteguide",
+                `${import.meta.env.VITE_API_URL}/user/deleteguide`,
                   {
                     useremail,
                   });

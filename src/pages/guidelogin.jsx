@@ -13,7 +13,7 @@ export default function LoginGuide() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/guidelogin",
+      `${import.meta.env.VITE_API_URL}/user/guidelogin`,
         {
           email,
           password,
@@ -78,7 +78,7 @@ export default function LoginGuide() {
       <div className="bgrect"></div>
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
+       
     </div>
   );
 }

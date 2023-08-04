@@ -13,7 +13,7 @@ export default function LoginAdmin() {
     event.preventDefault();
     try {
       const response = await axios.post(
-        `${process.env.VITE_API_URL}/user/adminlogin`,
+        `${import.meta.env.VITE_API_URL}/user/adminlogin`,
         {
           email,
           password,
@@ -62,8 +62,7 @@ export default function LoginAdmin() {
         </form>
         
         <p className="welcome">Welcome Back</p>
-        <div className="line"></div>
-        <p className="tagline">A Complete Solution for Managing Projects </p>
+        
     </div>
   );
 }

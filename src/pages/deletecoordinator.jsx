@@ -10,7 +10,7 @@ const DeleteCoordinator = () =>{
         event.preventDefault();
         try{
             const response = await axios.post(
-                `${process.env.VITE_API_URL}/user/deletecoordinator`,
+                `${import.meta.env.VITE_API_URL}/user/deletecoordinator`,
                   {
                     useremail,
                   });
