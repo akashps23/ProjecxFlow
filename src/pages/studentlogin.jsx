@@ -8,7 +8,6 @@ export default function LoginStudent() {
   const navigate = useNavigate();
   const [email, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [isEmpty, setIsEmpty] = useState(true);
 
   const handlestudentLogin = async (event) => {
     event.preventDefault();
@@ -20,21 +19,22 @@ export default function LoginStudent() {
           password,
         }
       );
-      // if (setIsEmpty(value === "")) {
-      //   message.error("Enter a Username or Password");
-      // } else {
-      if (response.data.success) {
-        localStorage.setItem("token", response.data.token);
-        localStorage.setItem("studentId", response.data.studentId);
-        message.success("Login Successful");
-        navigate("/studenthomepage");
-        console.log(response);
-
-        // Reset the form
-        setUsername("");
-        setPassword("");
+      if (email.length == 0 || password.length == 0) {
+        message.error("Enter a Username or Password");
       } else {
-        message.error("Something went Wrong!!");
+        if (response.data.success) {
+          localStorage.setItem("token", response.data.token);
+          localStorage.setItem("studentId", response.data.studentId);
+          message.success("Login Successful");
+          navigate("/studenthomepage");
+          console.log(response);
+
+          // Reset the form
+          setUsername("");
+          setPassword("");
+        } else {
+          message.error("Something went Wrong!!");
+        }
       }
     } catch (error) {
       console.error(error);
