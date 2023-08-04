@@ -69,7 +69,7 @@ export default function ProjectSearch() {
               title={result.title}
               type={result.type}
               year={result.year}
-              handleClick={() => handleClick(result.id)}
+              handleClick= {() => handleClick(result.id)}
             />
           ))}
         </div>
