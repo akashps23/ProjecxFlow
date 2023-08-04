@@ -13,7 +13,7 @@ export default function LoginAdmin() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/adminlogin",
+        `${process.env.VITE_API_URL}/user/adminlogin`,
         {
           email,
           password,

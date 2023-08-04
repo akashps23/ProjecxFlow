@@ -11,7 +11,7 @@ const Coordinatorlist = () => {
 
   const fetchCoordinators = async () => {
     try {
-      const response = await axios.get('http://localhost:9014/api/v1/user/coordinatorlist');
+      const response = await axios.get(`${process.env.VITE_API_URL}/user/coordinatorlist`);
       console.log(response)
       setCoordinantors(response.data.coordinators);
     } catch (error) {

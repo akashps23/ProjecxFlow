@@ -10,7 +10,7 @@ const Announcements = () => {
 
     const fetchAnnouncements = async () => {
         try {
-          const response = await axios.get('http://localhost:9014/api/v1/user/showannouncements');
+          const response = await axios.get(`${process.env.VITE_API_URL}/user/showannouncements`);
           console.log(response)
           setAnnouncements(response.data.announcements);
         } catch (error) {

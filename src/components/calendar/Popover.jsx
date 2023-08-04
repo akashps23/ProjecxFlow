@@ -8,7 +8,7 @@ export default function Popover(props) {
   const [loading, setLoading] = useState(false);
   const sendData = async (temp)=>{
     try{
-      const response = await axios.post("http://localhost:9014/api/v1/user/events",temp);
+      const response = await axios.post(`${process.env.VITE_API_URL}/user/events`,temp);
       console.log(response);
       if(response.status===201)
       {

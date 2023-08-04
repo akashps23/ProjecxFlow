@@ -13,7 +13,7 @@ export default function LoginCoordinator() {
     event.preventDefault();
     try {
       const response = await axios.post(
-      "http://localhost:9014/api/v1/user/coordinatorlogin",
+        `${process.env.VITE_API_URL}/user/coordinatorlogin`,
         {
           email,
           password,
