@@ -16,7 +16,7 @@ body {
    max-height: 100%;
    height: auto;
 }
-.admin_studentlist {
+.admin_proj_list {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -24,7 +24,7 @@ body {
   background-color: #ffffff;
   color: black;
 }
-.admin_studentlist .logo {
+.admin_proj_list .logo {
 	width: 6rem;  
 	height: 4rem;
 	position: absolute;
@@ -37,11 +37,11 @@ body {
 	object-fit: cover;
 	vertical-align: top;
   }
-.admin_studentlist .usertype {
+.admin_proj_list .usertype {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 20rem;
+	left: 22rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
@@ -53,7 +53,7 @@ body {
 	white-space: nowrap;
   }
 
-.admin_studentlist .line {
+.admin_proj_list .line {
 	width: 0.2rem;
 	height: 5rem;
 	position: absolute;
@@ -64,12 +64,12 @@ body {
 	background-color: #000000;
   }
 
-  .admin_studentlist .delete_student {
+  .admin_proj_list .delete_guide {
 	position:absolute  ;
-	width: 30rem;
-	height: 7rem;
-	left: 200rem;
-	top: 4rem;
+	width: 15%;
+	height: 9%;
+	left: 140rem;
+	top: 43%;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
@@ -80,7 +80,25 @@ body {
 	background-color: #1d1d1d;
 	border-radius: 10px;
   }
-.admin_studentlist .bgrect {
+  .admin_proj_list .email_id{
+	align-content: center;
+    position:absolute;
+	width: 30%;
+	height: 9%;
+	left: 25%;
+	top: 43%;
+	z-index: 1;
+	padding-left: 20px;
+	font-family: 'Poppins';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 36px;
+	background-color: #E2E2E2;
+	border-radius: 10px;
+	color: #000000;
+  }
+.admin_proj_list .bgrect {
 	width: 100vw;
 	height: 15rem;
     z-index: 0;

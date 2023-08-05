@@ -34,7 +34,7 @@ const CoordinatorHome = () => {
       {userData ? (
         <>
           <p className="title">Welcome {userData.name}</p>
-          <p>ID: {userData.id}</p>
+          {/* <p>ID: {userData.id}</p> */}
           {userData.email && (
             <Link to={`/myprojects?coordinatorId=${userData.email}`}>
               <button className="mine">My Projects</button>
@@ -67,7 +67,7 @@ const CoordinatorHome = () => {
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>
-      <div className="bgrect"></div>
+      <div className="bg_rect"></div>
     </div>
   );
 };

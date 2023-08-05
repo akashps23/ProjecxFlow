@@ -43,8 +43,10 @@ html {
 	left : 15%;
 	top :45%;
 	color: #000000;
+	line-height: 18rem;
+	border-radius: 10px;
 	background-color: #9babff;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .main{
 	width: 40rem;
@@ -52,9 +54,11 @@ html {
 	position: absolute;
 	left :39%;
 	top :45%;
+	line-height: 18rem;
+	border-radius: 10px;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .student{
 	width: 40rem;
@@ -62,9 +66,11 @@ html {
 	position: absolute;
 	left :65%;
 	top :45%;
+	line-height: 18rem;
+	border-radius: 10px;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .guide{
 	width: 40rem;
@@ -72,9 +78,11 @@ html {
 	position: absolute;
 	left :15%;
 	top : 70%;
+	line-height: 18rem;
+	border-radius: 10px;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .coordinator{
 	width: 40rem;
@@ -82,9 +90,11 @@ html {
 	position: absolute;
 	left :39%;
 	top : 70%;
+	line-height: 18rem;
+	border-radius: 10px;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .move{
 	width: 40rem;
@@ -92,9 +102,11 @@ html {
 	position: absolute;
 	left :65%;
 	top : 70%;
+	line-height: 18rem;
+	border-radius: 10px;
 	color: #000000;
 	background-color: #99a9fd;
-	font-size: 4.5rem;
+	font-size: 4.2rem;
   }
   .admin_profile .logo {
 	width: 6rem;  
@@ -110,7 +122,7 @@ html {
 	vertical-align: top;
   }
   .admin_profile .usertype {
-	width: 24.4rem;
+	width: 24.2rem;
 	height: 6.7rem;
 	position: absolute;
 	left: 18rem;
@@ -130,7 +142,7 @@ html {
 	position: absolute;
 	z-index: 1;
 	left: 18rem;
-	top: 4.5rem;
+	top: 4.2rem;
 	opacity: 45%;
 	background-color: #000000;
   }
@@ -154,6 +166,7 @@ html {
   .admin_profile .bgrect {
 	width: 100vw;
 	height: 15rem;
+	z-index: 0;
 	position: absolute;
 	top: 0rem;
 	background-color: #9aaafffc;

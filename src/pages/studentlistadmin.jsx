@@ -41,9 +41,10 @@ const StudentlistAdmin = () => {
           <p>College:{student.college}</p>
         </div>
       ))}
-      <button className="deletestudent">
-        <Link to="/deletestudent">Remove Student</Link>
-      </button>
+
+      <Link to="/deletestudent">
+        <div className="delete_student">Remove Student</div>
+      </Link>
     </div>
   );
 };

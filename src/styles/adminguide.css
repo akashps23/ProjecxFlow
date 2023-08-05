@@ -1,29 +1,30 @@
 html {
-    font-size:40%;
+	font-size:40%;
 }
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 ul, li {
-    list-style: none;
+	list-style: none;
 }
 input {
-    border: none;
+	border: none;
 }
 body {
    max-width: 100%;
    max-height: 100%;
    height: auto;
 }
-.guidance_coo {
+.admin_guidelist{
   width: 100vw;
   height: 100vh;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
+  color: black;
 }
-.guidance_coo .logo {
+.admin_guidelist .logo {
 	width: 6rem;  
 	height: 4rem;
 	position: absolute;
@@ -36,11 +37,11 @@ body {
 	object-fit: cover;
 	vertical-align: top;
   }
-  .guidance_coo .usertype {
+.admin_guidelist .usertype {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 22rem;
+	left: 18rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
@@ -51,7 +52,8 @@ body {
 	font-family: Helvetica;
 	white-space: nowrap;
   }
-  .guidance_coo .line {
+
+.admin_guidelist .line {
 	width: 0.2rem;
 	height: 5rem;
 	position: absolute;
@@ -62,11 +64,27 @@ body {
 	background-color: #000000;
   }
 
-  .guidance_coo .bg_rect {
-width: 100vw;
-height: 15rem;
-position: relative;
-top: 0rem;
-z-index: 0;
-background-color: rgba(154, 170, 255, 0.9900000095);
+  .admin_guidelist .delete_guide {
+	position:absolute  ;
+	width: 30rem;
+	height: 7rem;
+	left: 200rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.2vw;
+	line-height: 2.3;
+	color: #ffffff;
+	background-color: #1d1d1d;
+	border-radius: 10px;
+  }
+.admin_guidelist .bgrect {
+	width: 100vw;
+	height: 15rem;
+    z-index: 0;
+	position: relative;
+	top: 0rem;
+	background-color: rgba(154, 170, 255, 0.9900000095);
 }

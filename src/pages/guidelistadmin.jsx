@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
-import "../styles/adminfeatures.css";
+import "../styles/adminguide.css";
 
 const GuidelistAdmin = () => {
   const [guides, setGuides] = useState([]);
@@ -39,7 +39,7 @@ const GuidelistAdmin = () => {
         </div>
       ))}
       <Link to="/deleteguide">
-        <div className="deleteguide">Remove Guide</div>
+        <div className="delete_guide">Remove Guide</div>
       </Link>
     </div>
   );
