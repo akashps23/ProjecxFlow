@@ -54,6 +54,7 @@
 .minilist .bgrect {
 	width: 100vw;
 	height: 15rem;
+    z-index: 0;
 	position: relative;
 	top: -5rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);

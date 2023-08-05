@@ -36,29 +36,25 @@ const GuideHome = () => {
           <p>ID: {userData.id}</p>
           {userData.email && (
             <Link to={`/myguideprojects?guideId=${userData.email}`}>
-              <button className="mine">Under My Guidance</button>
+              <div className="mine">My Projects</div>
             </Link>
           )}
         </>
       ) : (
         <p>Loading...</p>
       )}
-      <button className="mini">
-        <Link to="/miniproject">Mini Projects</Link>
-      </button>
-
-      <button className="main">
-        <Link to="/mainproject">Main Projects</Link>
-      </button>
-
-      <button className="student">
-        <Link to="/studentlist">Students List</Link>
-      </button>
-
+     
+        <Link to="/miniproject"><div className="mini">Mini Projects</div></Link>
+     
+        <Link to="/mainproject"><div className="main">Main Projects</div></Link>
+      
+        <Link to="/studentlist"><div className="student">Students List</div></Link>
+ 
+        <Link to="/makeannouncement"><div className="anno">Announcement</div></Link>
       
       <img className="logo" />
       <div className="line"></div>
-      <p className="usertype">Project Guide</p>
+      <p className="usertype">Dashboard</p>
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>

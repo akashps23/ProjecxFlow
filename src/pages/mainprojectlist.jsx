@@ -39,6 +39,7 @@ const Mainproject = () => {
   return (
     <div className="mainlist ">
       <h2 className="title">Main Projects</h2>
+      <div className="bgrect"></div>
       <div className="flex gap-2">
       {projects.map((project) => (
         <div className='card' key={project._id}  onClick={() => handleClick(project._id)}>

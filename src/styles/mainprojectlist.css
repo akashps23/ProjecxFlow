@@ -44,40 +44,11 @@ body {
 .h3{
     color: black;
 }
-/* .mainlist .back {
- 
-    position: relative;
-    width: 15%;
-    height: 6%;
-    left: 80rem;
-    top: 90rem;
-    text-align: center;
-    font-family: 'Helvetica';
-    font-weight: 600;
-    font-size: 1.2vw;
-    line-height: 2.3;
-    color: #ffffff; 
-    background-color: #1d1d1d;
-    border-radius: 10px;
-        
 
-} */
-/* .mainlist .list {
-    width: 15%;
-    height: 6%;
-    left: 160rem;
-    top: 18rem;
-    text-align: center;
-    font-family: 'Helvetica';
-    font-weight: 600;
-    z-index: 1;
-    font-size: 1.2vw;
-    line-height: 2.3;
-    color: #ffffff; 
-} */
 .mainlist .bgrect {
 	width: 100vw;
 	height: 15rem;
+    z-index: 0;
 	position: relative;
 	top: -5rem;
 	background-color: rgba(154, 170, 255, 0.9900000095);
