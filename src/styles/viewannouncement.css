@@ -115,20 +115,10 @@ body {
 
 }
 .anno_key{
-    position: absolute;
-	width: 75%;
-	height: 10%;
-	margin-left: 10%;
+
+	
     margin-top: 2%;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
-	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #ffffff;
-	background-color: #1d1d1d;
-	border-radius: 10px;
+	
 
  
 
@@ -139,19 +129,20 @@ body {
 
 	font-size: 5rem;
 
+    color: #000000;
 
-	background-color: #1d1d1d00;
+	background-color: #dff4ffc6;
+
 	
 }
 .anno_key .anno_date{
     font-family: 'Helvetica';
 	font-weight: 700;
 
-	font-size: 3rem;
+	font-size: 2.5rem;
+    color: #000000;
 
-
-	background-color: #1d1d1d00;
-	
+	background-color: #ffe2e249;
 }
 
  .goto_mem{

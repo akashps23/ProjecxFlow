@@ -43,10 +43,10 @@ const ViewAnnouncement = () => {
       </Link>
       {announcements.map((announcement) => (
         <div className="anno_key" key={announcement}>
-          <p className="anno_date">{announcement.date}</p>
           <h3 className="data">
             {announcement.announcement}
           </h3>
+          <p className="anno_date">{announcement.date}</p>
         </div>
       ))}
     </div>
