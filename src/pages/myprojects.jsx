@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import axios from 'axios';
+import "../styles/myproject.css"
 
 const MyProjects = () => {
   const location = useLocation();
@@ -25,14 +26,17 @@ const MyProjects = () => {
   };
 
   return (
-    <div>
-      <h1>Projects of Coordinator {coordinatorId}</h1>
+    <div className='myprojects'>
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Projects Coordinates</p>
+      <div className="bgrect"></div>
       <ul>
         {projects.map((project, index) => (
           <li key={index}>
-            <p>Title: {project.title}</p>
-            <p>Year: {project.year}</p>
-            <p>Type: {project.type}</p>
+            <p>{project.title}</p>
+            <p>{project.year}</p>
+            <p>{project.type}</p>
           </li>
         ))}
       </ul>

@@ -1,6 +1,7 @@
-import  React,{ useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import "../styles/adminfeatures.css";
 
 const GuidelistAdmin = () => {
   const [guides, setGuides] = useState([]);
@@ -11,30 +12,35 @@ const GuidelistAdmin = () => {
 
   const fetchGuides = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/guidelistadmin`);
-      console.log(response)
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/user/guidelistadmin`
+      );
+      console.log(response);
       setGuides(response.data.guides);
     } catch (error) {
-      console.error('Error fetching guides list:', error);
+      console.error("Error fetching guides list:", error);
     }
   };
 
   return (
-    <div>
-      <h2 color='black'>Guides List</h2>
+    <div className="admin_guidelist">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Guide List</p>
+      <div className="bgrect"></div>
       {guides.map((guide) => (
         <div key={guide}>
-          <h3>Name:{guide.name}</h3>
-          <p>Email:{guide.email}</p>
-          <p>Phone Number:{guide.phoneno}</p>
-          <p>Faculty ID:{guide.fid}</p>
-          <p>Department:{guide.dept}</p>
-          <p>College:{guide.college}</p>
+          <h3>{guide.name}</h3>
+          <p>Email : {guide.email}</p>
+          <p>Phone Number : {guide.phoneno}</p>
+          <p>Faculty ID : {guide.fid}</p>
+          <p>Department : {guide.dept}</p>
+          <p>College : {guide.college}</p>
         </div>
       ))}
-      <button className="deleteguide">
-        <Link to="/deleteguide">Remove Guide</Link>
-      </button>
+      <Link to="/deleteguide">
+        <div className="deleteguide">Remove Guide</div>
+      </Link>
     </div>
   );
 };

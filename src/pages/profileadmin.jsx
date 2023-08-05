@@ -26,11 +26,13 @@ export default function AdminHome() {
       </button>
       <img className="logo" />
       <div className="line"></div>
-      <p className="usertype">Administrator</p>
+      
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>
-      <div className="bgrect"></div>
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Dashboard</p>
       <div className="bgrect"></div>
     </div>
   );

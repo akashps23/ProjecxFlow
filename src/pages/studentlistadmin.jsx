@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import "../styles/adminfeatures.css";
 
 const StudentlistAdmin = () => {
   const [students, setStudents] = useState([]);
@@ -22,8 +23,11 @@ const StudentlistAdmin = () => {
   };
 
   return (
-    <div>
-      <h2>Students List</h2>
+    <div className="admin_studentlist">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Student List</p>
+      <div className="bgrect"></div>
       {students.map((student) => (
         <div key={student}>
           <h3>Name:{student.name}</h3>
