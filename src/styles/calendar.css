@@ -141,21 +141,75 @@ button {
 }
 
 
-.calendar_section .logo {
-	width: 2%;  
 
-	position: absolute; 
-	left: 3rem;
-	top: -6rem;
-	z-index: 1;
-	scale: 50%;
+
   
-	background-size: 100% 80%;
-	background-position: 0rem;
-	background-image: url('../assets/logo.png');
+  .calendar_section  .goto_mem{
+	position: absolute;
+	
+	left: 120rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 700;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
 
-  }
- .logout{
+}
+.calendar_section .goto_cal{
+	position: absolute;
+
+	left: 145rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #00000050;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+
+.calendar_section .goto_doc{
+	position: absolute;
+	
+	left: 160rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.calendar_section .goto_mark{
+	position: absolute;
+	
+	left: 179rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.calendar_section  .logout{
 	position: absolute;
 	width: 8%;
 	height: 6%;
@@ -172,21 +226,36 @@ button {
 	border-radius: 10px;
 
 }
- .line {
-	width: 0.2rem;
-	height: 5rem;
+.calendar_section .goto_ann{
 	position: absolute;
+	
+	left: 190rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
 	z-index: 1;
-	left: 15rem;
-	top: 4.5rem;
-	opacity: 45%;
-	background-color: #000000;
-  }
-.usertype {
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.calendar_section .bgrect {
+	width: 100vw;
+	height: 15rem;
+  z-index: 0;
+  left: 0rem;
+  top:0rem;
+  position: absolute;
+	background-color: #9aaafffc;
+}
+.calendar_section .usertype {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 15rem;
+	left: 14rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
@@ -197,82 +266,25 @@ button {
 	font-family: Helvetica;
 	white-space: nowrap;
   } 
-  
- .goto_cal{
-	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 171.5rem;
-	top: 4rem;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
+  .calendar_section .line_coo{
+    position: relative;
+    width: 60rem;
+	height: 0.2rem;
+    left: 15%;
+    top: 27%;
+    background-color: #000000;
+  }
+  .calendar_section .logo {
+	width: 6rem;  
+	height: 4rem;
+	position: absolute; 
+	left: 3rem;
+	top: 0.8rem;
 	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #000000;
-	background-color: #1d1d1d00;
-	border-radius: 10px;
-
-}
- .goto_doc{
-	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 192rem;
-	top: 4rem;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
-	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #000000;
-	background-color: #1d1d1d00;
-	border-radius: 10px;
-
-}
- .goto_mem{
-	position: absolute;
-	width: 10%;
-	height: 6%;
-	left: 190rem;
-	top: 4rem;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
-	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #000000;
-	background-color: #1d1d1d00;
-	border-radius: 10px;
-
-}
- .goto_ann{
-	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 146rem;
-	top: 4rem;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
-	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #000000;
-	background-color: #1d1d1d00;
-	border-radius: 10px;
-
-}
-
-.calendar_section .bgrect {
-	width: 100vw;
-	height: 15rem;
-  z-index: 0;
-  left: 0rem;
-  top:0rem;
-  position: absolute;
-	background-color: #9aaafffc;
-}
+	scale: 50%;
+	background-size: 100% 120%;
+	background-position: 0rem;
+	background-image: url('../assets/logo.png');
+	object-fit: cover;
+	vertical-align: top;
+  }

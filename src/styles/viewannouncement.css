@@ -19,23 +19,23 @@ body {
 .announcement {
   width: 100vw;
   height: 100vh;
-  position: relative;
+
   overflow: hidden;
   background-color: #ffffff;
 }
-.logo {
-	width: 2%;  
-
+.announcement .logo {
+	width: 6rem;  
+	height: 4rem;
 	position: absolute; 
 	left: 3rem;
-	top: -6rem;
+	top: 0.8rem;
 	z-index: 1;
 	scale: 50%;
-  
-	background-size: 100% 80%;
+	background-size: 100% 120%;
 	background-position: 0rem;
 	background-image: url('../assets/logo.png');
-
+	object-fit: cover;
+	vertical-align: top;
   }
  .logout{
 	position: absolute;
@@ -68,7 +68,7 @@ body {
 	width: 24.4rem;
 	height: 6.7rem;
 	position: absolute;
-	left: 15rem;
+	left: 18rem;
 	top: 5rem;
 	z-index: 1;
 	font-size: 3.5rem;
@@ -80,11 +80,10 @@ body {
 	white-space: nowrap;
   } 
   
- .goto_cal{
+  .announcement .goto_mem{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 171.5rem;
+	
+	left: 120rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
@@ -97,19 +96,68 @@ body {
 	border-radius: 10px;
 
 }
- .goto_doc{
+.announcement .goto_cal{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 192rem;
+
+	left: 145rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
-	font-weight: 700;
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;
 	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+
+.announcement .goto_doc{
+	position: absolute;
+	
+	left: 160rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.announcement .goto_mark{
+	position: absolute;
+	
+	left: 179rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+
+.announcement .goto_ann{
+	position: absolute;
+	
+	left: 190rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #00000050;
 	background-color: #1d1d1d00;
 	border-radius: 10px;
 

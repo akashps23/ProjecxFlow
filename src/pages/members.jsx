@@ -48,22 +48,38 @@ const Members = () => {
         <div className="line_mem"></div>
 
         <div className="pro_data">
-          <p>{teamdata.member1}  |  {teamdata.member1}</p>
-          <p>{teamdata.member2}  |  {teamdata.member2}</p>
-          <p>{teamdata.member3}  |  {teamdata.member3}</p>
-          <p>{teamdata.member4}  |  {teamdata.member4}</p>
+          <p>
+            {teamdata.member1} | {teamdata.member1}
+          </p>
+          <p>
+            {teamdata.member2} | {teamdata.member2}
+          </p>
+          <p>
+            {teamdata.member3} | {teamdata.member3}
+          </p>
+          <p>
+            {teamdata.member4} | {teamdata.member4}
+          </p>
         </div>
 
+        <Link to="/teammembers">
+          <div className="goto_mem">Team Members</div>
+        </Link>
+
         <Link to="/calendar">
-          <div className="goto_cal">CALENDER</div>
+          <div className="goto_cal">Calender</div>
         </Link>
 
         <Link to="/fileupload">
-          <div className="goto_doc">ATTACHMENTS</div>
+          <div className="goto_doc">Attachments</div>
+        </Link>
+
+        <Link to="/evaluationresult">
+          <div className="goto_mark">Result</div>
         </Link>
 
         <Link to="/viewannouncement">
-          <div className="goto_ann">ANNOUNCEMENTS</div>
+          <div className="goto_ann">Announcements</div>
         </Link>
       </div>
     );

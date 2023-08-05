@@ -52,6 +52,8 @@ const GuideHome = () => {
  
         <Link to="/makeannouncement"><div className="anno">Announcement</div></Link>
       
+        <Link to="/evaluationguide"><div className="evaluation_mark">Evaluation</div></Link>
+
       <img className="logo" />
       <div className="line"></div>
       <p className="usertype">Dashboard</p>

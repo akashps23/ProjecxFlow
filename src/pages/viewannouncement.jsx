@@ -23,17 +23,24 @@ const ViewAnnouncement = () => {
 
   return (
     <div className="announcement">
-      
+      <Link to="/teammembers">
+        <div className="goto_mem">Team Members</div>
+      </Link>
+
       <Link to="/calendar">
-        <div className="goto_cal">CALENDER</div>
+        <div className="goto_cal">Calender</div>
       </Link>
 
       <Link to="/fileupload">
-        <div className="goto_ann">ATTACHMENTS</div>
+        <div className="goto_doc">Attachments</div>
       </Link>
 
-      <Link to="/teammembers">
-        <div className="goto_mem">TEAM MEMBERS</div>
+      <Link to="/evaluationresult">
+        <div className="goto_mark">Result</div>
+      </Link>
+
+      <Link to="/viewannouncement">
+        <div className="goto_ann">Announcements</div>
       </Link>
       <p className="usertype">Announcements</p>
       <div className="bgrect"></div>

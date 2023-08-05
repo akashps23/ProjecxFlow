@@ -32,6 +32,9 @@ import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
 import Coordinatorlist from "./pages/coordinatorlist";
 import Projectlist from "./pages/projectlist";
+import EvaluationCoordinator from "./pages/evaluationcoordinator";
+import EvaluationGuide from "./pages/evaluationguide";
+import EvaluationView from "./pages/evaluationview";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
@@ -130,7 +133,19 @@ function App() {
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/fileupload" element={<FileUploader />} />
 
-          {/* Valuation */}
+          {/* Evaluation */}
+          <Route
+            path="/evaluationcoordinator"
+            element={<EvaluationCoordinator />}
+          />
+          <Route
+            path="/evaluationguide"
+            element={<EvaluationGuide />}
+          />
+          <Route
+            path="/evaluationresult"
+            element={<EvaluationView />}
+          />
         </Routes>
       </BrowserRouter>
     </>
@@ -139,4 +154,3 @@ function App() {
 
 export default App;
 
-/*<Route path="/makeannouncement" element={<Announce />} /> */
