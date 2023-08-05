@@ -34,7 +34,7 @@ const ViewAnnouncement = () => {
       <Link to="/teammembers">
         <div className="goto_mem">TEAM MEMBERS</div>
       </Link>
-      <p className="usertype">Attachments</p>
+      <p className="usertype">Announcements</p>
       <div className="bgrect"></div>
       <img className="logo" />
       <div className="line"></div>
@@ -43,9 +43,7 @@ const ViewAnnouncement = () => {
       </Link>
       {announcements.map((announcement) => (
         <div className="anno_key" key={announcement}>
-          <h3 className="data">
-            {announcement.announcement}
-          </h3>
+          <h3 className="data">{announcement.announcement}</h3>
           <p className="anno_date">{announcement.date}</p>
         </div>
       ))}
