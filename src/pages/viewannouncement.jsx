@@ -23,6 +23,7 @@ const ViewAnnouncement = () => {
 
   return (
     <div className="announcement">
+      
       <Link to="/calendar">
         <div className="goto_cal">CALENDER</div>
       </Link>

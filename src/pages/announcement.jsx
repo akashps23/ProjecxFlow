@@ -1,38 +1,45 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
+import "../styles/announcementslist.css"
 
-const Announcements = () => {
-    const [announcements, setAnnouncements] = useState([]);
-    useEffect(() => {
-      fetchAnnouncements();
-    }, []);
+const AnnouncementsList = () => {
+  const [announcements, setAnnouncements] = useState([]);
+  useEffect(() => {
+    fetchAnnouncements();
+  }, []);
 
-    const fetchAnnouncements = async () => {
-        try {
-          const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/showannouncements`);
-          console.log(response)
-          setAnnouncements(response.data.announcements);
-        } catch (error) {
-          console.error('Error fetching announcements:', error);
-        }
-      };
-    
-      return (
-        <div>
-          <h2>Announcements</h2>
-          {announcements.map((announcement) => (
-            <div key={announcement}>
-              <h3>{announcement.announcement} - {announcement.date}</h3>
-              
-              
-            </div>
-          ))}
-          <Link to="/makeannouncement">
-        <p>Make Announcements</p>
-      </Link>
-        </div>
+  const fetchAnnouncements = async () => {
+    try {
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/user/showannouncements`
       );
-    };
+      console.log(response);
+      setAnnouncements(response.data.announcements);
+    } catch (error) {
+      console.error("Error fetching announcements:", error);
+    }
+  };
 
-    export default Announcements;
+  return (
+    <div className="anno_list_cls">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Published Announcements</p>
+      <div className="bgrect"></div>
+      <h2>Announcements</h2>
+      {announcements.map((announcement) => (
+        <div className="list" key={announcement}>
+          <h3 className="list_list">
+            {announcement.announcement} - {announcement.date}
+          </h3>
+        </div>
+      ))}
+      <Link to="/makeannouncement">
+        <div className="make">Create an Announcement</div>
+      </Link>
+    </div>
+  );
+};
+
+export default AnnouncementsList;

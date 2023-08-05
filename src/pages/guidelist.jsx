@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "../styles/guidelist.css";
 
 const Guidelist = () => {
   const [guides, setGuides] = useState([]);
@@ -10,25 +11,31 @@ const Guidelist = () => {
 
   const fetchGuides = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/guidelist`);
-      console.log(response)
+      const response = await axios.get(
+        `${import.meta.env.VITE_API_URL}/user/guidelist`
+      );
+      console.log(response);
       setGuides(response.data.guides);
     } catch (error) {
-      console.error('Error fetching guides list:', error);
+      console.error("Error fetching guides list:", error);
     }
   };
 
   return (
-    <div>
-      <h2>Guides List</h2>
+    <div className="guide">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Guide List</p>
+      <div className="bgrect"></div>
+
       {guides.map((guide) => (
-        <div key={guide}>
-          <h3>Name:{guide.name}</h3>
-          <p>Email:{guide.email}</p>
-          <p>Phone Number:{guide.phoneno}</p>
-          <p>Faculty ID:{guide.fid}</p>
-          <p>Department:{guide.dept}</p>
-          <p>College:{guide.college}</p>
+        <div className="list" key={guide}>
+          <h3>{guide.name}</h3>
+          <p>Email ID : {guide.email}</p>
+          <p>Phone Number : {guide.phoneno}</p>
+          <p>Faculty ID : {guide.fid}</p>
+          <p>Department : {guide.dept}</p>
+          <p>College : {guide.college}</p>
         </div>
       ))}
     </div>

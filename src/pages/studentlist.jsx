@@ -23,20 +23,22 @@ const Studentlist = () => {
 
   return (
     <div className="studentlist">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Student List</p>
       <div className="bgrect"></div>
-      <p className="title">List of Students </p>
       {students.map((student) => (
-        <div key={student}>
-          <h3>Name:{student.name}</h3>
-          <p>Email:{student.email}</p>
-          <p>Phone Number:{student.phoneno}</p>
-          <p>Register Number:{student.regno}</p>
-          <p>Admission Number:{student.admno}</p>
-          <p>Semester:{student.sem}</p>
-          <p>Department:{student.dept}</p>
-          <p>Roll Number:{student.rollno}</p>
-          <p>College:{student.college}</p>
-          <button></button>
+        <div className="stulist" key={student}>
+          <h3>{student.name}</h3>
+          <p>Email ID : {student.email}</p>
+          <p>Phone Number : {student.phoneno}</p>
+          <p>Register Number : {student.regno}</p>
+          <p>Admission Number : {student.admno}</p>
+          <p>Semester : {student.sem}</p>
+          <p>Department : {student.dept}</p>
+          <p>Roll Number : {student.rollno}</p>
+          <p>College : {student.college}</p>
+          <button className="edit"></button>
         </div>
       ))}
     </div>

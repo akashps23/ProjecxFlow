@@ -38,14 +38,18 @@ const Mainproject = () => {
 
   return (
     <div className="mainlist ">
-      <h2 className="title">Main Projects</h2>
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Main Projects</p>
       <div className="bgrect"></div>
+      <div className="flexlist">
       <div className="flex gap-2">
       {projects.map((project) => (
         <div className='card' key={project._id}  onClick={() => handleClick(project._id)}>
           <h3 className='card-title'>{project.title} - {project.year}</h3> 
         </div>
       ))}
+    </div>
     </div>
     </div>
   );

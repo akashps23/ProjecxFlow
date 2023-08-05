@@ -51,7 +51,7 @@ import FileUploader from "./pages/fileupload";
 
 //announcement
 import Announce from "./pages/makeannouncement";
-import Announcements from "./pages/announcement";
+import AnnouncementsList from "./pages/announcement";
 import ViewAnnouncement from "./pages/viewannouncement";
 
 import React from "react";
@@ -129,7 +129,7 @@ function App() {
           {/* Announcements */}
           <Route path="/viewannouncement" element={<ViewAnnouncement />} />
           <Route path="/makeannouncement" element={<Announce />} />
-          <Route path="/announcements" element={<Announcements />} />
+          <Route path="/announcements" element={<AnnouncementsList />} />
         </Routes>
       </BrowserRouter>
     </>

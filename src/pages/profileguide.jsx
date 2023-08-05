@@ -59,7 +59,7 @@ const GuideHome = () => {
         <p className="logout">Log Out</p>
       </Link>
       <div className="bgrect"></div>
-      <div className="bgrect"></div>
+      
     </div>
   );
 };
