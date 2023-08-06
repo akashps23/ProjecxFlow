@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import "../styles/adminprojectlist.css"
 
-const Projectlist = () => {
+const ProjectList = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
@@ -19,8 +20,11 @@ const Projectlist = () => {
   };
 
   return (
-    <div>
-      <h2>Projects List</h2>
+    <div className="admin_proj_list">
+      <img className="logo" />
+      <div className="line"></div>
+      <p className="usertype">Project History</p>
+      <div className="bgrect"></div>
       {projects.map((project) => (
         <div key={project}>
           <h3>Title:{project.title}</h3>
@@ -32,4 +36,4 @@ const Projectlist = () => {
   );
 };
 
-export default Projectlist;
+export default ProjectList;

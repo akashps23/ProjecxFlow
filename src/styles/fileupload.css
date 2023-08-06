@@ -80,11 +80,26 @@ html {
 	white-space: nowrap;
   } 
   
-  .file_upload .goto_cal{
+  .file_upload .line_mem{
+    position: relative;
+    width: 168rem;
+	height: 0.3rem;
+    left: 14.9%;
+    top: 22%;
+    background-color: #000000;
+  }
+  .file_upload .pro_data{
+    position: relative;
+    width: 45%;
+	height: 5%;
+    font-size: 20px;
+    left: 27.5%;
+    top: 27%;
+  }
+  .file_upload .goto_mem{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 171.5rem;
+	
+	left: 120rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
@@ -97,15 +112,47 @@ html {
 	border-radius: 10px;
 
 }
+.file_upload .goto_cal{
+	position: absolute;
+
+	left: 145rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+
 .file_upload .goto_doc{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 192rem;
+	
+	left: 160rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
-	font-weight: 700;
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #00000050;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.file_upload .goto_mark{
+	position: absolute;
+	
+	left: 179rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;
@@ -114,32 +161,15 @@ html {
 	border-radius: 10px;
 
 }
-.file_upload .goto_mem{
+
+.file_upload .goto_ann{
 	position: absolute;
-	width: 10%;
-	height: 6%;
+	
 	left: 190rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
-	font-weight: 700;
-	z-index: 1;
-	font-size: 1.1vw;
-	line-height: 2.3;
-	color: #000000;
-	background-color: #1d1d1d00;
-	border-radius: 10px;
-
-}
-.file_upload .goto_ann{
-	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 146rem;
-	top: 4rem;
-	text-align: center;
-	font-family: 'Helvetica';
-	font-weight: 700;
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;

@@ -72,9 +72,7 @@ export default function LoginGuide() {
         <img className="logo" />
       <div className="line"></div>
       
-      <Link to="/">
-        <p className="logout">Log Out</p>
-      </Link>
+   
       
         <p className="welcome">Welcome Back</p>
         <div className="line"></div>

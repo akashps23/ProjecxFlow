@@ -25,7 +25,7 @@ const Miniproject = () => {
     <div className='minilist'>
       <img className="logo" />
       <div className="line"></div>
-      <p className="usertype">Main Projects</p>
+      <p className="usertype">Mini Projects</p>
       <div className="bgrect"></div>
       <div className="flexlist">
       <div className="flex gap-2">

@@ -6,27 +6,27 @@ export default function AdminHome() {
   return (
     <div className="admin_profile">
       <p className="title">Welcome Admin</p>
-      <button className="mini">
-        <Link to="/miniproject">Mini Projects</Link>
-      </button>
-      <button className="main">
-        <Link to="/mainproject">Main Projects</Link>
-      </button>
-      <button className="student">
-        <Link to="/studentlistadmin">Students List</Link>
-      </button>
-      <button className="guide">
-        <Link to="/guidelistadmin">Guides List</Link>
-      </button>
-      <button className="coordinator">
-        <Link to="/coordinatorlist">Coordinators List</Link>
-      </button>
-      <button className="move">
-        <Link to="/projectlist">Projects History</Link>
-      </button>
+      <Link to="/miniproject">
+        <div className="mini">Mini Projects</div>
+      </Link>
+      <Link to="/mainproject">
+        <div className="main">Main Projects</div>
+      </Link>
+      <Link to="/studentlistadmin">
+        <div className="student">Students List</div>
+      </Link>
+      <Link to="/guidelistadmin">
+        <div className="guide">Guides List</div>
+      </Link>
+      <Link to="/coordinatorlist">
+        <div className="coordinator">Coordinators List</div>
+      </Link>
+      <Link to="/projectlist">
+        <div className="move">Projects History</div>
+      </Link>
       <img className="logo" />
       <div className="line"></div>
-      
+
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>

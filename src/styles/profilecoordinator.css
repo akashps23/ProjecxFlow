@@ -36,60 +36,80 @@ html {
 	color: #000000;
   }
   .coordinator .mini{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :15%;
+	left : 8%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
   .coordinator .main{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :39%;
+	left : 30%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
   .coordinator .student{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :65%;
+	left :75%;
+	top :45%;
+	color: #000000;
+	background-color: #99a9fd;
+	font-size: 4.5rem;
+  }
+  .coordinator .announcement{
+	width: 45rem;
+	height : 20rem;
+	position: absolute;
+	left :53%;
 	top :45%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
   .coordinator .guide{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :15%;
+	left : 8%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
   .coordinator .mine{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :39%;
+	left :30%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
   .coordinator .guidance{
-	width: 40rem;
+	width: 45rem;
 	height : 20rem;
 	position: absolute;
-	left :65%;
+	left :53%;
+	top : 70%;
+	color: #000000;
+	background-color: #99a9fd;
+	font-size: 4.5rem;
+  }
+  .coordinator .marks{
+	width: 45rem;
+	height : 20rem;
+	position: absolute;
+	left : 75%;
 	top : 70%;
 	color: #000000;
 	background-color: #99a9fd;
@@ -138,7 +158,7 @@ html {
 	width: 8%;
 	height: 6%;
 	left: 215rem;
-	top: 0rem;
+	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
@@ -150,11 +170,11 @@ html {
 	border-radius: 10px;
 
 }
-  .coordinator .bgrect {
+  .coordinator .bg_rect {
 	width: 100vw;
 	height: 15rem;
 	z-index: 0;
 	position: absolute;
-	top: 0rem;
+	top: 0%;
 	background-color: #9aaafffc;
 }

@@ -40,7 +40,7 @@ html {
 	width: 40rem;
 	height : 20rem;
 	position: absolute;
-	left : 5%;
+	left : 20%;
 	top : 50%;
 	border-radius: 10px;
 	color: #000000;
@@ -52,7 +52,7 @@ html {
 	width: 40rem;
 	height : 20rem;
 	position: absolute;
-	left :23%;
+	left :41%;
 	top : 50%;
 	line-height: 18rem;
 	border-radius: 10px;
@@ -64,7 +64,7 @@ html {
 	width: 40rem;
 	height : 20rem;
 	position: absolute;
-	left :41%;
+	left :63%;
 	top : 50%;
 	line-height: 18rem;
 	border-radius: 10px;
@@ -77,8 +77,8 @@ html {
 	width: 40rem;
 	height : 20rem;
 	position: absolute;
-	left :59%;
-	top : 50%;
+	left :20%;
+	top : 73%;
 	line-height: 18rem;
 
 	color: #000000;
@@ -90,12 +90,24 @@ html {
 	width: 40rem;
 	height : 20rem;
 	position: absolute;
-	left :77.5%;
-	top : 50%;
+	left :41%;
+	top : 73%;
 	line-height: 18rem;
 
 	color: #000000;
 	border-radius: 10px;
+	background-color: #99a9fd;
+	font-size: 4.5rem;
+  }
+  .guide .evaluation_mark{
+	width: 40rem;
+	height : 20rem;
+	position: absolute;
+	left : 63%;
+	top : 73%;
+	line-height: 18rem;
+	border-radius: 10px;
+	color: #000000;
 	background-color: #99a9fd;
 	font-size: 4.5rem;
   }
@@ -142,7 +154,7 @@ html {
 	width: 8%;
 	height: 6%;
 	left: 215rem;
-	top: 0rem;
+	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 600;
@@ -154,12 +166,12 @@ html {
 	border-radius: 10px;
 
 }
-  .guide .bgrect {
+  .guide .bg_rect {
 	width: 100vw;
 	height: 15rem;
 	z-index: 0;
 	position: absolute;
-	top: 0rem;
+	top:0%;
 	background-color: #9aaafffc;
 }
 

@@ -167,15 +167,30 @@ html {
     left: 27.5%;
     top: 27%;
   }
-  .team_members .goto_cal{
+  .team_members .goto_mem{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 171.5rem;
+	
+	left: 120rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
 	font-weight: 700;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #00000050;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.team_members .goto_cal{
+	position: absolute;
+
+	left: 145rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;
@@ -184,15 +199,31 @@ html {
 	border-radius: 10px;
 
 }
+
 .team_members .goto_doc{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 192rem;
+	
+	left: 160rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
-	font-weight: 700;
+	font-weight: 600;
+	z-index: 1;
+	font-size: 1.1vw;
+	line-height: 2.3;
+	color: #000000;
+	background-color: #1d1d1d00;
+	border-radius: 10px;
+
+}
+.team_members .goto_mark{
+	position: absolute;
+	
+	left: 179rem;
+	top: 4rem;
+	text-align: center;
+	font-family: 'Helvetica';
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;
@@ -204,13 +235,12 @@ html {
 
 .team_members .goto_ann{
 	position: absolute;
-	width: 8%;
-	height: 6%;
-	left: 146rem;
+	
+	left: 190rem;
 	top: 4rem;
 	text-align: center;
 	font-family: 'Helvetica';
-	font-weight: 700;
+	font-weight: 600;
 	z-index: 1;
 	font-size: 1.1vw;
 	line-height: 2.3;

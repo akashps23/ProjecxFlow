@@ -33,7 +33,7 @@ const GuideHome = () => {
       {userData ? (
         <>
           <p className="title">Welcome {userData.name}</p>
-          <p>ID: {userData.id}</p>
+          {/* <p>ID: {userData.id}</p> */}
           {userData.email && (
             <Link to={`/myguideprojects?guideId=${userData.email}`}>
               <div className="mine">My Projects</div>
@@ -52,13 +52,15 @@ const GuideHome = () => {
  
         <Link to="/makeannouncement"><div className="anno">Announcement</div></Link>
       
+        <Link to="/evaluationguide"><div className="evaluation_mark">Evaluation</div></Link>
+
       <img className="logo" />
       <div className="line"></div>
       <p className="usertype">Dashboard</p>
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>
-      <div className="bgrect"></div>
+      <div className="bg_rect"></div>
       
     </div>
   );

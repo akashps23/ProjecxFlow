@@ -32,6 +32,9 @@ import MyProjects from "./pages/myprojects";
 import GuidanceProject from "./pages/guidanceproject";
 import Coordinatorlist from "./pages/coordinatorlist";
 import Projectlist from "./pages/projectlist";
+import EvaluationCoordinator from "./pages/evaluationcoordinator";
+import EvaluationGuide from "./pages/evaluationguide";
+import EvaluationView from "./pages/evaluationview";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
@@ -65,24 +68,24 @@ function App() {
         <Routes>
           {/* home page */}
           <Route exact path="/" element={<Home />} />
+          <Route path="/adminhomepage" element={<AdminHome />} />
+          <Route path="/guidehomepage" element={<GuideHome />} />
+          <Route path="/studenthomepage" element={<StudentHome />} />
+          <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
+
+          {/* Login Pages */}
           <Route path="/studentlogin" element={<LoginStudent />} />
           <Route path="/guidelogin" element={<LoginGuide />} />
           <Route path="/adminlogin" element={<LoginAdmin />} />
           <Route path="/coordinatorlogin" element={<LoginCoordinator />} />
 
-          {/* features */}
-          <Route path="/miniproject" element={<Miniproject />} />
-          <Route path="/mainproject" element={<Mainproject />} />
-          <Route path="/projectsearch" element={<ProjectSearch />} />
-          <Route path="/teamcreate" element={<TeamCreate />} />
-          <Route path="/myguideprojects" element={<MyguideProjects />} />
-          <Route path="/deletestudent" element={<DeleteStudent />} />
-          <Route path="/deleteguide" element={<DeleteGuide />} />
-          <Route path="/deletecoordinator" element={<DeleteCoordinator />} />
-          <Route path="/fileupload" element={<FileUploader />} />
-
-          {/* login pages */}
+          {/* SignUp Pages */}
           <Route path="/usertype" element={<UserType />} />
+          <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
+          <Route path="/studentsignup" element={<SignupStudent />} />
+          <Route path="/guidesignup" element={<SignupGuide />} />
+
+          {/* Forgot password */}
           <Route
             path="/forgotpasswordstudent"
             element={<ForgotPasswordStudent />}
@@ -96,40 +99,53 @@ function App() {
             element={<ForgotPasswordCoordinator />}
           />
 
-          {/* SignUp Pages */}
+          {/* Lists */}
+          <Route path="/miniproject" element={<Miniproject />} />
+          <Route path="/mainproject" element={<Mainproject />} />
+          <Route path="/studentlist" element={<Studentlist />} />
+          <Route path="/guidelist" element={<Guidelist />} />
+          <Route path="/coordinatorlist" element={<Coordinatorlist />} />
+          <Route path="/projectlist" element={<Projectlist />} />
+          <Route path="/myprojects" element={<MyProjects />} />
+          <Route path="/guidanceproject" element={<GuidanceProject />} />
+          <Route path="/myguideprojects" element={<MyguideProjects />} />
+          <Route path="/guidelistadmin" element={<GuidelistAdmin />} />
+          <Route path="/studentlistadmin" element={<StudentlistAdmin />} />
 
-          <Route path="/coordinatorsignup" element={<SignupCoordinator />} />
-          <Route path="/studentsignup" element={<SignupStudent />} />
-          <Route path="/guidesignup" element={<SignupGuide />} />
+          {/* Removing User */}
+          <Route path="/deletestudent" element={<DeleteStudent />} />
+          <Route path="/deleteguide" element={<DeleteGuide />} />
+          <Route path="/deletecoordinator" element={<DeleteCoordinator />} />
 
-          {/* Home Pages */}
-          <Route path="/adminhomepage" element={<AdminHome />} />
-
-          {/* Team Create */}
+          {/* Dashboard */}
           <Route path="/teamcreate" element={<TeamCreate />} />
           <Route path="/projectdetails" element={<ProjectDetails />} />
           <Route path="/teamdashboard" element={<TeamDashboard />} />
           <Route path="/teammembers" element={<Members />} />
 
-          <Route path="/guidehomepage" element={<GuideHome />} />
-          <Route path="/studenthomepage" element={<StudentHome />} />
-          <Route path="/coordinatorhomepage" element={<CoordinatorHome />} />
-          <Route path="/calendar" element={<Calendar />} />
-
-          {/* list pages */}
-          <Route path="/studentlist" element={<Studentlist />} />
-          <Route path="/studentlistadmin" element={<StudentlistAdmin />} />
-          <Route path="/guidelist" element={<Guidelist />} />
-          <Route path="/guidelistadmin" element={<GuidelistAdmin />} />
-          <Route path="/myprojects" element={<MyProjects />} />
-          <Route path="/guidanceproject" element={<GuidanceProject />} />
-          <Route path="/coordinatorlist" element={<Coordinatorlist />} />
-          <Route path="/projectlist" element={<Projectlist />} />
-
           {/* Announcements */}
           <Route path="/viewannouncement" element={<ViewAnnouncement />} />
           <Route path="/makeannouncement" element={<Announce />} />
           <Route path="/announcements" element={<AnnouncementsList />} />
+
+          {/* features */}
+          <Route path="/projectsearch" element={<ProjectSearch />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/fileupload" element={<FileUploader />} />
+
+          {/* Evaluation */}
+          <Route
+            path="/evaluationcoordinator"
+            element={<EvaluationCoordinator />}
+          />
+          <Route
+            path="/evaluationguide"
+            element={<EvaluationGuide />}
+          />
+          <Route
+            path="/evaluationresult"
+            element={<EvaluationView />}
+          />
         </Routes>
       </BrowserRouter>
     </>
@@ -138,4 +154,3 @@ function App() {
 
 export default App;
 
-/*<Route path="/makeannouncement" element={<Announce />} /> */

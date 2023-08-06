@@ -131,25 +131,36 @@ const FileUploader = () => {
     <div className="file_upload">
       <h2 className="file_title">Upload A File</h2>
       <h2 className="file_title2">Choose The File Type</h2>
+      <Link to="/teammembers">
+        <div className="goto_mem">Team Members</div>
+      </Link>
+
       <Link to="/calendar">
-        <div className="goto_cal">CALENDER</div>
+        <div className="goto_cal">Calender</div>
+      </Link>
+
+      <Link to="/fileupload">
+        <div className="goto_doc">Attachments</div>
+      </Link>
+
+      <Link to="/evaluationresult">
+        <div className="goto_mark">Result</div>
       </Link>
 
       <Link to="/viewannouncement">
-        <div className="goto_ann">ANNOUNCEMENTS</div>
+        <div className="goto_ann">Announcements</div>
       </Link>
-
-      <Link to="/teammembers">
-        <div className="goto_mem">TEAM MEMBERS</div>
-      </Link>
-      <p className="usertype">Attachments</p>
       <div className="bgrect"></div>
       <img className="logo" />
       <div className="line"></div>
       <Link to="/">
         <p className="logout">Log Out</p>
       </Link>
-      <input className="fileuploadkey" type="file" onChange={handleFileChange} />
+      <input
+        className="fileuploadkey"
+        type="file"
+        onChange={handleFileChange}
+      />
       {file && (
         <div>
           <h3>Selected File:</h3>
@@ -160,28 +171,53 @@ const FileUploader = () => {
       )}
       <div className="upload_button">
         <br></br>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadabstract}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploadabstract}
+        >
           Abstract
         </button>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadsrs}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploadsrs}
+        >
           SRS
         </button>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadsdd}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploadsdd}
+        >
           SDD
         </button>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadppt}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploadppt}
+        >
           PPT
         </button>
-        <button className="upload_button"
+        <button
+          className="upload_button"
           style={{ ...buttonStyles }}
           onClick={handleUploadimplementation}
         >
           Implementation
         </button>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploaddiary}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploaddiary}
+        >
           Diary
         </button>
-        <button className="upload_button" style={{ ...buttonStyles }} onClick={handleUploadreport}>
+        <button
+          className="upload_button"
+          style={{ ...buttonStyles }}
+          onClick={handleUploadreport}
+        >
           Report
         </button>
       </div>
