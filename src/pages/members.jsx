@@ -16,6 +16,7 @@ const Members = () => {
       if (response.data.success) {
         localStorage.setItem("projectId", response.data.data.projectId);
         SetTeamdata(response.data.data);
+        console.log(teamdata.namemem3)
       }
     } catch (error) {
       console.log(error);
@@ -38,20 +39,20 @@ const Members = () => {
         </Link>
         <h1 className="tag_coordinator">Coordinator</h1>
         <div className="line_coo"></div>
-        <p className="tag_coordinator_details_name">{teamdata.coordinator}</p>
+        <p className="tag_coordinator_details_name">{teamdata.namecordinator}</p>
         <p className="tag_coordinator_details_id">{teamdata.coordinator}</p>
         <h2 className="tag_guide">Guide</h2>
         <div className="line_guide"></div>
-        <p className="tag_guide_details_name">{teamdata.guide}</p>
+        <p className="tag_guide_details_name">{teamdata.nameguide}</p>
         <p className="tag_guide_details_id">{teamdata.guide}</p>
         <h3 className="tag_mem">Teammates</h3>
         <div className="line_mem"></div>
 
         <div className="pro_data">
-          <p>{teamdata.member1}  |  {teamdata.member1}</p>
-          <p>{teamdata.member2}  |  {teamdata.member2}</p>
-          <p>{teamdata.member3}  |  {teamdata.member3}</p>
-          <p>{teamdata.member4}  |  {teamdata.member4}</p>
+          <p>{teamdata.namemember1}  |  {teamdata.member1}</p>
+          <p>{teamdata.namemember2}  |  {teamdata.member2}</p>
+          <p>{teamdata.namemember3}  |  {teamdata.member3}</p>
+          <p>{teamdata.namemember4}  |  {teamdata.member4}</p>
         </div>
 
         <Link to="/calendar">
