@@ -22,11 +22,11 @@ const Resetpassword = () => {
             else
             {
                 const response = await axios.post(
-                    `${import.meta.env.VITE_API_URL}/recoverstudent/${email}/${password}`
+                    `${import.meta.env.VITE_API_URL}/user/recoverstudent/${email}/${password}`
                   );
                   
                 console.log(response);
-                if(response.status===204)
+                if(response.status===200)
                 {
                     message.success("Password resetted successfully");
                     navigate("/studentlogin");
