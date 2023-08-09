@@ -123,7 +123,11 @@ const FileUploader = () => {
 
   const buttonStyles = {
     fontSize: "3rem",
-
+    margin: "1rem 3rem",
+  };
+  const buttonStyles2 = {
+    fontSize: "3rem",
+    width: "100px",
     margin: "1rem 3rem",
   };
 
@@ -173,49 +177,49 @@ const FileUploader = () => {
         <br></br>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadabstract}
         >
           Abstract
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadsrs}
         >
           SRS
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadsdd}
         >
           SDD
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadppt}
         >
           PPT
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadimplementation}
         >
           Implementation
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploaddiary}
         >
           Diary
         </button>
         <button
           className="upload_button"
-          style={{ ...buttonStyles }}
+          style={{ ...buttonStyles2 }}
           onClick={handleUploadreport}
         >
           Report

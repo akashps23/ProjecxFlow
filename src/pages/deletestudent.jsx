@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import { message } from "antd";
-import "../styles/deletestudent.css"
+import "../styles/deletestudent.css";
 
 const DeleteStudent = () => {
   const navigate = useNavigate();
@@ -35,13 +35,15 @@ const DeleteStudent = () => {
       <div className="bgrect"></div>
       <form onSubmit={handleDelete}>
         <input
-        className="emailid"
+          className="emailid"
           type="text"
           placeholder="Enter The Student's Email ID"
           value={useremail}
           onChange={(event) => setuseremail(event.target.value)}
         ></input>
-        <button className="deletestudent" type="submit">Remove Student</button>
+        <button className="deletestudent" type="submit">
+          Remove Student
+        </button>
       </form>
     </div>
   );
