@@ -18,15 +18,21 @@ export default function ForgotPasswordCoordinator() {
           email,
           answer,
         });
-      if (response.data.success) {
+      if (response.status===200) {
         localStorage.setItem("token", response.data.token);
-       navigate("/coordinatorhomepage");
+       navigate("/passwordresetcoordinator");
        message.success("recovered successfully")
        console.log(response)
 
         // Reset the form
         setUsername("");
         setAnswer("");
+      }
+      else if(response.status===204){
+        message.error("Wrong Answer!")
+      }
+      else{
+        message.error("Internal server error");
       }
     } catch (error) {
       console.error(error);

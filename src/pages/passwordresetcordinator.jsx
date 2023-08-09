@@ -5,7 +5,7 @@ import { message } from "antd";
 import "../styles/passwordreset.css"
 
 
-const ResetpasswordStudent = () => {
+const ResetpasswordCordinator = () => {
     const navigate = useNavigate();
     const[password , Setpassword] = useState("");
     const[repassword , Setrepassword] = useState("");
@@ -22,19 +22,22 @@ const ResetpasswordStudent = () => {
             else
             {
                 const response = await axios.post(
-                    `${import.meta.env.VITE_API_URL}/user/recoverstudent/${email}/${password}`
+                    `${import.meta.env.VITE_API_URL}/user/recovercoordinator/${email}/${password}`
                   );
                   
                 console.log(response);
                 if(response.status===200)
                 {
                     message.success("Password resetted successfully");
-                    navigate("/studentlogin");
+                    navigate("/coordinatorlogin");
 
                     Setpassword("");
                     Setrepassword("");
                 }
-                
+                else if(response.status===204)
+                {
+                    message.error("User not found");
+                }
                 else
                 {
                     message.error("Internal Server Error");
@@ -73,4 +76,4 @@ const ResetpasswordStudent = () => {
       );
     }
 
-    export default ResetpasswordStudent;
+    export default ResetpasswordCordinator;

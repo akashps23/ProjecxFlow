@@ -19,7 +19,7 @@ export default function ForgotPasswordStudent() {
           email,
           answer,
         });
-      if (response.data.success) {
+      if (response.status===200) {
         localStorage.setItem("token", response.data.token);
        navigate("/passwordresetstudent");
        message.success("recovered successfully")
@@ -28,6 +28,12 @@ export default function ForgotPasswordStudent() {
         // Reset the form
         setUsername("");
         setAnswer("");
+      }
+      else if(response.status===204){
+        message.error("Wrong Answer!")
+      }
+      else{
+        message.error("Internal server error");
       }
     } catch (error) {
       console.error(error);

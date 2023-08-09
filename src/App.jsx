@@ -57,11 +57,14 @@ import Announce from "./pages/makeannouncement";
 import AnnouncementsList from "./pages/announcement";
 import ViewAnnouncement from "./pages/viewannouncement";
 
-import Resetpassword from "./pages/passwordresetstudent";
+import ResetpasswordStudent from "./pages/passwordresetstudent";
+import ResetpasswordGuide from "./pages/passwordresetguide";
+
 
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ResetpasswordCordinator from "./pages/passwordresetcordinator";
 
 function App() {
   return (
@@ -134,7 +137,9 @@ function App() {
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/fileupload" element={<FileUploader />} />
-          <Route path="/passwordresetstudent" element={<Resetpassword />} />
+          <Route path="/passwordresetstudent" element={<ResetpasswordStudent />} />
+          <Route path="/passwordresetguide" element={<ResetpasswordGuide />} />
+          <Route path="/passwordresetcoordinator" element={<ResetpasswordCordinator />} />
 
           {/* Evaluation */}
           <Route
