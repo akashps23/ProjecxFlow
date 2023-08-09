@@ -35,6 +35,7 @@ import Projectlist from "./pages/projectlist";
 import EvaluationCoordinator from "./pages/evaluationcoordinator";
 import EvaluationGuide from "./pages/evaluationguide";
 import EvaluationView from "./pages/evaluationview";
+import EvaluationProjects from "./pages/evaluationprojects";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
@@ -59,7 +60,6 @@ import ViewAnnouncement from "./pages/viewannouncement";
 
 import ResetpasswordStudent from "./pages/passwordresetstudent";
 import ResetpasswordGuide from "./pages/passwordresetguide";
-
 
 import React from "react";
 import "./App.css";
@@ -137,30 +137,28 @@ function App() {
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/fileupload" element={<FileUploader />} />
-          <Route path="/passwordresetstudent" element={<ResetpasswordStudent />} />
+          <Route
+            path="/passwordresetstudent"
+            element={<ResetpasswordStudent />}
+          />
           <Route path="/passwordresetguide" element={<ResetpasswordGuide />} />
-          <Route path="/passwordresetcoordinator" element={<ResetpasswordCordinator />} />
+          <Route
+            path="/passwordresetcoordinator"
+            element={<ResetpasswordCordinator />}
+          />
 
           {/* Evaluation */}
           <Route
             path="/evaluationcoordinator"
             element={<EvaluationCoordinator />}
           />
-          <Route
-            path="/evaluationguide"
-            element={<EvaluationGuide />}
-          />
-          <Route
-            path="/evaluationresult"
-            element={<EvaluationView />}
-          />
+          <Route path="/evaluationguide" element={<EvaluationGuide />} />
+          <Route path="/evaluationresult" element={<EvaluationView />} />
         </Routes>
-
-      
+        <Route path="/evaluationprojects" element={<EvaluationProjects />} />
       </BrowserRouter>
     </>
   );
 }
 
 export default App;
-

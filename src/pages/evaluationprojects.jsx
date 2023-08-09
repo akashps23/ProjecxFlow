@@ -39,7 +39,7 @@ const MyProjects = () => {
     <div className="myprojects">
       <img className="logo" />
       <div className="line"></div>
-      <p className="usertype">Projects Coordinates</p>
+      <p className="usertype">Select a Project to Evaluate</p>
       <div className="bgrect"></div>
       <div
         className="searchResults_s"
@@ -61,4 +61,4 @@ const MyProjects = () => {
   );
 };
 
-export default MyProjects;
+export default EvaluationProjects();

@@ -123,12 +123,12 @@ const FileUploader = () => {
 
   const buttonStyles = {
     fontSize: "3rem",
-    margin: "1rem 3rem",
+    margin: "1rem 0rem",
   };
   const buttonStyles2 = {
-    fontSize: "3rem",
-    width: "100px",
-    margin: "1rem 3rem",
+    fontSize: "2rem",
+    width: "130px",
+    margin: "0.5rem 1rem",
   };
 
   return (
