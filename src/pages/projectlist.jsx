@@ -34,9 +34,9 @@ const ProjectList = () => {
       >
         {projects.map((project, index) => (
           <ReusableCard key={index} height={150}>
-            <h3>Title:{project.title}</h3>
-            <p>Type:{project.type}</p>
-            <p>Year:{project.year}</p>
+            <h3>{project.title}</h3>
+            <p>{project.type}</p>
+            <p>{project.year}</p>
           </ReusableCard>
         ))}
       </div>

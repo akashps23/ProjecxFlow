@@ -29,7 +29,11 @@ const MyProjects = () => {
       console.error(error);
     }
   };
-
+  const handleClick = (teamId) => {
+    console.log(teamId);
+    localStorage.setItem("teamId", teamId);
+    navigate("/teammembers");
+  };
   return (
     <div className="myprojects">
       <img className="logo" />
@@ -41,7 +45,11 @@ const MyProjects = () => {
         style={{ marginTop: "8rem", display: "flex", justifyContent: "left" }}
       >
         {projects.map((project, index) => (
-          <ReusableCard key={index} height={150}>
+          <ReusableCard
+            handleClick={() => handleClick(project.teamId)}
+            key={index}
+            height={150}
+          >
             <p>{project.title}</p>
             <p>{project.year}</p>
             <p>{project.type}</p>

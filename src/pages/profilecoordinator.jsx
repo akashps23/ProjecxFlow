@@ -64,7 +64,7 @@ const CoordinatorHome = () => {
       <Link to="/makeannouncement">
         <button className="announcement">Announcements</button>
       </Link>
-      <Link to="/evaluationcoordinator">
+      <Link to="/evaluationprojects">
         <button className="marks">Evaluation</button>
       </Link>
       <img className="logo" />

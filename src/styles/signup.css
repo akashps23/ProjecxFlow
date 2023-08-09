@@ -19,7 +19,7 @@ body {
 .signup_student {
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+ 
   background-color: #ffffff;
 }
 .signup_student .login {

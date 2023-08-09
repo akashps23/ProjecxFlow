@@ -1,6 +1,6 @@
 /* Add this to your CSS file */
 .ticker-container {
-    overflow: hidden;
+   
     animation: ticker-animation 20s linear infinite;
   }
   

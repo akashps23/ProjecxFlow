@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/adminfeatures.css";
+import StudentCard from "../components/cards/StudentCard";
 
 const StudentlistAdmin = () => {
   const [students, setStudents] = useState([]);
@@ -28,7 +29,7 @@ const StudentlistAdmin = () => {
       <div className="line"></div>
       <p className="usertype">Student List</p>
       <div className="bgrect"></div>
-      {students.map((student) => (
+      {/* {students.map((student) => (
         <div key={student}>
           <h3>Name:{student.name}</h3>
           <p>Email:{student.email}</p>
@@ -40,8 +41,26 @@ const StudentlistAdmin = () => {
           <p>Roll Number:{student.rollno}</p>
           <p>College:{student.college}</p>
         </div>
-      ))}
-
+      ))} */}
+      <div
+        className="searchResults_s"
+        style={{ marginTop: "8rem", display: "flex", justifyContent: "center" }}
+      >
+        {students.map((student, index) => (
+          <StudentCard
+            key={index}
+            name={student.name}
+            email={student.email}
+            phoneno={student.phoneno}
+            regno={student.regno}
+            admno={student.admno}
+            sem={student.sem}
+            dept={student.dept}
+            rollno={student.rollno}
+            college={student.college}
+          />
+        ))}
+      </div>
       <Link to="/deletestudent">
         <div className="delete_student">Remove Student</div>
       </Link>

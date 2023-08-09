@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import "../styles/adminguide.css";
+import GuideCard from "../components/cards/GuideCard";
 
 const GuidelistAdmin = () => {
   const [guides, setGuides] = useState([]);
@@ -28,7 +29,7 @@ const GuidelistAdmin = () => {
       <div className="line"></div>
       <p className="usertype">Guide List</p>
       <div className="bgrect"></div>
-      {guides.map((guide) => (
+      {/* {guides.map((guide) => (
         <div key={guide}>
           <h3>{guide.name}</h3>
           <p>Email : {guide.email}</p>
@@ -37,7 +38,25 @@ const GuidelistAdmin = () => {
           <p>Department : {guide.dept}</p>
           <p>College : {guide.college}</p>
         </div>
-      ))}
+      ))} */}
+
+      <div
+        className="searchResults_s"
+        style={{ marginTop: "8rem", display: "flex", justifyContent: "center" }}
+      >
+        {guides.map((guide, index) => (
+          <GuideCard
+            key={index}
+            name={guide.name}
+            email={guide.email}
+            phoneno={guide.phoneno}
+            fid={guide.fid}
+            dept={guide.dept}
+            college={guide.college}
+          />
+        ))}
+      </div>
+
       <Link to="/deleteguide">
         <div className="delete_guide">Remove Guide</div>
       </Link>
