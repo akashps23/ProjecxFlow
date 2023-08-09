@@ -31,6 +31,7 @@ body {
 	left: 5rem;
 	top: 0.8rem;
 	z-index: 1;
+	scale: 60%;
 	background-size: 100% 120%;
 	background-position: 0rem;
 	background-image: url('../assets/logo.png');

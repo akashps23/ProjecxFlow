@@ -29,6 +29,7 @@ body {
 	position: absolute; 
 	left: 3rem;
 	top: 0.8rem;
+	scale: 60%;
 	z-index: 1;
 	scale: 50%;
 	background-size: 100% 120%;

@@ -31,6 +31,7 @@ html {
 	position: absolute;
 	left: 5rem;
 	top: 0.8rem;
+	scale: 60%;
 	z-index: 1;
 	background-size: 100% 120%;
 	background-position: 0rem;
