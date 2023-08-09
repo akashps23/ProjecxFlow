@@ -57,6 +57,8 @@ import Announce from "./pages/makeannouncement";
 import AnnouncementsList from "./pages/announcement";
 import ViewAnnouncement from "./pages/viewannouncement";
 
+import Resetpassword from "./pages/passwordresetstudent";
+
 import React from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -132,6 +134,7 @@ function App() {
           <Route path="/projectsearch" element={<ProjectSearch />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/fileupload" element={<FileUploader />} />
+          <Route path="/passwordresetstudent" element={<Resetpassword />} />
 
           {/* Evaluation */}
           <Route
@@ -147,6 +150,8 @@ function App() {
             element={<EvaluationView />}
           />
         </Routes>
+
+      
       </BrowserRouter>
     </>
   );

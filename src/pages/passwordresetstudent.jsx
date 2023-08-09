@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { message } from "antd";
+import "../styles/passwordreset.css"
 
 
 const Resetpassword = () => {
@@ -20,11 +21,26 @@ const Resetpassword = () => {
             }
             else
             {
-                const response = await axios.post(`${import.meta.env.VITE_API_URL}/user/recoverstudent/${email}`,{password,});
+                const response = await axios.post(
+                    `${import.meta.env.VITE_API_URL}/recoverstudent/${email}/${password}`
+                  );
+                  
                 console.log(response);
-                if(response.data.success)
+                if(response.status===204)
                 {
-                    mesage
+                    message.success("Password resetted successfully");
+                    navigate("/studentlogin");
+
+                    Setpassword("");
+                    Setrepassword("");
+                }
+                else if(response.status===204)
+                {
+                    message.error("User not found");
+                }
+                else
+                {
+                    message.error("Internal Server Error");
                 }
             }
         }
@@ -33,4 +49,31 @@ const Resetpassword = () => {
             message.error("something went wrong");
         }
     }
-}
+
+    return (
+        <div className="forgot">
+          <p className="title">Reset Your Password</p>
+          <div className="bgrect"></div>
+          <form onSubmit={handlepasswordreset}>
+          <input
+            className="password"
+            placeholder={"Password"}
+            type="password"
+            value={password}
+            onChange={(event) => Setpassword(event.target.value)}
+          ></input>
+          <input
+            className="repassword"
+            placeholder={"Re enter Password"}
+            type="password"
+            value={repassword}
+            onChange={(event) => Setrepassword(event.target.value)}
+          ></input>
+            <button className="submit" type="submit">Reset</button>
+          </form>
+          
+        </div>
+      );
+    }
+
+    export default Resetpassword;
