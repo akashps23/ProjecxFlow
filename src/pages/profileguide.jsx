@@ -43,16 +43,26 @@ const GuideHome = () => {
       ) : (
         <p>Loading...</p>
       )}
-     
-        <Link to="/miniproject"><div className="mini">Mini Projects</div></Link>
-     
-        <Link to="/mainproject"><div className="main">Main Projects</div></Link>
-      
-        <Link to="/studentlist"><div className="student">Students List</div></Link>
- 
-        <Link to="/makeannouncement"><div className="anno">Announcement</div></Link>
-      
-        <Link to="/evaluationguide"><div className="evaluation_mark">Evaluation</div></Link>
+
+      <Link to="/miniproject">
+        <div className="mini">Mini Projects</div>
+      </Link>
+
+      <Link to="/mainproject">
+        <div className="main">Main Projects</div>
+      </Link>
+
+      <Link to="/studentlist">
+        <div className="student">Students List</div>
+      </Link>
+
+      <Link to="/makeannouncement">
+        <div className="anno">Make Announcement</div>
+      </Link>
+
+      <Link to="/announcements">
+        <div className="evaluation_mark">Announcment List</div>
+      </Link>
 
       <img className="logo" />
       <div className="line"></div>
@@ -61,7 +71,6 @@ const GuideHome = () => {
         <p className="logout">Log Out</p>
       </Link>
       <div className="bg_rect"></div>
-      
     </div>
   );
 };

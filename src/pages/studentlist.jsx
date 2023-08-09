@@ -5,7 +5,7 @@ import axios from "axios";
 const Studentlist = () => {
   const [students, setStudents] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     fetchStudents();
   }, []);
 
@@ -38,7 +38,7 @@ const Studentlist = () => {
           <p>Department : {student.dept}</p>
           <p>Roll Number : {student.rollno}</p>
           <p>College : {student.college}</p>
-          <button className="edit"></button>
+         
         </div>
       ))}
     </div>

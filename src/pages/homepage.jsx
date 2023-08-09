@@ -55,7 +55,6 @@ export default function Home() {
       <p className="tagline_head">Manage projects with ProjectXFlow</p>
 
       <div className="signup_rect"></div>
-
       <Link to="/usertype">
         <p className="getstarted">Get Started</p>
       </Link>
