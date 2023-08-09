@@ -20,20 +20,19 @@ const Mainproject = () => {
       console.error("Error fetching projects:", error);
     }
   };
-  const handleClick = async(projectId) => {
-    console.log(projectId)
+  const handleClick = async (projectId) => {
+    console.log(projectId);
     try {
       const response = await axios.get(
         `http://localhost:9014/api/v1/pdf/viewabstract/${projectId}`
       );
       console.log(response.data);
-      let link = response.data
-      if(link==="") message.error("File not uploaded yet!")
+      let link = response.data;
+      if (link === "") message.error("File not uploaded yet!");
       else window.open(link);
     } catch (error) {
       console.log(error);
     }
-    
   };
 
   return (
@@ -43,14 +42,29 @@ const Mainproject = () => {
       <p className="usertype">Main Projects</p>
       <div className="bgrect"></div>
       <div className="flexlist">
-      <div className="flex gap-2">
-      {projects.map((project) => (
-        <div className='card' key={project._id}  onClick={() => handleClick(project._id)}>
-          <h3 className='card-title'>{project.title} - {project.year}</h3> 
+        <div className="flex gap-2">
+          <div
+            className="searchResults_s"
+            style={{
+              marginTop: "8rem",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {projects.map((project) => (
+              <div
+                className="card"
+                key={project._id}
+                onClick={() => handleClick(project._id)}
+              >
+                <h3 className="card-title">
+                  {project.title} - {project.year}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
-      ))}
-    </div>
-    </div>
+      </div>
     </div>
   );
 };

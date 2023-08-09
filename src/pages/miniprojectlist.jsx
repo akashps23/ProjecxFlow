@@ -22,21 +22,31 @@ const Miniproject = () => {
   };
 
   return (
-    <div className='minilist'>
+    <div className="minilist">
       <img className="logo" />
       <div className="line"></div>
       <p className="usertype">Mini Projects</p>
       <div className="bgrect"></div>
       <div className="flexlist">
-      <div className="flex gap-2">
-      {projects.map((project) => (
-        <div className='card' key={project._id}>
-          <h3 className='card-title'>{project.title} - {project.year}</h3>          
+        <div className="flex gap-2">
+          <div
+            className="searchResults_s"
+            style={{
+              marginTop: "8rem",
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            {projects.map((project) => (
+              <div className="card" key={project._id}>
+                <h3 className="card-title">
+                  {project.title} - {project.year}
+                </h3>
+              </div>
+            ))}
+          </div>
         </div>
-        
-      ))}
-    </div>
-    </div>
+      </div>
     </div>
   );
 };

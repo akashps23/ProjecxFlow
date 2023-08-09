@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from 'react';
-import { useLocation } from 'react-router-dom';
-import axios from 'axios';
-import "../styles/myproject.css"
+import React, { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
+import axios from "axios";
+import "../styles/myproject.css";
+import ReusableCard from "../components/cards/ReusableCard";
 
 const MyProjects = () => {
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
-  const coordinatorId = searchParams.get('coordinatorId');
+  const coordinatorId = searchParams.get("coordinatorId");
 
   const [projects, setProjects] = useState([]);
 
@@ -18,7 +19,11 @@ const MyProjects = () => {
 
   const fetchProjects = async () => {
     try {
-      const response = await axios.get(`${import.meta.env.VITE_API_URL}/user/projects?coordinatorId=${coordinatorId}`);
+      const response = await axios.get(
+        `${
+          import.meta.env.VITE_API_URL
+        }/user/projects?coordinatorId=${coordinatorId}`
+      );
       setProjects(response.data.projects);
     } catch (error) {
       console.error(error);
@@ -26,20 +31,23 @@ const MyProjects = () => {
   };
 
   return (
-    <div className='myprojects'>
+    <div className="myprojects">
       <img className="logo" />
       <div className="line"></div>
       <p className="usertype">Projects Coordinates</p>
       <div className="bgrect"></div>
-      <ul>
+      <div
+        className="searchResults_s"
+        style={{ marginTop: "8rem", display: "flex", justifyContent: "left" }}
+      >
         {projects.map((project, index) => (
-          <li key={index}>
+          <ReusableCard key={index} height={150}>
             <p>{project.title}</p>
             <p>{project.year}</p>
             <p>{project.type}</p>
-          </li>
+          </ReusableCard>
         ))}
-      </ul>
+      </div>
     </div>
   );
 };
