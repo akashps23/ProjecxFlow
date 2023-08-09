@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/guidelist.css";
+import GuideCard from "../components/cards/GuideCard";
 
 const Guidelist = () => {
   const [guides, setGuides] = useState([]);
@@ -27,17 +28,22 @@ const Guidelist = () => {
       <div className="line"></div>
       <p className="usertype">Guide List</p>
       <div className="bgrect"></div>
-
-      {guides.map((guide) => (
-        <div className="list" key={guide}>
-          <h3>{guide.name}</h3>
-          <p>Email ID : {guide.email}</p>
-          <p>Phone Number : {guide.phoneno}</p>
-          <p>Faculty ID : {guide.fid}</p>
-          <p>Department : {guide.dept}</p>
-          <p>College : {guide.college}</p>
-        </div>
-      ))}
+      <div
+        className="searchResults_s"
+        style={{ marginTop: "8rem", display: "flex", justifyContent: "center" }}
+      >
+        {guides.map((guide, index) => (
+          <GuideCard
+            key={index}
+            name={guide.name}
+            email={guide.email}
+            phoneno={guide.phoneno}
+            fid={guide.fid}
+            dept={guide.dept}
+            college={guide.college}
+          />
+        ))}
+      </div>
     </div>
   );
 };
