@@ -35,7 +35,7 @@ import Projectlist from "./pages/projectlist";
 import EvaluationCoordinator from "./pages/evaluationcoordinator";
 import EvaluationGuide from "./pages/evaluationguide";
 import EvaluationView from "./pages/evaluationview";
-import EvaluationProjects from "./pages/evaluationprojects";
+// import EvaluationProjects from "./pages/evaluationprojects";
 
 //home profile
 import AdminHome from "./pages/profileadmin";
@@ -155,7 +155,7 @@ function App() {
           <Route path="/evaluationguide" element={<EvaluationGuide />} />
           <Route path="/evaluationresult" element={<EvaluationView />} />
         </Routes>
-        <Route path="/evaluationprojects" element={<EvaluationProjects />} />
+        {/* <Route path="/evaluationprojects" element={<EvaluationProjects />} /> */}
       </BrowserRouter>
     </>
   );

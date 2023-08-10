@@ -4,7 +4,7 @@ import axios from "axios";
 import "../styles/myproject.css";
 import ReusableCard from "../components/cards/ReusableCard";
 
-const MyProjects = () => {
+const EvaluationProjects = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const searchParams = new URLSearchParams(location.search);
